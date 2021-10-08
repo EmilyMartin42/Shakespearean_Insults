@@ -1,7 +1,4 @@
-# 10/06/21 Meeting Minutes and Project Update
-
-Meeting Minutes 10/06
-
+# 10/06/21 Meeting Minutes
 
 - Discussed broad preliminary research questions - our current options are as follows:
   - General
@@ -14,7 +11,7 @@ Meeting Minutes 10/06
     2. Are there commonalities between the morphological constituents in Shakespeare’s insults? 
    Do they vary between Shakespeare’s comedies and tragedies?
 - Selected plays to focus on for our project, and decided that an appropriate number is 4;
-- the plays we will be using are Othello, Hamlet, The Comedy of Errors, and A Midsummer Night’s Dream
+the plays we will be using are Othello, Hamlet, The Comedy of Errors, and A Midsummer Night’s Dream
 - Discussed potential resources for our project (https://shakespeare.folger.edu/, https://wordhoard.northwestern.edu/userman/other-files/, 
 http://metalab.unc.edu/bosak/xml/eg/shaks200.zip,
 or https://github.com/severdia/PlayShakespeare.com-XML/tree/master/playshakespeare_editions ); our final
@@ -37,17 +34,3 @@ phase phase of mark-up Naiya and Emily will add linguistic mark-up to the files*
   No color scheme planning so Dillon is not grumpy)
   2. Emily and Naiya will begin tentatively planning their procedures for mark-up of linguistic features, and divide the poems up between them** 
   (may have to be after meeting with Professor Narae Han)
-
-Project Update 10/08
-Our group’s primary task going into this week was to find potential resources for our project, select which plays we would work with and who will be 
-working with each of them, and generate ideas for our project so that we could officially plan for the work that mark-ups we will be doing in the 
-following weeks. All group members proposed their suggestions regarding these subjects, and we came up with some working plans. 
-Each group member suggested a resource to pull from for our project and chose a text from Shakespeare that we wanted to mark-up, and in this week’s 
-discussion we concluded that we will be using the Wordhoard version of our texts (they are now officially Othello, Hamlet, The Comedy of Errors, 
-and A Midsummer Night’s Dream), because for the linguistic mark-up of our documents it would be helpful to have token-level mark-up as opposed to line-level.
-We decided that our mark-up will be completed in two phases, the initial insult-detection phase being done by Mason and Dillon - the former will mark-up tragedies, 
-and the latter comedies. Emily and Naiya will work on the second phase of linguistic mark-up (we have not decided how to split the plays between us yet, but it will 
-likely be a similar situation to that of our initial phase.)
-For next week we are planning to have formulated a set of “steps” for marking-up insults (Dillon and Mason), push our XML files to our github repo (Emily), and have 
-met with/have a date and time to meet with Narae Han to check-in about our linguistics-focused research questions (Naiya).
-
