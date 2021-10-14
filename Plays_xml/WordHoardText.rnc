@@ -54,12 +54,18 @@ hi_p_type =
   (element hi { hi_p_type }*
    | element title { title_type }*)+,
   attribute rend { rend_style_type }
+# 2021-10-13 djb
+# To allow <insult-start/> and <insult-end/> elements
+#   mixed in with words:
+#   1. Add those elements to the content model for 
+#     <wordHoardTaggedLine_type>
+#   2. Add definitions of those elements to the schema
 wordHoardTaggedLine_type =
-  (element w { w_type }*
-   | element punc { xsd:string }*
-   | element hi { hi_line_type }*
-   | element title { title_type }*
-   | element stage { xsd:string }*)+,
+  (element w { w_type }
+   | element punc { xsd:string }
+   | element hi { hi_line_type }
+   | element title { title_type }
+   | element stage { xsd:string })+,
   attribute id { xsd:string }?,
   attribute n { xsd:unsignedShort }?,
   attribute label { xsd:string }?,
