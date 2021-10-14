@@ -1,0 +1,9 @@
+start = insults
+insults = element insults { group+ }
+group = element group { group_type, insult+ }
+group_type = attribute type { "single" | "compound" | "invalid" }
+insult = element insult { type, text }
+type =
+    attribute type {
+        list { ("gender" | "personal-attack")+ }
+    }

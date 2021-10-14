@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="sample-insults.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="simple-insults.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<insults>
+    <!--
+        Relax NG declares the value of insult/@type as a token list of literal strings
+        Invalid strings (here "oops") are trapped by Relax NG validation
+        Repetition (here "gender gender") is trapped by Schematron
+    -->
+    <group type="single">
+        <insult type="gender">You throw like a girl.</insult>
+        <insult type="personal-attack">You have sword skills of a child.</insult>
+    </group>
+    <group type="compound">
+        <insult type="personal-attack gender">You have the sword skills of a little girl.</insult>
+        <insult type="gender personal-attack">You have the sword skills of a little girl.</insult>
+    </group>
+    <group type="invalid">
+        <!-- These examples are all invalid -->
+        <insult type="gender gender">You throw like a girl.</insult>
+        <insult type="oops">You have the sword skills of an alien.</insult>
+        <insult type="gender oops">You have the sword skills of an alien girl.</insult>
+    </group>
+</insults>
