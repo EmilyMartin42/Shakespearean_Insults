@@ -1,0 +1,213 @@
+default namespace = ""
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace rng = "http://relaxng.org/ns/structure/1.0"
+
+prosodic_type = "prose" | "verse"
+align_type = "left" | "center" | "right"
+title_type = xsd:string { maxLength = "50" }
+wordHoardHeader_text_type =
+  element pubDate {
+    xsd:string { pattern = "\d{4}(-\d{4})?" }
+  }?,
+  element taggingData { taggingData_type },
+  attribute corpus { xsd:string },
+  attribute work { xsd:string },
+  attribute prosodic { prosodic_type }?
+wordHoardHeader_div_type =
+  element title { title_type },
+  element fullTitle { title_type }?,
+  element pathTag { xsd:string }?,
+  element taggingData { taggingData_type },
+  attribute prosodic { prosodic_type }?
+w_type =
+  xsd:string,
+  attribute id { xsd:string },
+  attribute lemma { xsd:string }?,
+  attribute pos { xsd:string }?,
+  attribute bensonGloss { xsd:unsignedShort }?,
+  attribute metricalShape { xsd:string }?
+rend_suppress_type = "none"
+rend_stanza_indent_type = "spenser-indentation"
+rend_speech_indent_type = "none" | "indent"
+rend_style_type =
+  "bold"
+  | "italic"
+  | "extended"
+  | "sperrtext"
+  | "underline"
+  | "overline"
+  | "macron"
+  | "superscript"
+  | "subscript"
+  | "monospaced"
+  | "normal"
+  | "roman"
+  | "plain"
+hi_line_type =
+  (element w { w_type }*
+   | element punc { xsd:string }*
+   | element hi { hi_line_type }*
+   | element title { title_type }*
+   | element stage { xsd:string }*)+,
+  attribute rend { rend_style_type }
+hi_p_type =
+  (element hi { hi_p_type }*
+   | element title { title_type }*)+,
+  attribute rend { rend_style_type }
+wordHoardTaggedLine_type =
+  (element w { w_type }*
+   | element punc { xsd:string }*
+   | element hi { hi_line_type }*
+   | element title { title_type }*
+   | element stage { xsd:string }*)+,
+  attribute id { xsd:string }?,
+  attribute n { xsd:unsignedShort }?,
+  attribute label { xsd:string }?,
+  attribute prosodic { prosodic_type }?,
+  [ a:defaultValue = "normal" ] attribute rend { rend_style_type }?,
+  [ a:defaultValue = "left" ] attribute align { align_type }?,
+  attribute indent { xsd:string }?
+# Added mixed content to p_type manually
+# djb, 2021-10-14
+p_type =
+  mixed {
+    (element hi { hi_p_type }
+     | element title { title_type })*
+  },
+  attribute id { xsd:string }?,
+  attribute n { xsd:string }?,
+  attribute label { xsd:string }?,
+  attribute rend { rend_style_type }?,
+  [ a:defaultValue = "left" ] attribute align { align_type }?,
+  attribute indent { xsd:string }?
+lg_type =
+  (element wordHoardTaggedLine { wordHoardTaggedLine_type }*
+   | element p { p_type }*
+   | element head { xsd:string }*
+   | element stage { xsd:string }*
+   | element lg { lg_type }*)+,
+  attribute id { xsd:string }?,
+  attribute type {
+    "argument"
+    | "couplet"
+    | "mww-song"
+    | "poem"
+    | "refrain"
+    | "sestina"
+    | "song"
+    | "speech"
+    | "stanza"
+    | "triplet"
+    | "quatrain"
+  }?,
+  attribute n { xsd:string }?,
+  attribute rend { rend_stanza_indent_type }?,
+  [ a:defaultValue = "left" ] attribute align { align_type }?
+taggingData_type =
+  element lemma { empty }?,
+  element pos { empty }?,
+  element wordClass { empty }?,
+  element spelling { empty }?,
+  element speaker { empty }?,
+  element gender { empty }?,
+  element mortality { empty }?,
+  element prosodic { empty }?,
+  element metricalShape { empty }?,
+  element pubDates { empty }?
+role_type =
+  xsd:string,
+  attribute id { xsd:string }?,
+  attribute gender { "male" | "female" | "uncertainMixedOrUnknown" }?,
+  attribute mortality { "mortal" | "immortalOrSupernatural" | "unknownOrOther" }?,
+  attribute originalName { xsd:string }?
+sp_type =
+  (element speaker { xsd:string }?
+   | element wordHoardTaggedLine { wordHoardTaggedLine_type }*
+   | element p { p_type }*
+   | element head { xsd:string }*
+   | element stage { xsd:string }*
+   | element lg { lg_type }*)+,
+  attribute who { xsd:string },
+  attribute rend { rend_speech_indent_type }?
+castItem_type =
+  (element role { role_type }*
+   | element roleDesc { xsd:string }?)+,
+  attribute type { xsd:string },
+  attribute rend { rend_suppress_type }?
+castList_type =
+  (element castItem { castItem_type }*
+   | element castGroup {
+       element title { xsd:string }?,
+       element castItem { castItem_type }+
+     }*)+
+div_type =
+  (element wordHoardHeader { wordHoardHeader_div_type }
+   | element lg { lg_type }*
+   | element sp { sp_type }*
+   | element wordHoardTaggedLine { wordHoardTaggedLine_type }*
+   | element p { p_type }*
+   | element div { div_type }*
+   | element head {
+       xsd:string,
+       attribute id { xsd:string }?
+     }*
+   | element stage { xsd:string }*
+   | element castList { castList_type }*)+,
+  attribute id { xsd:string },
+  attribute type { "castList" }?,
+  attribute numberingStyle { "stanza" }?,
+  attribute indent { xsd:unsignedShort }?,
+  attribute rend { rend_suppress_type }?,
+  attribute n { xsd:unsignedInt }?
+titleStmt_type =
+  element title { title_type }+,
+  element shortTitle { title_type }?,
+  element author { xsd:string }+,
+  element respStmt {
+    element name { xsd:string },
+    element resp { xsd:string }
+  }*
+start |= starting_WordHoardText
+starting_WordHoardText =
+  element WordHoardText {
+    element wordHoardHeader { wordHoardHeader_text_type },
+    element teiHeader {
+      element fileDesc {
+        element titleStmt { titleStmt_type },
+        element extent { xsd:string }?,
+        element publicationStmt {
+          element p { p_type }*
+        }?,
+        element sourceDesc {
+          element bibl {
+            element titleStmt {
+              element p { p_type }*
+            }?
+            & element extent { xsd:string }?
+            & element author { xsd:string }?
+            & element title { xsd:string }?
+            & element publisher { xsd:string }?
+            & element pubPlace { xsd:string }?
+            & element date { xsd:string }?
+            & element publicationStmt {
+                element p { p_type }*
+              }?
+            & element editionStmt {
+                element p { p_type }*
+              }?
+          },
+          attribute default { xsd:string }?
+        }?
+      }
+    },
+    element text {
+      element front {
+        element div { div_type }?
+      }?,
+      element body {
+        element div { div_type }+,
+        element wordHoardTaggedLine { wordHoardTaggedLine_type }?
+      }?,
+      attribute id { xsd:string }?
+    }
+  }
