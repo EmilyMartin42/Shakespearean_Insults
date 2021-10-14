@@ -27,7 +27,7 @@ General definition: Any form of deragotory, abusive, or disrespectful remark/act
     1. Example: "Hamlet has been having affairs with the court cur"
     1. `type="slander"`
 
-### Actions
+### Actions - No longer in the scope of the project
 1. Denying satisfaction/ breaking tradition
     1. Explanation: Disrespecting the honor of someone being insulted by way of denying something that they want or require. This must be something they require to appease others or the cultural system, not just themselves.
     1. Example: "Raise your sword, demon!" *Opponent exit stage right*
