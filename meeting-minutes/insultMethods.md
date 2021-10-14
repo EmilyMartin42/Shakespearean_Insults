@@ -48,4 +48,4 @@ General definition: Any form of deragotory, abusive, or disrespectful remark/act
 1. Tag the insult within the line and include its type.
     1. Example: `<insult type="nameCall">` You are a motherless hag `</insult>`
 1. In the event that there are multiple categories under which an insult may fall, the attribute value should contain both types separated by a space.
-1.  1. Example: `<insult type="nameCall sexGen>` You fat cow, you are more cowardly than a woman `</insult>`
+1.  1. Example: `<insult type="nameCall sexGen">` You fat cow, you are more cowardly than a woman `</insult>`

@@ -1,0 +1,895 @@
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" ns=""
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+    <rng:define name="prosodic_type">
+        <rng:choice>
+            <rng:value>prose</rng:value>
+            <rng:value>verse</rng:value>
+        </rng:choice>
+    </rng:define>
+
+    <rng:define name="align_type">
+        <rng:choice>
+            <rng:value>left</rng:value>
+            <rng:value>center</rng:value>
+            <rng:value>right</rng:value>
+        </rng:choice>
+    </rng:define>
+
+    <rng:define name="title_type">
+        <rng:data type="string">
+            <rng:param name="maxLength">50</rng:param>
+        </rng:data>
+    </rng:define>
+
+    <rng:define name="wordHoardHeader_text_type">
+
+        <rng:optional>
+            <rng:element name="pubDate">
+
+                <rng:data type="string">
+                    <rng:param name="pattern">\d{4}(-\d{4})?</rng:param>
+                </rng:data>
+
+            </rng:element>
+        </rng:optional>
+        <rng:element name="taggingData">
+            <rng:ref name="taggingData_type"/>
+        </rng:element>
+
+        <rng:attribute name="corpus">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:attribute name="work">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:optional>
+            <rng:attribute name="prosodic">
+                <rng:ref name="prosodic_type"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+    <rng:define name="wordHoardHeader_div_type">
+
+        <rng:element name="title">
+            <rng:ref name="title_type"/>
+        </rng:element>
+        <rng:optional>
+            <rng:element name="fullTitle">
+                <rng:ref name="title_type"/>
+            </rng:element>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="pathTag">
+                <rng:data type="string"/>
+            </rng:element>
+        </rng:optional>
+        <rng:element name="taggingData">
+            <rng:ref name="taggingData_type"/>
+        </rng:element>
+
+        <rng:optional>
+            <rng:attribute name="prosodic">
+                <rng:ref name="prosodic_type"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+    <rng:define name="w_type">
+
+
+        <rng:attribute name="id">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:attribute name="lemma">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:attribute name="pos">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:attribute name="bensonGloss">
+            <rng:data type="unsignedShort"/>
+        </rng:attribute>
+        <rng:attribute name="metricalShape">
+            <rng:data type="string"/>
+        </rng:attribute>
+
+
+    </rng:define>
+
+    <rng:define name="rend_suppress_type">
+        <rng:choice>
+            <rng:value>none</rng:value>
+        </rng:choice>
+    </rng:define>
+
+    <rng:define name="rend_stanza_indent_type">
+        <rng:choice>
+            <rng:value>spenser-indentation</rng:value>
+        </rng:choice>
+    </rng:define>
+
+    <rng:define name="rend_speech_indent_type">
+        <rng:choice>
+            <rng:value>none</rng:value>
+            <rng:value>indent</rng:value>
+        </rng:choice>
+    </rng:define>
+
+    <rng:define name="rend_style_type">
+        <rng:choice>
+            <rng:value>bold</rng:value>
+            <rng:value>italic</rng:value>
+            <rng:value>extended</rng:value>
+            <rng:value>sperrtext</rng:value>
+            <rng:value>underline</rng:value>
+            <rng:value>overline</rng:value>
+            <rng:value>macron</rng:value>
+            <rng:value>superscript</rng:value>
+            <rng:value>subscript</rng:value>
+            <rng:value>monospaced</rng:value>
+            <rng:value>normal</rng:value>
+            <rng:value>roman</rng:value>
+            <rng:value>plain</rng:value>
+        </rng:choice>
+    </rng:define>
+
+    <rng:define name="hi_line_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="w">
+                        <rng:ref name="w_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="punc">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="hi">
+                        <rng:ref name="hi_line_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="title">
+                        <rng:ref name="title_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="stage">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:attribute name="rend">
+            <rng:ref name="rend_style_type"/>
+        </rng:attribute>
+    </rng:define>
+
+    <rng:define name="hi_p_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="hi">
+                        <rng:ref name="hi_p_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="title">
+                        <rng:ref name="title_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:attribute name="rend">
+            <rng:ref name="rend_style_type"/>
+        </rng:attribute>
+    </rng:define>
+
+    <rng:define name="wordHoardTaggedLine_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="w">
+                        <rng:ref name="w_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="punc">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="hi">
+                        <rng:ref name="hi_line_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="title">
+                        <rng:ref name="title_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="stage">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:optional>
+            <rng:attribute name="id">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="n">
+                <rng:data type="unsignedShort"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="label">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="prosodic">
+                <rng:ref name="prosodic_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute xmlns:ns_1="http://relaxng.org/ns/compatibility/annotations/1.0"
+                name="rend" ns_1:defaultValue="normal">
+                <rng:ref name="rend_style_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute xmlns:ns_1="http://relaxng.org/ns/compatibility/annotations/1.0"
+                name="align" ns_1:defaultValue="left">
+                <rng:ref name="align_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="indent">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+    <rng:define name="p_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="hi">
+                        <rng:ref name="hi_p_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="title">
+                        <rng:ref name="title_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:optional>
+            <rng:attribute name="id">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="n">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="label">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="rend">
+                <rng:ref name="rend_style_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute xmlns:ns_1="http://relaxng.org/ns/compatibility/annotations/1.0"
+                name="align" ns_1:defaultValue="left">
+                <rng:ref name="align_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="indent">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+    <rng:define name="lg_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="wordHoardTaggedLine">
+                        <rng:ref name="wordHoardTaggedLine_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="p">
+                        <rng:ref name="p_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="head">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="stage">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="lg">
+                        <rng:ref name="lg_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:optional>
+            <rng:attribute name="id">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="type">
+
+                <rng:choice>
+                    <rng:value>argument</rng:value>
+                    <rng:value>couplet</rng:value>
+                    <rng:value>mww-song</rng:value>
+                    <rng:value>poem</rng:value>
+                    <rng:value>refrain</rng:value>
+                    <rng:value>sestina</rng:value>
+                    <rng:value>song</rng:value>
+                    <rng:value>speech</rng:value>
+                    <rng:value>stanza</rng:value>
+                    <rng:value>triplet</rng:value>
+                    <rng:value>quatrain</rng:value>
+                </rng:choice>
+
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="n">
+                <rng:data type="string"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="rend">
+                <rng:ref name="rend_stanza_indent_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute xmlns:ns_1="http://relaxng.org/ns/compatibility/annotations/1.0"
+                name="align" ns_1:defaultValue="left">
+                <rng:ref name="align_type"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+
+    <rng:define name="taggingData_type">
+
+        <rng:optional>
+            <rng:element name="lemma"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="pos"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="wordClass"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="spelling"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="speaker"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="gender"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="mortality"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="prosodic"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="metricalShape"/>
+        </rng:optional>
+        <rng:optional>
+            <rng:element name="pubDates"/>
+        </rng:optional>
+
+    </rng:define>
+
+    <rng:define name="role_type">
+
+
+        <rng:attribute name="id">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:attribute name="gender">
+
+            <rng:choice>
+                <rng:value>male</rng:value>
+                <rng:value>female</rng:value>
+                <rng:value>uncertainMixedOrUnknown</rng:value>
+            </rng:choice>
+
+        </rng:attribute>
+        <rng:attribute name="mortality">
+
+            <rng:choice>
+                <rng:value>mortal</rng:value>
+                <rng:value>immortalOrSupernatural</rng:value>
+                <rng:value>unknownOrOther</rng:value>
+            </rng:choice>
+
+        </rng:attribute>
+        <rng:attribute name="originalName">
+            <rng:data type="string"/>
+        </rng:attribute>
+
+
+    </rng:define>
+
+    <rng:define name="sp_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:optional>
+                    <rng:element name="speaker">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:optional>
+                <rng:zeroOrMore>
+                    <rng:element name="wordHoardTaggedLine">
+                        <rng:ref name="wordHoardTaggedLine_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="p">
+                        <rng:ref name="p_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="head">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="stage">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="lg">
+                        <rng:ref name="lg_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:attribute name="who">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:optional>
+            <rng:attribute name="rend">
+                <rng:ref name="rend_speech_indent_type"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+    <rng:define name="castItem_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="role">
+                        <rng:ref name="role_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:optional>
+                    <rng:element name="roleDesc">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:optional>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:attribute name="type">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:optional>
+            <rng:attribute name="rend">
+                <rng:ref name="rend_suppress_type"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+
+    <rng:define name="castList_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:zeroOrMore>
+                    <rng:element name="castItem">
+                        <rng:ref name="castItem_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="castGroup">
+
+
+                        <rng:optional>
+                            <rng:element name="title">
+                                <rng:data type="string"/>
+                            </rng:element>
+                        </rng:optional>
+                        <rng:oneOrMore>
+                            <rng:element name="castItem">
+                                <rng:ref name="castItem_type"/>
+                            </rng:element>
+                        </rng:oneOrMore>
+
+
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+    </rng:define>
+
+
+    <rng:define name="div_type">
+
+        <rng:oneOrMore>
+            <rng:choice>
+                <rng:element name="wordHoardHeader">
+                    <rng:ref name="wordHoardHeader_div_type"/>
+                </rng:element>
+                <rng:zeroOrMore>
+                    <rng:element name="lg">
+                        <rng:ref name="lg_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="sp">
+                        <rng:ref name="sp_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="wordHoardTaggedLine">
+                        <rng:ref name="wordHoardTaggedLine_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="p">
+                        <rng:ref name="p_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="div">
+                        <rng:ref name="div_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="head">
+
+
+
+                        <rng:attribute name="id">
+                            <rng:data type="string"/>
+                        </rng:attribute>
+
+
+
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="stage">
+                        <rng:data type="string"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+                <rng:zeroOrMore>
+                    <rng:element name="castList">
+                        <rng:ref name="castList_type"/>
+                    </rng:element>
+                </rng:zeroOrMore>
+            </rng:choice>
+        </rng:oneOrMore>
+
+        <rng:attribute name="id">
+            <rng:data type="string"/>
+        </rng:attribute>
+        <rng:optional>
+            <rng:attribute name="type">
+
+                <rng:choice>
+                    <rng:value>castList</rng:value>
+                </rng:choice>
+
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="numberingStyle">
+
+                <rng:choice>
+                    <rng:value>stanza</rng:value>
+                </rng:choice>
+
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="indent">
+                <rng:data type="unsignedShort"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="rend">
+                <rng:ref name="rend_suppress_type"/>
+            </rng:attribute>
+        </rng:optional>
+        <rng:optional>
+            <rng:attribute name="n">
+                <rng:data type="unsignedInt"/>
+            </rng:attribute>
+        </rng:optional>
+    </rng:define>
+
+
+    <rng:define name="titleStmt_type">
+
+        <rng:oneOrMore>
+            <rng:element name="title">
+                <rng:ref name="title_type"/>
+            </rng:element>
+        </rng:oneOrMore>
+        <rng:optional>
+            <rng:element name="shortTitle">
+                <rng:ref name="title_type"/>
+            </rng:element>
+        </rng:optional>
+        <rng:oneOrMore>
+            <rng:element name="author">
+                <rng:data type="string"/>
+            </rng:element>
+        </rng:oneOrMore>
+        <rng:zeroOrMore>
+            <rng:element name="respStmt">
+
+
+                <rng:element name="name">
+                    <rng:data type="string"/>
+                </rng:element>
+                <rng:element name="resp">
+                    <rng:data type="string"/>
+                </rng:element>
+
+
+            </rng:element>
+        </rng:zeroOrMore>
+
+    </rng:define>
+
+
+    <rng:start combine="choice">
+        <rng:ref name="WordHoardText"/>
+    </rng:start>
+    <rng:define name="WordHoardText">
+        <rng:element name="WordHoardText">
+
+
+            <rng:element name="wordHoardHeader">
+                <rng:ref name="wordHoardHeader_text_type"/>
+            </rng:element>
+            <rng:element name="teiHeader">
+
+
+                <rng:element name="fileDesc">
+
+
+                    <rng:element name="titleStmt">
+                        <rng:ref name="titleStmt_type"/>
+                    </rng:element>
+                    <rng:optional>
+                        <rng:element name="extent">
+                            <rng:data type="string"/>
+                        </rng:element>
+                    </rng:optional>
+                    <rng:optional>
+                        <rng:element name="publicationStmt">
+
+
+                            <rng:zeroOrMore>
+                                <rng:element name="p">
+                                    <rng:ref name="p_type"/>
+                                </rng:element>
+                            </rng:zeroOrMore>
+
+
+                        </rng:element>
+                    </rng:optional>
+                    <rng:optional>
+                        <rng:element name="sourceDesc">
+
+
+                            <rng:element name="bibl">
+
+                                <rng:interleave>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="titleStmt">
+
+
+                                                <rng:zeroOrMore>
+                                                  <rng:element name="p">
+                                                  <rng:ref name="p_type"/>
+                                                  </rng:element>
+                                                </rng:zeroOrMore>
+
+
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="extent">
+                                                <rng:data type="string"/>
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="author">
+                                                <rng:data type="string"/>
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="title">
+                                                <rng:data type="string"/>
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="publisher">
+                                                <rng:data type="string"/>
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="pubPlace">
+                                                <rng:data type="string"/>
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="date">
+                                                <rng:data type="string"/>
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="publicationStmt">
+
+
+                                                <rng:zeroOrMore>
+                                                  <rng:element name="p">
+                                                  <rng:ref name="p_type"/>
+                                                  </rng:element>
+                                                </rng:zeroOrMore>
+
+
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                    <rng:optional>
+                                        <rng:optional>
+                                            <rng:element name="editionStmt">
+
+
+                                                <rng:zeroOrMore>
+                                                  <rng:element name="p">
+                                                  <rng:ref name="p_type"/>
+                                                  </rng:element>
+                                                </rng:zeroOrMore>
+
+
+                                            </rng:element>
+                                        </rng:optional>
+                                    </rng:optional>
+                                </rng:interleave>
+
+                            </rng:element>
+
+                            <rng:optional>
+                                <rng:attribute name="default">
+                                    <rng:data type="string"/>
+                                </rng:attribute>
+                            </rng:optional>
+
+                        </rng:element>
+                    </rng:optional>
+
+
+                </rng:element>
+
+
+            </rng:element>
+            <rng:element name="text">
+
+
+                <rng:optional>
+                    <rng:element name="front">
+
+
+                        <rng:optional>
+                            <rng:element name="div">
+                                <rng:ref name="div_type"/>
+                            </rng:element>
+                        </rng:optional>
+
+
+                    </rng:element>
+                </rng:optional>
+                <rng:optional>
+                    <rng:element name="body">
+
+
+                        <rng:oneOrMore>
+                            <rng:element name="div">
+                                <rng:ref name="div_type"/>
+                            </rng:element>
+                        </rng:oneOrMore>
+                        <rng:optional>
+                            <rng:element name="wordHoardTaggedLine">
+                                <rng:ref name="wordHoardTaggedLine_type"/>
+                            </rng:element>
+                        </rng:optional>
+
+
+                    </rng:element>
+                </rng:optional>
+
+                <rng:optional>
+                    <rng:attribute name="id">
+                        <rng:data type="string"/>
+                    </rng:attribute>
+                </rng:optional>
+
+            </rng:element>
+
+
+        </rng:element>
+    </rng:define>
+</rng:grammar>
