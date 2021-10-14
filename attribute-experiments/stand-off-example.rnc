@@ -1,0 +1,11 @@
+start = play
+play = element play { insults, act+ }
+insults = element insults { insult+ }
+insult = element insult { words, empty }
+words = attribute words { xsd:IDREFS }
+act = element act { id, scene+ }
+scene = element scene { id, line+ }
+line = element line { id, (w | punc)+ }
+id = attribute id { xsd:ID }
+w = element w { id, text }
+punc = element punc { text }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="stand-off-example.rnc" type="application/relax-ng-compact-syntax"?>-->
+<play>
+
+  <insults>
+    <insult words="
+      sha-ham-01010102
+      sha-ham-01010201 
+      sha-ham-01010202 
+      sha-ham-01010203
+      sha-ham-01010204"/>
+  </insults>
+
+  <act id="sha-ham-01">
+    <scene id="sha-ham-0101">
+      <line id="sha-ham-010101">
+        <w id="sha-ham-01010101">Hi</w>
+        <punc>, </punc>
+        <insult-start/>
+        <w id="sha-ham-01010102">Mom</w>
+        <punc>!</punc>
+      </line>
+      <line id="sha-ham-010102">
+        <w id="sha-ham-01010201">Have</w>
+        <w id="sha-ham-01010202">you</w>
+        <w id="sha-ham-01010203">gained</w>
+        <w id="sha-ham-01010204">weight</w>
+        <insult-end/>
+        <punc>?</punc>
+      </line>
+    </scene>
+  </act>
+</play>
