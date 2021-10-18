@@ -60,9 +60,16 @@ hi_p_type =
 #   1. Add those elements to the content model for 
 #     <wordHoardTaggedLine_type>
 #   2. Add definitions of those elements to the schema
+# --------------------------------------------------------------
+# 2021-10-18 mng
+# Insult empty start and end tags have been added
+# The insultStart element does allow an attribute "type"
+# There is no defined and restricted attribute value list
 wordHoardTaggedLine_type =
   (element w { w_type }
    | element punc { xsd:string }
+   | element insultStart { attribute type {xsd:string} } 
+   | element insultEnd { empty }
    | element hi { hi_line_type }
    | element title { title_type }
    | element stage { xsd:string })+,
