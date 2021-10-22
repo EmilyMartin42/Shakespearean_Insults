@@ -9,9 +9,12 @@
 
 - finalize methodology for insult markup **[MG + DS]**
 - complete markup of insults (empty elements) **[MG + DS]**
+    - Hamlet + Othello **[MG]**
+    - The Comedy of Errors + Midsummer Night's Dream **[DS]**
 - finalize methodology for linguistic markup **[EM + NO]**
 - complete all linguistic markup **[EM + NO]**
-
+    - Hamlet + The Comedy of Errors **[EM]**
+    - Othello + Midsummer Night's Dream **[NO]**
 ### stand-off markup
 
 - XSLT - someone want to read ahead? **[MG?]**
@@ -21,15 +24,22 @@
 
 ### schema
 
-
 - finalize version **[all]**
 - add insult markup related elements / attributes **[MG or DS]**
 - add linguistic markup related elements / attributes **[EM or NO]**
 
 ****
 
+### schematron 
+**[maybe MG?]**
+- attribute values that are strings of tokens separated by one space
+- empty element
+
+****
+
 ### project site
 
+**[mainly MG and DS for now]**
 - color scheme
 - design of menu bar (or desired format)
 - different pages to be included
