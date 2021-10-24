@@ -7,7 +7,7 @@
 ### Gender
 Do gender differences have any impact on insults?
 
-**Markup:** `gender="female-male"` a woman insulting a man or `gender = '"male-female"` a man insulting a woman.
+**Markup:** `gender="male-male"`, a man insulting a man; `gender = '"male-female"` a man insulting a woman; `gender="female-female"` a woman insulting a woman; `gender="female-male"` a woman insulting a man.
 
 ### Relationship
 Does the relationship between the characters have any bearing on the insult?
@@ -39,3 +39,6 @@ What illocutionary act is being committed by the speaker? Illocutionary acts are
 What is being implied by the speaker in order to insult the recipient/are the typical rules of conversation (see Grice's Maxims: `https://www.sas.upenn.edu/~haroldfs/dravling/grice.html`) being violated in order to imply an insult?
 
 **Markup:** `imp="qual"` to give the most accurate information possible; `imp="quant"` to give the most appropriate amount of information possible; `imp="relev"` to give the most relevant information possible; `imp="man"` to give the most clear, concise, and organized information as possible, avoiding ambiguity
+
+
+  *Overall markup note:* All relevant attributes will be listed in the `insultStart` tag in the order they are listed here. 
