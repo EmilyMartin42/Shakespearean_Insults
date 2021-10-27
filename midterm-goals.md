@@ -42,6 +42,7 @@
 **[mainly MG and DS for now]**
 - color scheme
 - design of menu bar (or desired format)
+- SSI
 - different pages to be included
 - project background
 - individual developer bios 
