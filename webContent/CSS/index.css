@@ -37,7 +37,7 @@ body {
     background-color: #A8DADC;
     box-shadow: 10px 5px #112748;
 }
-#current {
+body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl {
     background-color: #A8DADC;
     box-shadow: 10px 5px #112748;
 }
