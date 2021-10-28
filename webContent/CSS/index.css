@@ -1,3 +1,6 @@
+:root {
+    --text-color: #112748;
+}
 body {
     background-color: #F5FAF3;
     overflow-x: hidden;
@@ -15,7 +18,7 @@ body {
 #title {
     display: flex;
     font-size: 3em;
-    color: #112748;
+    color: var(--text-color);
 }
 .nav {
     display: flex;
@@ -27,7 +30,7 @@ body {
 .navItem {
     margin-left: 1em;
     margin-right: 1em;
-    color: #112748;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.7em;
     font-weight: 900;
@@ -39,12 +42,18 @@ body {
 }
 body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl {
     background-color: #A8DADC;
-    box-shadow: 10px 5px #112748;
+    box-shadow: 10px 5px var(--text-color);
 }
-#pageTitle {
+.subTitle {
     display:flex;
     justify-content: center;
     font-size: 2.5em;
+    color: var(--text-color);
+}
+#abtDev {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
 }
 #footer {
     display: flex;
@@ -56,5 +65,5 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     width: 100%;
     height: auto;
     color: #F1FAEE;
-    background-color: #112748;
+    background-color: var(--text-color);
 }
