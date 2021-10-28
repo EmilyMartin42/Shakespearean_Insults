@@ -45,15 +45,21 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     box-shadow: 10px 5px var(--text-color);
 }
 .subTitle {
-    display:flex;
+    display: flex;
     justify-content: center;
     font-size: 2.5em;
     color: var(--text-color);
 }
 #abtDev {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: var(--text-color);
+    max-width: 80%;
+    margin: auto;
+}
+#devTitle {
+    flex-basis: 100%;
 }
 #footer {
     display: flex;
