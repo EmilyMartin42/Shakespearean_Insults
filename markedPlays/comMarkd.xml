@@ -1847,7 +1847,7 @@
 							<punc                                   >,</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com101055" n="55">
-							<insultStart type ="nameCall sexGen"/>
+							<insultStart insType ="nameCall sexGen"/>
 							<w id="sha-com10105501"
 							   lemma="a (at)"
 							   pos="at"                             >A</w>
@@ -3179,7 +3179,7 @@
 							   lemma="forward (aj)"
 							   pos="aj-ly-av"                       >forward</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com10109703"
 							   lemma="old (aj)"
 							   pos="aj"                             >old</w>
@@ -5872,7 +5872,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com102019" n="19">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com10201901"
 							   lemma="a (at)"
 							   pos="at"                             >A</w>
@@ -7542,7 +7542,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com102066" n="66">
-							<insultStart type ="pAttack"/> <!-- Not sure about this one, lmk if you think it needs removed-->
+							<insultStart insType ="pAttack"/> <!-- Not sure about this one, lmk if you think it needs removed-->
 							<w id="sha-com10206601"
 							   lemma="methinks (v)"
 							   pos="v-3sg.pr"                       >Methinks</w>
@@ -7784,7 +7784,7 @@
 							   lemma="on (prp)"
 							   pos="prp--av"                        >on</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com10207203"
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
@@ -8324,7 +8324,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com102087" n="87">
-							<insultStart type ="pAttack"/>
+							<insultStart insType ="pAttack"/>
 							<w id="sha-com10208701"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ge-dt"                  >Thy</w>
@@ -8545,7 +8545,7 @@
 							   lemma="that (dt)"
 							   pos="dt"                             >that</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com10209207"
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
@@ -10429,7 +10429,7 @@
 							<punc                                   >,</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com201041" n="41">
-							<insultStart type ="backComp"/> <!-- Not sure about this one either, fool-begged patience???? makes sense imo-->
+							<insultStart insType ="backComp"/> <!-- Not sure about this one either, fool-begged patience???? makes sense imo-->
 							<w id="sha-com20104101"
 							   lemma="this (dt)"
 							   pos="dt"                             >This</w>
@@ -11027,7 +11027,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
 							<punc                                   > </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20105703"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >villain</w>
@@ -11308,7 +11308,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ob"                     >thee</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20106409"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >villain</w>
@@ -13492,7 +13492,7 @@
 							   lemma="phoenix (n)"
 							   pos="n-sg-np"                        >Phoenix</w>
 							<punc                                   >? </punc>
-							<insultStart type ="pAttack"/>
+							<insultStart insType ="pAttack"/>
 							<w id="sha-com20201107"
 							   lemma="be (vp)"
 							   pos="vp-2sg.pt"                      >Wast</w>
@@ -13714,7 +13714,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com202017" n="17">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20201701"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >Villain</w>
@@ -14953,7 +14953,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com202050" n="50" prosodic="prose">
-							<insultStart type ="backComp"/>
+							<insultStart insType ="backComp"/>
 							<w id="sha-com20205001"
 							   lemma="marry (itj)"
 							   pos="itj"                            >Marry</w>
@@ -15463,7 +15463,7 @@
 							   lemma="as (cjs)"
 							   pos="cjs"                            >as</w>
 							<punc                                   > </punc>
-							<insultStart type ="pAttack"/>
+							<insultStart insType ="pAttack"/>
 							<w id="sha-com20206609"
 							   lemma="the (at)"
 							   pos="at"                             >the</w>
@@ -17543,7 +17543,7 @@
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.ge-dt"                  >my</w>
 							<punc                                   > </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20213208"
 							   lemma="harlot (n)"
 							   pos="n-sg"                           >harlot</w>
@@ -17659,7 +17659,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com202136" n="136">
-							<insultStart type ="pAttack"/>
+							<insultStart insType ="pAttack"/>
 							<w id="sha-com20213601"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -19551,7 +19551,7 @@
 							   lemma="drumble (v)"
 							   pos="v-pr"                           >drumble</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20219004"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
@@ -19730,7 +19730,7 @@
 							   lemma="no (at)"
 							   pos="itj"                            >No</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20219407"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -19753,7 +19753,7 @@
 					<sp who="Luciana">
 						<speaker>Luciana</speaker>
 						<wordHoardTaggedLine id="sha-com202195" n="195">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com20219501"
 							   lemma="if (cjs)"
 							   pos="cjs"                            >If</w>
@@ -19800,7 +19800,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com202196" n="196">
-							<insultStart type ="sexGen"/> <!-- Not sure about this one -->
+							<insultStart insType ="sexGen"/> <!-- Not sure about this one -->
 							<w id="sha-com20219601"
 							   lemma="it (pnp)|be (vp)"
 							   pos="pnp-3sg|vp-3sg.pr"              >'Tis</w>
@@ -21136,7 +21136,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com301015I" n="15" label="15I">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com30101501"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -21859,7 +21859,7 @@
 						<speaker>S. Dromio</speaker>
 						<stage>Within</stage>
 						<wordHoardTaggedLine id="sha-com301032" n="32">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com30103201"
 							   lemma="mome (n)"
 							   pos="n-sg"                           >Mome</w>
@@ -28464,7 +28464,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302075" n="75" prosodic="prose">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com30207501"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -29003,7 +29003,7 @@
 							   pos="at"                             >a</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com302090" n="90" prosodic="prose">
-							<insultStart type ="sexGen"/>
+							<insultStart insType ="sexGen"/>
 							<w id="sha-com30209001"
 							   lemma="wondrous (aj)"
 							   pos="aj"                             >wondrous</w>
@@ -29063,7 +29063,7 @@
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
 							<punc                                   >, </punc>
-							<insultStart type ="sexGen slander"/> <!-- Feel free to shorten this one, there's a lot here so I wasn't sure how much to keep included -->
+							<insultStart insType ="sexGen slander"/> <!-- Feel free to shorten this one, there's a lot here so I wasn't sure how much to keep included -->
 							<w id="sha-com30209203"
 							   lemma="she (pnp)|be (vp)"
 							   pos="pnp-3sg.sb|vp-3sg.pr"           >she's</w>
@@ -29341,7 +29341,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302100" n="100" prosodic="prose">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30210001"
 							   lemma="swart (aj)"
 							   pos="aj"                             >Swart</w>
@@ -29511,7 +29511,7 @@
 							   lemma="grain (n)"
 							   pos="n-sg"                           >grain</w>
 							<punc                                   >; </punc>
-							<insultStart type ="slander sexGen"/>
+							<insultStart insType ="slander sexGen"/>
 							<w id="sha-com30210406"
 							   lemma="Noah (np)"
 							   pos="np-sg.ge"                       >Noah's</w>
@@ -29616,7 +29616,7 @@
 							   lemma="quarter (n)"
 							   pos="n-pl"                           >quarters</w>
 							<punc                                   >, </punc>
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30210706"
 							   lemma="will (vm)"
 							   pos="vm-pr"                          >will</w>
@@ -29681,7 +29681,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302110" n="110" prosodic="prose">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30211001"
 							   lemma="no (at)"
 							   pos="av"                             >No</w>
@@ -29832,7 +29832,7 @@
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
 							<punc                                   >, </punc>
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30211403"
 							   lemma="in (prp)"
 							   pos="prp"                            >in</w>
@@ -29893,7 +29893,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302117" n="117" prosodic="prose">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30211701"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -29966,7 +29966,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302120" n="120" prosodic="prose">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30212001"
 							   lemma="in (prp)"
 							   pos="prp"                            >In</w>
@@ -30031,7 +30031,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302123" n="123" prosodic="prose">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30212301"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -30182,7 +30182,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302128" n="128" prosodic="prose">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30212801"
 							   lemma="faith (n)"
 							   pos="n-sg"                           >Faith</w>
@@ -30270,7 +30270,7 @@
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
 							<punc                                   >, </punc>
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30213003"
 							   lemma="upon (prp)"
 							   pos="prp"                            >upon</w>
@@ -30473,7 +30473,7 @@
 							   lemma="conclude (v)"
 							   pos="v-inf"                          >conclude</w>
 							<punc                                   >, </punc>
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30213511"
 							   lemma="this (dt)"
 							   pos="dt"                             >this</w>
@@ -31182,7 +31182,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com302152" n="152">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com30215201"
 							   lemma="there (pcl)|be (vp)"
 							   pos="pcl-ex|vp-3sg.pr"               >There's</w>
@@ -36372,7 +36372,7 @@
 							<punc                                   >:</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com401111" n="111">
-							<insultStart type ="sexGen slander"/>
+							<insultStart insType ="sexGen slander"/>
 							<w id="sha-com40111101"
 							   lemma="she (pnp)"
 							   pos="pnp-3sg.sb"                     >She</w>
@@ -37202,7 +37202,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com402019" n="19">
-							<insultStart type ="nameCall slander"/>
+							<insultStart insType ="nameCall slander"/>
 							<w id="sha-com40201901"
 							   lemma="he (pnp)"
 							   pos="pnp-3sg.sb"                     >He</w>
@@ -40718,7 +40718,7 @@
 							   lemma="master (n)"
 							   pos="n-sg"                           >Master</w>
 							<punc                                   >, </punc>
-							<insultStart type ="slander sexGen"/>
+							<insultStart insType ="slander sexGen"/>
 							<w id="sha-com40304702"
 							   lemma="be (vp)"
 							   pos="vp-3sg.pr"                      >is</w>
@@ -40741,7 +40741,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com403048" n="48" prosodic="prose">
-							<insultStart type ="slander sexGen"/>
+							<insultStart insType ="slander sexGen"/>
 							<w id="sha-com40304801"
 							   lemma="it (pnp)"
 							   pos="pnp-3sg"                        >It</w>
@@ -40764,7 +40764,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com403049" n="49" prosodic="prose">
-							<insultStart type ="slander sexGen"/>
+							<insultStart insType ="slander sexGen"/>
 							<w id="sha-com40304901"
 							   lemma="nay (itj)"
 							   pos="itj"                            >Nay</w>
@@ -40807,7 +40807,7 @@
 							   pos="cjc"                            >and</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com403050" n="50" prosodic="prose">
-							<insultStart type ="slander sexGen"/>
+							<insultStart insType ="slander sexGen"/>
 							<w id="sha-com40305001"
 							   lemma="here (av)"
 							   pos="av"                             >here</w>
@@ -41885,7 +41885,7 @@
 							   lemma="now (av)"
 							   pos="av"                             >Now</w>
 							<punc                                   >, </punc>
-							<insultStart type ="slander pAttack"/>
+							<insultStart insType ="slander pAttack"/>
 							<w id="sha-com40308002"
 							   lemma="out (av)"
 							   pos="av"                             >out</w>
@@ -43237,7 +43237,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404022" n="22" prosodic="prose">
-							<insultStart type ="pAttack nameCall"/>
+							<insultStart insType ="pAttack nameCall"/>
 							<w id="sha-com40402201"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -43318,7 +43318,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404025" n="25" prosodic="prose">
-							<insultStart type ="pAttack nameCall"/>
+							<insultStart insType ="pAttack nameCall"/>
 							<w id="sha-com40402501"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -44518,7 +44518,7 @@
 							   lemma="not (neg)"
 							   pos="neg"                            >not</w>
 							<punc                                   >, </punc>
-							<insultStart type ="pAttack nameCall"/>
+							<insultStart insType ="pAttack nameCall"/>
 							<w id="sha-com40405806"
 							   lemma="poor (aj)"
 							   pos="aj"                             >poor</w>
@@ -45104,7 +45104,7 @@
 							   lemma="do (vp)"
 							   pos="vp-pt"                          >did</w>
 							<punc                                   >; </punc>
-							<insultStart type ="slander sexGen"/>
+							<insultStart insType ="slander sexGen"/>
 							<w id="sha-com40407404"
 							   lemma="the (at)"
 							   pos="at"                             >the</w>
@@ -45789,7 +45789,7 @@
 							   lemma="they (pnp)"
 							   pos="pnp-3pl.ge-dt"                  >their</w>
 							<punc                                   > </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com40409206"
 							   lemma="pale (aj)"
 							   pos="aj"                             >pale</w>
@@ -46036,7 +46036,7 @@
 					<sp who="Adriana">
 						<speaker>Adriana</speaker>
 						<wordHoardTaggedLine id="sha-com404099" n="99">
-							<insultStart type ="nameCall pAttack"/>
+							<insultStart insType ="nameCall pAttack"/>
 							<w id="sha-com40409901"
 							   lemma="dissemble (v)"
 							   pos="v-ppr-aj"                       >Dissembling</w>
@@ -46071,7 +46071,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404100" n="100">
-							<insultStart type ="pAttack sexGen nameCall"/>
+							<insultStart insType ="pAttack sexGen nameCall"/>
 							<w id="sha-com40410001"
 							   lemma="dissemble (v)"
 							   pos="v-ppr-aj"                       >Dissembling</w>
@@ -46347,7 +46347,7 @@
 							   lemma="man (n)"
 							   pos="n-sg"                           >man</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com40410705"
 							   lemma="how (cjq)"
 							   pos="cjq"                            >how</w>
@@ -46591,7 +46591,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
 							<punc                                   > </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com40411306"
 							   lemma="peevish (aj)"
 							   pos="aj"                             >peevish</w>
@@ -46916,7 +46916,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404123" n="123">
-							<insultStart type ="sexGen nameCall"/>
+							<insultStart insType ="sexGen nameCall"/>
 							<w id="sha-com40412301"
 							   lemma="o (itj)"
 							   pos="itj"                            >O</w>
@@ -46992,7 +46992,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ob"                     >thee</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com40412504"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >villain</w>
@@ -49274,7 +49274,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com501029" n="29">
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com50102901"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -49388,7 +49388,7 @@
 							   lemma="do (vp)"
 							   pos="vp-pr"                          >do</w>
 							<punc                                   > </punc>
-							<insultStart type ="nameCall pAttack"/>
+							<insultStart insType ="nameCall pAttack"/>
 							<w id="sha-com50103205"
 							   lemma="defy (v)"
 							   pos="v-inf"                          >defy</w>
@@ -49838,7 +49838,7 @@
 					<sp who="Aemilia">
 						<speaker>Aemilia</speaker>
 						<wordHoardTaggedLine id="sha-com501044" n="44">
-							<insultStart type ="pAttack slander"/> <!-- This is them insulting him because they're like "oh, he's crazy, he must be possessed" -->
+							<insultStart insType ="pAttack slander"/> <!-- This is them insulting him because they're like "oh, he's crazy, he must be possessed" -->
 							<w id="sha-com50104401"
 							   lemma="how (cjq)"
 							   pos="cjq--av"                        >How</w>
@@ -54436,7 +54436,7 @@
 							   lemma="peace (n)"
 							   pos="n-sg"                           >Peace</w>
 							<punc                                   >, </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com50117802"
 							   lemma="fool (n)"
 							   pos="n-sg"                           >fool</w>
@@ -56544,7 +56544,7 @@
 							   pos="pnp-3pl.ob"                     >them</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com501238" n="238">
-							<insultStart type ="nameCall pAttack "/>
+							<insultStart insType ="nameCall pAttack "/>
 							<w id="sha-com50123801"
 							   lemma="they (pnp)"
 							   pos="pnp-3pl.sb"                     >They</w>
@@ -56666,7 +56666,7 @@
 							   pos="n-sg"                           >man</w>
 							<insultEnd/>
 							<punc                                   >: </punc>
-							<insultStart type ="nameCall"/>
+							<insultStart insType ="nameCall"/>
 							<w id="sha-com50124205"
 							   lemma="this (dt)"
 							   pos="dt"                             >this</w>
@@ -57676,7 +57676,7 @@
 							<punc                                   >!</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com501271" n="271">
-							<insultStart type ="pAttack"/>
+							<insultStart insType ="pAttack"/>
 							<w id="sha-com50127101"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
