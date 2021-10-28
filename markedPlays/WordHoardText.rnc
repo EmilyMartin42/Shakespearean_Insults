@@ -68,7 +68,7 @@ hi_p_type =
 wordHoardTaggedLine_type =
   (element w { w_type }
    | element punc { xsd:string }
-   | element insultStart { attribute (insType|gender|rel|animosity|speechAct|illoc-type|maxim){xsd:string}+ } 
+   | element insultStart { attribute (insType|gender|rel|rel-state|speechAct|illoc-type|maxim){xsd:string}+ } 
    | element insultEnd { empty }
    | element hi { hi_line_type }
    | element title { title_type }
