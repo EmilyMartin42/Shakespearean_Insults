@@ -34,10 +34,10 @@
 
 }
 :root {
-    --textColor: #112748;
+    --textColor: #E0E0E0;
 }
 body {
-    background-color: #F5FAF3;
+    background-color: #2C2A25;
     font-family: 'pt';
     overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ body {
     width: auto;
     height: 5em;
     margin: auto;
-    background-color: #457B9D;
+    background-color: #8F0002;
     margin: -8px -8px 0 -8px;
     padding: 0em 0em 0em 1em;
 }
@@ -73,12 +73,12 @@ body {
     padding: .9em;
 }
 .navItem:hover {
-    background-color: #A8DADC;
-    box-shadow: 10px 5px #112748;
+    background-color: #B80003;
+    box-shadow: 10px 5px #958975;
 }
 body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl {
-    background-color: #A8DADC;
-    box-shadow: 10px 5px var(--textColor);
+    background-color: #B80003;
+    box-shadow: 10px 5px #958975;
 }
 #mainTitle {
     display: flex;
@@ -114,8 +114,8 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     margin-left: -8px;
     margin-bottom: -8px;
     height: auto;
-    color: #F1FAEE;
-    background-color: var(--textColor);
+    color: #494132;
+    background-color: #161513;
 }
 #abtDev ul li {
     margin-bottom: 1em;
