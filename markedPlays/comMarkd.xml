@@ -1847,7 +1847,8 @@
 							<punc                                   >,</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com101055" n="55">
-							<insultStart insType ="nameCall sexGen"/>
+							 <!--<insultStart insType ="nameCall sexGen"/>-->
+							<!-- This seems more like relating facts than insulting - mean equaled poor -->
 							<w id="sha-com10105501"
 							   lemma="a (at)"
 							   pos="at"                             >A</w>
@@ -1867,7 +1868,7 @@
 							<w id="sha-com10105505"
 							   lemma="deliver (v)"
 							   pos="v-ppt"                          >delivered</w>
-							<insultEnd/>
+							 <!--<insultEnd/> -->
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com101056" n="56">
 							<w id="sha-com10105601"
@@ -3179,7 +3180,7 @@
 							   lemma="forward (aj)"
 							   pos="aj-ly-av"                       >forward</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
 							<w id="sha-com10109703"
 							   lemma="old (aj)"
 							   pos="aj"                             >old</w>
@@ -5872,7 +5873,8 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com102019" n="19">
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
+							<!-- I checked and villain was a word for servant/serf so actually I am not sure this is an insult -->
 							<w id="sha-com10201901"
 							   lemma="a (at)"
 							   pos="at"                             >A</w>
@@ -7784,7 +7786,7 @@
 							   lemma="on (prp)"
 							   pos="prp--av"                        >on</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com10207203"
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
@@ -8324,7 +8326,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com102087" n="87">
-							<insultStart insType ="pAttack"/>
+							<insultStart insType ="pAttack" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com10208701"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ge-dt"                  >Thy</w>
@@ -8545,7 +8547,7 @@
 							   lemma="that (dt)"
 							   pos="dt"                             >that</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com10209207"
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
@@ -10429,7 +10431,6 @@
 							<punc                                   >,</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com201041" n="41">
-							<insultStart insType ="backComp"/> <!-- Not sure about this one either, fool-begged patience???? makes sense imo-->
 							<w id="sha-com20104101"
 							   lemma="this (dt)"
 							   pos="dt"                             >This</w>
@@ -10462,7 +10463,6 @@
 							   lemma="leave (v)"
 							   pos="v-ppt"                          >left</w>
 							<punc                                   >.</punc>
-							<insultEnd/>
 						</wordHoardTaggedLine>
 					</sp>
 					<sp who="Luciana">
@@ -11027,7 +11027,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="direct" />
 							<w id="sha-com20105703"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >villain</w>
@@ -11308,7 +11308,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ob"                     >thee</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com20106409"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >villain</w>
@@ -13492,7 +13492,7 @@
 							   lemma="phoenix (n)"
 							   pos="n-sg-np"                        >Phoenix</w>
 							<punc                                   >? </punc>
-							<insultStart insType ="pAttack"/>
+							<insultStart insType ="pAttack" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com20201107"
 							   lemma="be (vp)"
 							   pos="vp-2sg.pt"                      >Wast</w>
@@ -13714,7 +13714,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com202017" n="17">
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com20201701"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >Villain</w>
@@ -14953,7 +14953,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com202050" n="50" prosodic="prose">
-							<insultStart insType ="backComp"/>
+							<insultStart insType ="backComp" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com20205001"
 							   lemma="marry (itj)"
 							   pos="itj"                            >Marry</w>
@@ -15463,7 +15463,8 @@
 							   lemma="as (cjs)"
 							   pos="cjs"                            >as</w>
 							<punc                                   > </punc>
-							<insultStart insType ="pAttack"/>
+							<insultStart insType ="pAttack" speechAct="direct"/>
+							<!-- There is no relationship as father time is an abstract entity. -->
 							<w id="sha-com20206609"
 							   lemma="the (at)"
 							   pos="at"                             >the</w>
@@ -17543,7 +17544,7 @@
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.ge-dt"                  >my</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" rel="self" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com20213208"
 							   lemma="harlot (n)"
 							   pos="n-sg"                           >harlot</w>
@@ -17659,7 +17660,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com202136" n="136">
-							<insultStart insType ="pAttack"/>
+							<insultStart insType ="pAttack" rel="self" speechAct="direct"/>
 							<w id="sha-com20213601"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -19551,7 +19552,7 @@
 							   lemma="drumble (v)"
 							   pos="v-pr"                           >drumble</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="expressive" maxim="man"/>
 							<w id="sha-com20219004"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
@@ -19730,7 +19731,7 @@
 							   lemma="no (at)"
 							   pos="itj"                            >No</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" rel="self" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com20219407"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -19753,7 +19754,7 @@
 					<sp who="Luciana">
 						<speaker>Luciana</speaker>
 						<wordHoardTaggedLine id="sha-com202195" n="195">
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com20219501"
 							   lemma="if (cjs)"
 							   pos="cjs"                            >If</w>
@@ -19800,7 +19801,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com202196" n="196">
-							<insultStart insType ="sexGen"/> <!-- Not sure about this one -->
+							<insultStart insType ="sexGen" rel="self" speechAct="indirect" illoc-type="representative" maxim="man"/> <!-- Not sure about this one -->
 							<w id="sha-com20219601"
 							   lemma="it (pnp)|be (vp)"
 							   pos="pnp-3sg|vp-3sg.pr"              >'Tis</w>
@@ -21136,7 +21137,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com301015I" n="15" label="15I">
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30101501"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -21859,7 +21860,9 @@
 						<speaker>S. Dromio</speaker>
 						<stage>Within</stage>
 						<wordHoardTaggedLine id="sha-com301032" n="32">
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<!--relationship is tricky here. I am not sure who he is insulting - dromio or the people dromio mentioned... I will go with Dromio
+							also, rel-state is neutral because they don't know each other-->
 							<w id="sha-com30103201"
 							   lemma="mome (n)"
 							   pos="n-sg"                           >Mome</w>
@@ -28464,7 +28467,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302075" n="75" prosodic="prose">
-							<insultStart insType ="nameCall"/>
+							<insultStart insType ="nameCall" rel="self" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30207501"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
