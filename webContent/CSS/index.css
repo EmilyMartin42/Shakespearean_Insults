@@ -33,6 +33,13 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'sea';
+    src: url('/../Fonts/seagram_tfb-webfont.woff2') format('woff2'),
+         url('/../Fonts/seagram_tfb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --textColor: #E0E0E0;
 }
@@ -53,7 +60,9 @@ body {
 }
 #title {
     display: flex;
+    font-family: 'sea';
     font-size: 3em;
+    font-weight: 300;
     color: var(--textColor);
 }
 .nav {
