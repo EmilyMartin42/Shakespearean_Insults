@@ -7545,6 +7545,7 @@
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com102066" n="66">
 							<insultStart insType ="pAttack"/> <!-- Not sure about this one, lmk if you think it needs removed-->
+							<!-- I think it is not explicitly an insult? At least that is how I am reading it. Tricky tho (Emily)-->
 							<w id="sha-com10206601"
 							   lemma="methinks (v)"
 							   pos="v-3sg.pr"                       >Methinks</w>
@@ -29006,7 +29007,7 @@
 							   pos="at"                             >a</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com302090" n="90" prosodic="prose">
-							<insultStart insType ="sexGen"/>
+							<insultStart insType ="sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30209001"
 							   lemma="wondrous (aj)"
 							   pos="aj"                             >wondrous</w>
@@ -29066,7 +29067,7 @@
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="sexGen slander"/> <!-- Feel free to shorten this one, there's a lot here so I wasn't sure how much to keep included -->
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/> <!-- Feel free to shorten this one, there's a lot here so I wasn't sure how much to keep included -->
 							<w id="sha-com30209203"
 							   lemma="she (pnp)|be (vp)"
 							   pos="pnp-3sg.sb|vp-3sg.pr"           >she's</w>
@@ -29344,7 +29345,8 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302100" n="100" prosodic="prose">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual quant"/>
+							<!-- Could this be quality? exageration. I put both-->
 							<w id="sha-com30210001"
 							   lemma="swart (aj)"
 							   pos="aj"                             >Swart</w>
@@ -29514,7 +29516,7 @@
 							   lemma="grain (n)"
 							   pos="n-sg"                           >grain</w>
 							<punc                                   >; </punc>
-							<insultStart insType ="slander sexGen"/>
+							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com30210406"
 							   lemma="Noah (np)"
 							   pos="np-sg.ge"                       >Noah's</w>
@@ -29619,7 +29621,8 @@
 							   lemma="quarter (n)"
 							   pos="n-pl"                           >quarters</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<!-- An ell is 18 inches, so it is not inhuman measurements? --> 
 							<w id="sha-com30210706"
 							   lemma="will (vm)"
 							   pos="vm-pr"                          >will</w>
@@ -29684,7 +29687,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302110" n="110" prosodic="prose">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com30211001"
 							   lemma="no (at)"
 							   pos="av"                             >No</w>
@@ -29835,7 +29838,7 @@
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30211403"
 							   lemma="in (prp)"
 							   pos="prp"                            >in</w>
@@ -29896,7 +29899,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302117" n="117" prosodic="prose">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30211701"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -29969,7 +29972,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302120" n="120" prosodic="prose">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30212001"
 							   lemma="in (prp)"
 							   pos="prp"                            >In</w>
@@ -30034,7 +30037,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302123" n="123" prosodic="prose">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30212301"
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.sb"                     >I</w>
@@ -30185,7 +30188,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302128" n="128" prosodic="prose">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30212801"
 							   lemma="faith (n)"
 							   pos="n-sg"                           >Faith</w>
@@ -30273,7 +30276,7 @@
 							   lemma="sir (n)"
 							   pos="n-sg"                           >sir</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com30213003"
 							   lemma="upon (prp)"
 							   pos="prp"                            >upon</w>
@@ -30476,7 +30479,7 @@
 							   lemma="conclude (v)"
 							   pos="v-inf"                          >conclude</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/> <!-- manner?-->
 							<w id="sha-com30213511"
 							   lemma="this (dt)"
 							   pos="dt"                             >this</w>
@@ -31185,7 +31188,8 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com302152" n="152">
-							<insultStart insType ="sexGen slander"/>
+							<insultStart insType ="sexGen slander" speechAct="indirect" illoc-type="representative" maxim="qual"/> <!--unsure if it is direct or indirect.. I don't know if he believes in witches? -->
+							<!-- no relationship, he is insulting pretty much everyone in Ephesus-->
 							<w id="sha-com30215201"
 							   lemma="there (pcl)|be (vp)"
 							   pos="pcl-ex|vp-3sg.pr"               >There's</w>
