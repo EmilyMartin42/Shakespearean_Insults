@@ -7544,8 +7544,6 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com102066" n="66">
-							<insultStart insType ="pAttack"/> <!-- Not sure about this one, lmk if you think it needs removed-->
-							<!-- I think it is not explicitly an insult? At least that is how I am reading it. Tricky tho (Emily)-->
 							<w id="sha-com10206601"
 							   lemma="methinks (v)"
 							   pos="v-3sg.pr"                       >Methinks</w>
@@ -7581,7 +7579,6 @@
 							<w id="sha-com10206609"
 							   lemma="clock (n)"
 							   pos="n-sg"                           >clock</w>
-							<insultEnd/>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com102067" n="67">
 							<w id="sha-com10206701"
