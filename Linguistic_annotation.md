@@ -12,7 +12,7 @@ Do gender differences have any impact on insults?
 ### Relationship
 Does the relationship between the characters have any bearing on the insult?
 
-**Markup:** `rel="parent-child"` a parent insults their child; `rel="child-parent"` a child insults their parent; `rel="sibling-sibling"`, a siblings insults another sibling; and finally `rel="friend-friend"`, a friend insults a friend. In the case of an insult where someone mocks themselves the markup is: `rel="self"`
+**Markup:** `rel="parent-child"` a parent insults their child; `rel="child-parent"` a child insults their parent; `rel="sibling-sibling"`, a siblings insults another sibling; and finally `rel="friend-friend"`, a friend insults a friend; `rel="acq-acq"`, an acquaintance insults an acquaintance; `rel="spouse-spouse"` In the case of an insult where someone mocks themselves the markup is: `rel="self"`
 
     *note*: Even though things could get more complex with questions such as : do they both consider themselves friends or is one 'undercover' or even if the person they are insulting is not present in the scene we will treat them all the same for simplicities sake.
 
