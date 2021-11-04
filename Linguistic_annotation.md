@@ -12,12 +12,14 @@ Do gender differences have any impact on insults?
 ### Relationship
 Does the relationship between the characters have any bearing on the insult?
 
-**Markup:** `rel="parent-child"` a parent insults their child; `rel="child-parent"` a child insults their parent; `rel="sibling-sibling"`, a siblings insults another sibling; and finally `rel="friend-friend"`, a friend insults a friend. In the case of an insult where someone mocks themselves the markup is: `rel="self"`
+**Markup:** `rel="parent-child"` a parent insults their child; `rel="child-parent"` a child insults their parent; `rel="sibling-sibling"`, a siblings insults another sibling; and finally `rel="friend-friend"`, a friend insults a friend. If there ar insults occuring between a married couple; `rel="married-married"`. If aquaintances are insulting eachother; `rel="acquaintance-acquaintance"`. In the case of an insult where someone mocks themselves the markup is: `rel="self"`.
 
     *note*: Even though things could get more complex with questions such as : do they both consider themselves friends or is one 'undercover' or even if the person they are insulting is not present in the scene we will treat them all the same for simplicities sake.
 
 ### State of Relationships
-Since things can get complicated, people aren't who they say they are and other such drama, classification of villains vs heroes is hard. So, we decided to have an attribute for the state of relationships between characters in order to gauge characters feelings for one another. This will enable us to look at the differences between insults among friends and enemies without having to classify characters in any grey areas. If the relationship state is negative there is animosity between them, if the relationship is positive there is goodwill and if they just met or have no real relationship the attribute value will be neutral.
+Since things can get complicated, people aren't who they say they are and other such drama, classification of villains vs heroes is hard. So, we decided to have an attribute for the state of relationships between characters in order to gauge characters feelings for one another. 
+This will enable us to look at the differences between insults among friends and enemies without having to classify characters in any grey areas. If the relationship state is negative there is animosity between them, if the relationship is positive there is goodwill and if they just met or have no real relationship the attribute value will be neutral. 
+This can change over the course of the play, or even over the course of a small-scale dialogue, depending on the context.
 
 **Markup:** `rel-state="neg"`; `rel-state="pos"`; `rel-state="neutral"`
 
