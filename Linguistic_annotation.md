@@ -12,7 +12,7 @@ Do gender differences have any impact on insults?
 ### Relationship
 Does the relationship between the characters have any bearing on the insult?
 
-**Markup:** `rel="parent-child"` a parent insults their child; `rel="child-parent"` a child insults their parent; `rel="sibling-sibling"`, a siblings insults another sibling; and finally `rel="friend-friend"`, a friend insults a friend. If there ar insults occuring between a married couple; `rel="married-married"`. If aquaintances are insulting eachother; `rel="acquaintance-acquaintance"`. In the case of an insult where someone mocks themselves the markup is: `rel="self"`.
+**Markup:** `rel="parent-child"` a parent insults their child; `rel="child-parent"` a child insults their parent; `rel="sibling-sibling"`, a siblings insults another sibling; and finally `rel="friend-friend"`, a friend insults a friend. If there are insults occuring between a couple; `rel="couple-couple"`. If aquaintances are insulting eachother; `rel="acq-acq"`. In the case of an insult where someone mocks themselves the markup is: `rel="self"`.
 
 ### State of Relationships
 Since things can get complicated, people aren't who they say they are and other such drama, classification of villains vs heroes is hard. So, we decided to have an attribute for the state of relationships between characters in order to gauge characters feelings for one another. 
