@@ -3180,7 +3180,7 @@
 							   lemma="forward (aj)"
 							   pos="aj-ly-av"                       >forward</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="acq-acq" rel-state="neutral" speechAct="direct"/>
 							<w id="sha-com10109703"
 							   lemma="old (aj)"
 							   pos="aj"                             >old</w>
@@ -5873,8 +5873,9 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com102019" n="19">
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
-							<!-- I checked and villain was a word for servant/serf so actually I am not sure this is an insult -->
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<!-- I checked and villain was a word for servant/serf so actually I am not sure how insulting this is. But maybe it is also word play? 
+							I am going with the latter assumption-->
 							<w id="sha-com10201901"
 							   lemma="a (at)"
 							   pos="at"                             >A</w>
@@ -13712,7 +13713,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com202017" n="17">
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com20201701"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >Villain</w>
@@ -21860,7 +21861,8 @@
 						<wordHoardTaggedLine id="sha-com301032" n="32">
 							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<!--relationship is tricky here. I am not sure who he is insulting - dromio or the people dromio mentioned... I will go with Dromio
-							also, rel-state is neutral because they don't know each other-->
+							also, rel-state is neutral because they don't know each other
+							I decided he was mocking dromio-->
 							<w id="sha-com30103201"
 							   lemma="mome (n)"
 							   pos="n-sg"                           >Mome</w>
@@ -29005,6 +29007,8 @@
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com302090" n="90" prosodic="prose">
 							<insultStart insType ="sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<!-- Even though she thinks they were married when he met her I am marking this friend-friend because he does not
+							and he is the one speaking-->
 							<w id="sha-com30209001"
 							   lemma="wondrous (aj)"
 							   pos="aj"                             >wondrous</w>
@@ -29342,8 +29346,8 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com302100" n="100" prosodic="prose">
-							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual quant"/>
-							<!-- Could this be quality? exageration. I put both-->
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							
 							<w id="sha-com30210001"
 							   lemma="swart (aj)"
 							   pos="aj"                             >Swart</w>
@@ -37207,8 +37211,8 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com402019" n="19">
-							<insultStart insType ="nameCall slander" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
-							<!--I out rel-state neg because she is talking about the wrong Antiphilous (sp?!?!) but I am have a few questions about that -->
+							<insultStart insType ="nameCall slander" gender="female-male" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<!-- Spouse-spouse because she thinks she is talking about her spouse -->
 							<w id="sha-com40201901"
 							   lemma="he (pnp)"
 							   pos="pnp-3sg.sb"                     >He</w>
@@ -40724,7 +40728,7 @@
 							   lemma="master (n)"
 							   pos="n-sg"                           >Master</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40304702"
 							   lemma="be (vp)"
 							   pos="vp-3sg.pr"                      >is</w>
@@ -40747,7 +40751,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com403048" n="48" prosodic="prose">
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="slander sexGen" gender="male-female" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40304801"
 							   lemma="it (pnp)"
 							   pos="pnp-3sg"                        >It</w>
@@ -40770,7 +40774,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com403049" n="49" prosodic="prose">
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="slander sexGen" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40304901"
 							   lemma="nay (itj)"
 							   pos="itj"                            >Nay</w>
@@ -40813,7 +40817,7 @@
 							   pos="cjc"                            >and</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com403050" n="50" prosodic="prose">
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="slander sexGen" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com40305001"
 							   lemma="here (av)"
 							   pos="av"                             >here</w>
@@ -41891,7 +41895,7 @@
 							   lemma="now (av)"
 							   pos="av"                             >Now</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="slander pAttack" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="slander pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com40308002"
 							   lemma="out (av)"
 							   pos="av"                             >out</w>
@@ -43243,7 +43247,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404022" n="22" prosodic="prose">
-							<insultStart insType ="pAttack nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="pAttack nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40402201"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -43324,7 +43328,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404025" n="25" prosodic="prose">
-							<insultStart insType ="pAttack nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="pAttack nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com40402501"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -44524,7 +44528,7 @@
 							   lemma="not (neg)"
 							   pos="neg"                            >not</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="pAttack nameCall" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="pAttack nameCall" gender="female-male" rel="spouse-spouse" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com40405806"
 							   lemma="poor (aj)"
 							   pos="aj"                             >poor</w>
@@ -46043,7 +46047,7 @@
 					<sp who="Adriana">
 						<speaker>Adriana</speaker>
 						<wordHoardTaggedLine id="sha-com404099" n="99">
-							<insultStart insType ="nameCall pAttack" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="nameCall pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com40409901"
 							   lemma="dissemble (v)"
 							   pos="v-ppr-aj"                       >Dissembling</w>
@@ -46078,7 +46082,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404100" n="100">
-							<insultStart insType ="pAttack sexGen nameCall" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="pAttack sexGen nameCall" gender="male-female" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40410001"
 							   lemma="dissemble (v)"
 							   pos="v-ppr-aj"                       >Dissembling</w>
@@ -46598,7 +46602,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="nameCall" gender="female-male" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com40411306"
 							   lemma="peevish (aj)"
 							   pos="aj"                             >peevish</w>
@@ -46923,7 +46927,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404123" n="123">
-							<insultStart insType ="sexGen nameCall" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="relev"/>
+							<insultStart insType ="sexGen nameCall" gender="male-female" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
 							<w id="sha-com40412301"
 							   lemma="o (itj)"
 							   pos="itj"                            >O</w>
@@ -46999,7 +47003,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ob"                     >thee</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com40412504"
 							   lemma="villain (n)"
 							   pos="n-sg"                           >villain</w>
@@ -49281,7 +49285,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com501029" n="29">
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="acq-acq" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com50102901"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -49396,6 +49400,7 @@
 							   pos="vp-pr"                          >do</w>
 							<punc                                   > </punc>
 							<insultStart insType ="nameCall pAttack" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<!-- He thinks they are/were friends-->
 							<w id="sha-com50103205"
 							   lemma="defy (v)"
 							   pos="v-inf"                          >defy</w>
@@ -54441,7 +54446,7 @@
 							   lemma="peace (n)"
 							   pos="n-sg"                           >Peace</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="female-male" rel="acq-acq" rel-state="neutral" speechAct="direct"/>
 							<w id="sha-com50117802"
 							   lemma="fool (n)"
 							   pos="n-sg"                           >fool</w>
@@ -56549,7 +56554,7 @@
 							   pos="pnp-3pl.ob"                     >them</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com501238" n="238">
-							<insultStart insType ="nameCall pAttack " gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="nameCall pAttack " gender="male-male" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com50123801"
 							   lemma="they (pnp)"
 							   pos="pnp-3pl.sb"                     >They</w>
@@ -56671,7 +56676,7 @@
 							   pos="n-sg"                           >man</w>
 							<insultEnd/>
 							<punc                                   >: </punc>
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="acq-acq" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com50124205"
 							   lemma="this (dt)"
 							   pos="dt"                             >this</w>
