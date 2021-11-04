@@ -49845,8 +49845,6 @@
 					<sp who="Aemilia">
 						<speaker>Aemilia</speaker>
 						<wordHoardTaggedLine id="sha-com501044" n="44">
-							<insultStart insType ="pAttack slander"/> <!-- This is them insulting him because they're like "oh, he's crazy, he must be possessed" -->
-							<!-- I think possessed meant mad/crazy?-->
 							<w id="sha-com50104401"
 							   lemma="how (cjq)"
 							   pos="cjq--av"                        >How</w>
@@ -49879,7 +49877,6 @@
 							   lemma="man (n)"
 							   pos="n-sg"                           >man</w>
 							<punc                                   >?</punc>
-							<insultEnd/>
 						</wordHoardTaggedLine>
 					</sp>
 					<sp who="Adriana">
