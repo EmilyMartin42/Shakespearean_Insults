@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="WordHoardText.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="WordHoardText.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <WordHoardText>
 	<wordHoardHeader corpus="sha" work="mnd" prosodic="verse">
 		<pubDate>1595-1596</pubDate>
@@ -18899,7 +18901,7 @@
 							<punc                                   >;</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd201212" n="212">
-							<insultStart insType ="sexGen pAttack" gender="male-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="man"/> <!-- I dunno really what to quantify this kind of thing as, it's not really a personal attack i don't think-->
+							<insultStart insType ="pAttack sexGen" gender="male-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="man"/> <!-- I dunno really what to quantify this kind of thing as, it's not really a personal attack i don't think-->
 							<w id="sha-mnd20121201"
 							   lemma="for (cjc)"
 							   pos="cjc"                            >For</w>
@@ -24254,7 +24256,7 @@
 							   lemma="that (dt)"
 							   pos="dt"                             >that</w>
 							<punc                                   > </punc>
-							<insultStart insType ="slander pAttack" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="qual"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="qual"/>
 							<w id="sha-mnd20210703"
 							   lemma="vile (aj)"
 							   pos="aj"                             >vile</w>
@@ -32183,7 +32185,7 @@
 							   lemma="well (av)"
 							   pos="av"                             >well</w>
 							<punc                                   >: </punc>
-							<insultStart insType ="slander nameCall" gender="male-" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="nameCall slander" gender="male-" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-mnd30118402"
 							   lemma="that (dt)"
 							   pos="dt"                             >that</w>
@@ -32691,7 +32693,7 @@
 							   lemma="with (prp)"
 							   pos="prp"                            >with</w>
 							<punc                                   > </punc>
-							<insultStart insType ="slander nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30200604"
 							   lemma="a (at)"
 							   pos="at"                             >a</w>
@@ -32897,7 +32899,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd302013" n="13">
-							<insultStart insType ="slander nameCall" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="nameCall slander" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-mnd30201301"
 							   lemma="the (at)"
 							   pos="at"                             >The</w>
@@ -38184,7 +38186,7 @@
 						<speaker>Helena</speaker>
 						<wordHoardTaggedLine id="sha-mnd302168" n="168">
 							<!--same situation as the previous insult-->
-							<insultStart insType ="pAttack nameCall" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="qual"/>
+							<insultStart insType ="nameCall pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="qual"/>
 							<w id="sha-mnd30216801"
 							   lemma="never (av)"
 							   pos="av"                             >Never</w>
@@ -39159,7 +39161,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd302195" n="195">
-							<insultStart insType ="sexGen nameCall" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall sexGen" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30219501"
 							   lemma="injurious (aj)"
 							   pos="aj"                             >Injurious</w>
@@ -42394,7 +42396,7 @@
 							<punc                                   >!</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd302285" n="285">
-							<insultStart insType ="sexGen pAttack" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="relev"/>
+							<insultStart insType ="pAttack sexGen" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="relev"/>
 							<w id="sha-mnd30228501"
 							   lemma="have (vp)"
 							   pos="vp-pr"                          >Have</w>
@@ -44460,7 +44462,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd302342" n="342">
-							<insultStart insType ="sexGen pAttack" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/> <!-- Not sure about this one honestly. "You're quick to fight and short" basically -->
+							<insultStart insType ="pAttack sexGen" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/> <!-- Not sure about this one honestly. "You're quick to fight and short" basically -->
 							<w id="sha-mnd30234201"
 							   lemma="you (pnp)"
 							   pos="pnp-2pl.ge-dt"                  >Your</w>
@@ -49929,7 +49931,7 @@
 							   lemma="this (dt)"
 							   pos="dt"                             >this</w>
 							<punc                                   > </punc>
-							<insultStart insType ="slander nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd40104806"
 							   lemma="hateful (aj)"
 							   pos="aj"                             >hateful</w>
@@ -61267,7 +61269,7 @@
 					<sp who="Hippolyta">
 						<speaker>Hippolyta</speaker>
 						<wordHoardTaggedLine id="sha-mnd501119" n="119" prosodic="prose">
-							<insultStart insType ="slander pAttack" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
 							<w id="sha-mnd50111901"
 							   lemma="indeed (av)"
 							   pos="av"                             >Indeed</w>
@@ -64526,7 +64528,7 @@
 						<speaker>Lion</speaker>
 						<wordHoardTaggedLine id="sha-mnd501210" n="210">
 							<!--to a group-->
-							<insultStart insType ="sexGen pAttack" speechAct="direct"/>
+							<insultStart insType ="pAttack sexGen" speechAct="direct"/>
 							<w id="sha-mnd50121001"
 							   lemma="you (pnp)"
 							   pos="pnp-2pl"                        >You</w>
@@ -64996,7 +64998,7 @@
 							   lemma="for (prp)"
 							   pos="prp"                            >for</w>
 							<punc                                   > </punc>
-							<insultStart insType ="slander pAttack" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-mnd50122206"
 							   lemma="he (pnp)"
 							   pos="pnp-3sg.ge-dt"                  >his</w>

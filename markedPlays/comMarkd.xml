@@ -29517,7 +29517,7 @@
 							   lemma="grain (n)"
 							   pos="n-sg"                           >grain</w>
 							<punc                                   >; </punc>
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com30210406"
 							   lemma="Noah (np)"
 							   pos="np-sg.ge"                       >Noah's</w>
@@ -40728,7 +40728,7 @@
 							   lemma="master (n)"
 							   pos="n-sg"                           >Master</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40304702"
 							   lemma="be (vp)"
 							   pos="vp-3sg.pr"                      >is</w>
@@ -40751,7 +40751,7 @@
 					<sp who="AntipholusS">
 						<speaker>S. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com403048" n="48" prosodic="prose">
-							<insultStart insType ="slander sexGen" gender="male-female" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40304801"
 							   lemma="it (pnp)"
 							   pos="pnp-3sg"                        >It</w>
@@ -40774,7 +40774,7 @@
 					<sp who="DromioS">
 						<speaker>S. Dromio</speaker>
 						<wordHoardTaggedLine id="sha-com403049" n="49" prosodic="prose">
-							<insultStart insType ="slander sexGen" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40304901"
 							   lemma="nay (itj)"
 							   pos="itj"                            >Nay</w>
@@ -40817,7 +40817,7 @@
 							   pos="cjc"                            >and</w>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-com403050" n="50" prosodic="prose">
-							<insultStart insType ="slander sexGen" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com40305001"
 							   lemma="here (av)"
 							   pos="av"                             >here</w>
@@ -41895,7 +41895,7 @@
 							   lemma="now (av)"
 							   pos="av"                             >Now</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="slander pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="pAttack slander" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-com40308002"
 							   lemma="out (av)"
 							   pos="av"                             >out</w>
@@ -43247,7 +43247,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404022" n="22" prosodic="prose">
-							<insultStart insType ="pAttack nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="nameCall pAttack" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40402201"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -43328,7 +43328,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404025" n="25" prosodic="prose">
-							<insultStart insType ="pAttack nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
+							<insultStart insType ="nameCall pAttack" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-com40402501"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >Thou</w>
@@ -44528,7 +44528,7 @@
 							   lemma="not (neg)"
 							   pos="neg"                            >not</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="pAttack nameCall" gender="female-male" rel="spouse-spouse" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="nameCall pAttack" gender="female-male" rel="spouse-spouse" rel-state="pos" speechAct="direct"/>
 							<w id="sha-com40405806"
 							   lemma="poor (aj)"
 							   pos="aj"                             >poor</w>
@@ -45114,7 +45114,7 @@
 							   lemma="do (vp)"
 							   pos="vp-pt"                          >did</w>
 							<punc                                   >; </punc>
-							<insultStart insType ="slander sexGen" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40407404"
 							   lemma="the (at)"
 							   pos="at"                             >the</w>
@@ -46082,7 +46082,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404100" n="100">
-							<insultStart insType ="pAttack sexGen nameCall" gender="male-female" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType =" nameCall pAttack sexGen" gender="male-female" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-com40410001"
 							   lemma="dissemble (v)"
 							   pos="v-ppr-aj"                       >Dissembling</w>
@@ -46927,7 +46927,7 @@
 					<sp who="AntipholusE">
 						<speaker>E. Antipholus</speaker>
 						<wordHoardTaggedLine id="sha-com404123" n="123">
-							<insultStart insType ="sexGen nameCall" gender="male-female" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
+							<insultStart insType ="nameCall sexGen" gender="male-female" rel="spouse-spouse" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
 							<w id="sha-com40412301"
 							   lemma="o (itj)"
 							   pos="itj"                            >O</w>
