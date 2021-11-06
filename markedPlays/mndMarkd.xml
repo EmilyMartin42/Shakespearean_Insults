@@ -3111,7 +3111,7 @@
 							<punc                                   >,</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd101092" n="92">
-							<insultStart insType ="pAttack" gender="male-male" rel="friend-friend" rel-type="neutral" speechAct="indirect" illoc-type="directive" maxim="qual"/>
+							<insultStart insType ="pAttack" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="directive" maxim="qual"/>
 							<w id="sha-mnd10109201"
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.ge-dt"                  >Thy</w>
@@ -12864,7 +12864,7 @@
 					</sp>
 					<sp who="mnd-fai.">
 						<speaker>Fairy</speaker>
-						<wordHoardTaggedLine id="sha-mnd201032" n="32" gender="" rel="" rel-state="" speechAct="" illoc-type="" maxim="">
+						<wordHoardTaggedLine id="sha-mnd201032" n="32">
 							<w id="sha-mnd20103201"
 							   lemma="either (av)"
 							   pos="av"                             >Either</w>
@@ -12919,7 +12919,7 @@
 							   lemma="that (dt)"
 							   pos="dt"                             >that</w>
 							<punc                                   > </punc>
-							<insultStart insType ="pAttack" gender="female-male" rel="" rel-state="pos" speechAct="direct"/>
+							<insultStart insType ="pAttack" gender="female-male" rel="acq-acq" rel-state="neutral" speechAct="direct"/>
 							<w id="sha-mnd20103306"
 							   lemma="shrewd (aj)"
 							   pos="aj"                             >shrewd</w>
@@ -12950,7 +12950,7 @@
 							   lemma="Goodfellow (np)"
 							   pos="np-sg"                          >Goodfellow</w>
 							<punc                                   >: </punc>
-							<insultStart insType ="pAttack" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="representative" maxim="relev"/>
+							<insultStart insType ="pAttack" gender="female-male" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="relev"/>
 							<w id="sha-mnd20103404"
 							   lemma="be (vp)"
 							   pos="vp-pr"                          >are</w>
@@ -13012,7 +13012,7 @@
 							   pos="cjc"                            >and</w>
 							<punc                                   > </punc>
 							<!-- are these serious insults or are they just joking around? -->
-							<insultStart insType ="pAttack" gender="female-male" rel="friend-friend" rel-state="pos" speechAct="indirect" illoc-type="expressive" maxim="relev"/>
+							<insultStart insType ="pAttack" gender="female-male" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="expressive" maxim="relev"/>
 							<w id="sha-mnd20103604"
 							   lemma="sometime (av)"
 							   pos="av"                             >sometimes</w>
@@ -13814,7 +13814,7 @@
 					<sp who="Oberon">
 						<speaker>Oberon</speaker>
 						<wordHoardTaggedLine id="sha-mnd201060" n="60">
-							<insultStart insType ="nameCall pAttack" gender="male-female" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall pAttack" gender="male-female" rel="couple-couple" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd20106001"
 							   lemma="ill (aj)"
 							   pos="aj--av"                         >Ill</w>
@@ -13849,7 +13849,7 @@
 							   lemma="what (dtq)"
 							   pos="dtq"                            >What</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="female-male" rel="couple-couple" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd20106102"
 							   lemma="jealous (aj)"
 							   pos="aj"                             >jealous</w>
@@ -29433,7 +29433,7 @@
 					<sp who="Quince">
 						<speaker>Quince</speaker>
 						<wordHoardTaggedLine id="sha-mnd301101" n="101" prosodic="prose">
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="pos" speechAct="direct"/>
 							<w id="sha-mnd30110101"
 							   lemma="o (itj)"
 							   pos="itj"                            >O</w>
@@ -32185,7 +32185,7 @@
 							   lemma="well (av)"
 							   pos="av"                             >well</w>
 							<punc                                   >: </punc>
-							<insultStart insType ="nameCall slander" gender="male-" rel="friend-friend" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="nameCall slander" gender="male-male" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-mnd30118402"
 							   lemma="that (dt)"
 							   pos="dt"                             >that</w>
@@ -32693,7 +32693,7 @@
 							   lemma="with (prp)"
 							   pos="prp"                            >with</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall slander" gender="male-male" rel="acq-acq" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30200604"
 							   lemma="a (at)"
 							   pos="at"                             >a</w>
@@ -32899,6 +32899,7 @@
 							<punc                                   >.</punc>
 						</wordHoardTaggedLine>
 						<wordHoardTaggedLine id="sha-mnd302013" n="13">
+							<!--at a group-->
 							<insultStart insType ="nameCall slander" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-mnd30201301"
 							   lemma="the (at)"
@@ -38186,7 +38187,7 @@
 						<speaker>Helena</speaker>
 						<wordHoardTaggedLine id="sha-mnd302168" n="168">
 							<!--same situation as the previous insult-->
-							<insultStart insType ="nameCall pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="qual"/>
+							<insultStart insType ="nameCall pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="relev"/>
 							<w id="sha-mnd30216801"
 							   lemma="never (av)"
 							   pos="av"                             >Never</w>
@@ -40554,7 +40555,7 @@
 							   lemma="do (vp)"
 							   pos="vp-pr"                          >do</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="pAttack" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="expressive" maxim="relev"/> <!-- Dunno what to call this, it's not really a personal attack i guess? more of just being like "You guys are liars" -->
+							<insultStart insType ="pAttack" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/> <!-- Dunno what to call this, it's not really a personal attack i guess? more of just being like "You guys are liars" -->
 							<w id="sha-mnd30223703"
 							   lemma="persever (v)"
 							   pos="v-pr"                           >persever</w>
@@ -41491,7 +41492,7 @@
 					<sp who="Hermia">
 						<speaker>Hermia</speaker>
 						<wordHoardTaggedLine id="sha-mnd302262" n="262">
-							<insultStart insType ="pAttack" gender="female-" rel="" rel-state="" speechAct="" illoc-type="" maxim=""/>
+							<insultStart insType ="pAttack" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30226201"
 							   lemma="why (cjq)"
 							   pos="cjq--av"                        >Why</w>
@@ -42286,7 +42287,7 @@
 							   lemma="i (pnp)"
 							   pos="pnp-1sg.ob"                     >me</w>
 							<punc                                   >! </punc>
-							<insultStart insType ="nameCall" gender="female-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-mnd30228203"
 							   lemma="you (pnp)"
 							   pos="pnp-2pl"                        >you</w>
@@ -43976,7 +43977,7 @@
 							   lemma="go (v)"
 							   pos="v-ppt"                          >gone</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="female-female" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-mnd30232809"
 							   lemma="you (pnp)"
 							   pos="pnp-2pl"                        >you</w>
@@ -46526,7 +46527,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30240504"
 							   lemma="coward (n)"
 							   pos="n-sg"                           >coward</w>
@@ -46679,7 +46680,7 @@
 							   lemma="come (v)"
 							   pos="v-pr"                           >Come</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30240906"
 							   lemma="recreant (aj)"
 							   pos="aj-sg-n"                        >recreant</w>
@@ -46693,7 +46694,7 @@
 							   lemma="thou (pnp)"
 							   pos="pnp-2sg.sb"                     >thou</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="nameCall" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd30240909"
 							   lemma="child (n)"
 							   pos="n-sg"                           >child</w>
@@ -47765,7 +47766,7 @@
 							   lemma="come (v)"
 							   pos="v-3sg.pr"                       >comes</w>
 							<punc                                   >, </punc>
-							<insultStart insType ="sexGen slander" gender="male-female" rel="friend-friend" rel-state="neutral" speechAct="direct"/>
+							<insultStart insType ="sexGen slander" gender="male-female" rel="acq-acq" rel-state="neutral" speechAct="direct"/>
 							<w id="sha-mnd30243904"
 							   lemma="curse (v)"
 							   pos="v-ppt"                          >curst</w>
@@ -49931,7 +49932,7 @@
 							   lemma="this (dt)"
 							   pos="dt"                             >this</w>
 							<punc                                   > </punc>
-							<insultStart insType ="nameCall slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="direct"/>
+							<insultStart insType ="nameCall slander" gender="male-male" rel="acq-acq" rel-state="neg" speechAct="direct"/>
 							<w id="sha-mnd40104806"
 							   lemma="hateful (aj)"
 							   pos="aj"                             >hateful</w>
@@ -61152,7 +61153,7 @@
 							   lemma="have (vp)"
 							   pos="vp-3sg.pr"                      >hath</w>
 							<punc                                   > </punc>
-							<insultStart insType ="pAttack slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="qual"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="qual"/>
 							<w id="sha-mnd50111603"
 							   lemma="rid (v)"
 							   pos="v-ppt"                          >rid</w>
@@ -61269,7 +61270,7 @@
 					<sp who="Hippolyta">
 						<speaker>Hippolyta</speaker>
 						<wordHoardTaggedLine id="sha-mnd501119" n="119" prosodic="prose">
-							<insultStart insType ="pAttack slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="acq-acq" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="relev"/>
 							<w id="sha-mnd50111901"
 							   lemma="indeed (av)"
 							   pos="av"                             >Indeed</w>
@@ -61353,7 +61354,7 @@
 					<sp who="Theseus">
 						<speaker>Theseus</speaker>
 						<wordHoardTaggedLine id="sha-mnd501121" n="121" prosodic="prose">
-							<insultStart insType ="pAttack slander" gender="male-male" rel="friend-friend" rel-state="neg" speechAct="indirect" illoc-type="representative" maxim="manner"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="manner"/>
 							<w id="sha-mnd50112101"
 							   lemma="he (pnp)"
 							   pos="pnp-3sg.ge-dt"                  >His</w>
