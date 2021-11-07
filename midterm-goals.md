@@ -15,10 +15,11 @@
 - complete all linguistic markup **[EM + NO]**
     - Hamlet + The Comedy of Errors **[EM]**
     - Othello + Midsummer Night's Dream **[NO]**
-### stand-off markup
 
-- XSLT - someone want to read ahead? **[MG?]**
-- transform docs containing empty elements into docs containing the stand-off markup
+### ~~stand-off markup~~
+
+- ~~XSLT - someone want to read ahead? **[MG?]**~~
+- ~~transform docs containing empty elements into docs containing the stand-off markup~~
 
 ****
 
