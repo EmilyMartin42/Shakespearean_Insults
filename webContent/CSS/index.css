@@ -100,18 +100,21 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor)
 }
 .subTitle {
+    margin-top: 1px;
+    margin-bottom: 1px;
     display: flex;
     justify-content: center;
     font-size: 2.5em;
     color: var(--textColor);
 }
 #abtDev, #over {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
     color: var(--textColor);
-    max-width: 70%;
-    margin: auto;
+    width: 75%;
 }
 #devTitle {
     flex-basis: 100%;
