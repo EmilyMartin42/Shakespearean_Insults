@@ -42,9 +42,12 @@
 }
 :root {
     --textColor: #E0E0E0;
+    --backgroundColor: #2C2A25;
+    --headerColor: #8F0002;
+    --hoverColor: #B80003;
 }
 body {
-    background-color: #2C2A25;
+    background-color: var(--backgroundColor);
     font-family: 'pt';
     overflow-x: hidden;
 }
@@ -54,7 +57,7 @@ body {
     width: auto;
     height: 5em;
     margin: auto;
-    background-color: #8F0002;
+    background-color: var(--headerColor);
     margin: -8px -8px 0 -8px;
     padding: 0em 0em 0em 1em;
 }
@@ -82,11 +85,11 @@ body {
     padding: .9em;
 }
 .navItem:hover {
-    background-color: #B80003;
+    background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
 body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl {
-    background-color: #B80003;
+    background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
 #mainTitle {
@@ -131,4 +134,61 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
 }
 #abtDev ul li {
     margin-bottom: 1em;
+}
+.card {
+    display: inline-block;
+    color: var(--textColor);
+    background-size: cover;
+    width: 22.5%;
+    padding: 19rem 0 0;
+    border-radius: .5rem;
+    overflow-y: hidden;
+    margin: 0 1rem 0 1rem;
+}
+.cardContent {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    padding-top: 2.5rem;
+    background: linear-gradient( 
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, .3) 5%,
+    hsla(0, 0%, 0%, 1)
+    );
+}
+.ham{
+    background-image: url(/images/ham.jpg)
+}
+.oth{
+    background-image: url(/images/oth.jpg)
+}
+.mnd{
+    background-image: url(/images/mid.jpg)
+}
+.coe{
+    background-image: url(/images/coe.jpg)
+}
+.playTitle {
+    position: relative;
+    width: max-content;
+}
+.playTitle::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--padding) * -1); /* Ignore this error */
+    bottom: 0;
+    height: 3px;
+    width: calc(100% + var(--padding));
+    background: var(--hoverColor);
+}
+.button {
+    cursor: pointer;
+    padding: .4em 1.25em;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textColor);
+    background-color: var(--hoverColor);
+    border-radius: .25rem;
+}
+.button:hover, .button:focus {
+    background-color: var(--headerColor)
 }
