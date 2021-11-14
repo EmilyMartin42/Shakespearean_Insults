@@ -140,20 +140,39 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
     background-size: cover;
     width: 22.5%;
-    padding: 19rem 0 0;
+    padding: 18rem 0 0;
     border-radius: .5rem;
     overflow-y: hidden;
     margin: 0 1rem 0 1rem;
+
+    transition: transform 500ms ease;
+}
+.card:hover {
+    transform: scale(1.05);
 }
 .cardContent {
     --padding: 1.5rem;
     padding: var(--padding);
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
     background: linear-gradient( 
     hsla(0, 0%, 0%, 0),
-    hsla(0, 0%, 0%, .3) 5%,
+    hsla(0, 0%, 0%, .3) 10%,
     hsla(0, 0%, 0%, 1)
     );
+    transform: translateY(50%);
+
+    transition: transform 500ms ease;
+}
+.cardContent > *:not(.playTitle) {
+    opacity: 0;
+    
+    transition: opacity 750ms linear;
+}
+.card:hover .cardContent {
+    transform: translateY(0);
+}
+.card:hover .cardContent > *:not(.playTitle){
+    opacity: 1;;
 }
 .ham{
     background-image: url(/images/ham.jpg)
@@ -175,10 +194,17 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     content: "";
     position: absolute;
     left: calc(var(--padding) * -1); /* Ignore this error */
-    bottom: 0;
-    height: 3px;
+    bottom: -5px;
+    height: 4px;
     width: calc(100% + var(--padding));
     background: var(--hoverColor);
+    transform: scaleX(0);
+    transform-origin: left;
+    
+    transition: transform 1500ms ease;    
+}
+.card:hover .playTitle::after {
+    transform: scaleX(1);
 }
 .button {
     cursor: pointer;
