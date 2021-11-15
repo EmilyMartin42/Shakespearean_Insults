@@ -5,6 +5,14 @@
         <speech>
             <w>Lorem ipsum dolor sit amet.</w>
             <w>Lorem ipsum dolor sit amet.</w>
+            <insultStart insType="backComp"/>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+        </speech>
+        <speech>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <insultEnd/>
             <w>Lorem ipsum dolor sit amet.</w>
             <w>Lorem ipsum dolor sit amet.</w>
         </speech>
@@ -18,7 +26,7 @@
         </speech>
         <speech>
             <w>Lorem ipsum dolor sit amet.</w>
-            <insultStart/>
+            <insultStart insType="nameCall pAttack"/>
             <w>Lorem ipsum dolor sit amet.</w>
             <insultEnd/>
             <w>Lorem ipsum dolor sit amet.</w>
