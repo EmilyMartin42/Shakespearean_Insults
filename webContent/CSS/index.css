@@ -103,7 +103,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor)
 }
 .subTitle {
-    margin-top: 1px;
+    margin-top: 25px;
     margin-bottom: 1px;
     display: flex;
     justify-content: center;
@@ -217,4 +217,21 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
 }
 .button:hover, .button:focus {
     background-color: var(--headerColor)
+}
+.text-box {
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: var(--textColor);
+    width: 75%;
+}
+.aboutSub {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    color: var(--textColor);
 }
