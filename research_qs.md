@@ -5,6 +5,7 @@ identified four secondary research questions to hone in on these factors.
 1) What role does insult type play and how does it influence other interconnected features?
 
 2) What types of relationship state are more common for those who are closer, and do the insults they use on each other have a distinct type.
-3) What role does speech act type play and how does it influence other interconnected features?
+
+3) Do particular illocutionary speech act types tend to employ to the flouting of a specific maxim in order to convey them?
 
 4) Does gender have an effect on insult type and does it effect the direct vs indirectness of the speech act?
