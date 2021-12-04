@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/1999/xhtml"
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="http://www.w3.org/1999/xhtml"
     exclude-result-prefixes="xs" version="3.0">
+    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no"
+        indent="yes"/>
+    
     <xsl:variable name="all_plays" as="document-node()+"
-        select="collection('markedPlays/finals/?select=*.xml')"/>
+        select="collection('../markedPlays/finals/?select=*.xml')"/>
     <xsl:variable name="tragedies" as="document-node()+"
-        select="collection('markedPlays/finals/?select=hamFinal.xml')"/>
+        select="doc('../markedPlays/finals/?select=hamFinal.xml'), doc('markedPlays/finals/?select=othFinal.xml')"/>
+    <xsl:variable name="comedies" as="document-node()+"
+        select="doc('../markedPlays/finals/?select=comFinal.xml'), doc('markedPlays/finals/?select=mndFinal.xml')"/>
     <xsl:template name="xsl:initial-template">
         <html>
             <head>
                 <title>Shakespeare's Slights</title>
-                <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+                <link rel="xml-stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
             <body class="analysis">
                 <!--
@@ -90,6 +97,7 @@
             -->
                 </table>
                 <h2>Relationship state and insult type</h2>
+                <p> We can probably put Masons svg here, run with all the plays </p>
                 
             </body>
         </html>
