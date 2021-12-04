@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<start>
+    <title>Test Stand Off</title>
+    <body>
+        <speech>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <insultStart insType="backComp"/>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+        </speech>
+        <speech>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <insultEnd/>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+        </speech>
+        <speech>
+            <insultStart insType="slander"/>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <insultEnd/>
+            <w>Lorem ipsum dolor sit amet.</w>
+        </speech>
+        <speech>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <insultStart insType="nameCall pAttack"/>
+            <w>Lorem ipsum dolor sit amet.</w>
+            <insultEnd/>
+            <w>Lorem ipsum dolor sit amet.</w>
+        </speech>
+    </body>
+</start>
