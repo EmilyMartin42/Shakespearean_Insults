@@ -592,7 +592,7 @@
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
-                            maxim="quan"/>
+                            maxim="quant"/>
                <w id="sha-oth30341701" lemma="there (pcl)" pos="pcl-ex">There</w>
                <punc> </punc>
                <w id="sha-oth30341702" lemma="be (vp)" pos="vp-pr">are</w>
@@ -683,7 +683,7 @@
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
-                            maxim="rel"/>
+                            maxim="relev"/>
                <w id="sha-oth40102502" lemma="hear (v)" pos="v-pt">heard</w>
                <punc> </punc>
                <w id="sha-oth40102503" lemma="he (pnp)" pos="pnp-3sg.ob">him</w>
