@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'ptBold';
+    src: url('/../Fonts/ptserif-bold-webfont.woff2') format('woff2'),
+         url('ptserif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ptBoldItalic';
+    src: url('/../Fonts/ptserif-bolditalic-webfont.woff2') format('woff2'),
+         url('/../Fonts/ptserif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ptItalic';
+    src: url('/../Fonts/ptserif-italic-webfont.woff2') format('woff2'),
+         url('/../Fonts/ptserif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pt';
+    src: url('/../Fonts/ptserif-regular-webfont.woff2') format('woff2'),
+         url('/../Fonts/ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sea';
+    src: url('/../Fonts/seagram_tfb-webfont.woff2') format('woff2'),
+         url('/../Fonts/seagram_tfb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --textColor: #E0E0E0;
+    --backgroundColor: #2C2A25;
+    --headerColor: #8F0002;
+    --hoverColor: #B80003;
+}
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'pt';
+    overflow-x: hidden;
+}
+#head {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 5em;
+    margin: auto;
+    background-color: var(--headerColor);
+    margin: -8px -8px 0 -8px;
+    padding: 0em 0em 0em 1em;
+}
+#title {
+    display: flex;
+    font-family: 'sea';
+    font-size: 3em;
+    font-weight: 300;
+    color: var(--textColor);
+}
+.nav {
+    display: flex;
+    width: auto;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.navItem {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: 900;
+    padding: .9em;
+}
+.navItem:hover {
+    background-color: var(--hoverColor);
+    box-shadow: 10px 5px #958975;
+}
+body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl {
+    background-color: var(--hoverColor);
+    box-shadow: 10px 5px #958975;
+}
+#mainTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-family: "ptBold";
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--textColor)
+}
+.subTitle {
+    margin-top: 25px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    color: var(--textColor);
+}
+#abtDev, #over {
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: var(--textColor);
+    width: 75%;
+}
+#devTitle {
+    flex-basis: 100%;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 102%;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    height: auto;
+    color: #494132;
+    background-color: #161513;
+}
+#abtDev ul li {
+    margin-bottom: 1em;
+}
+.card {
+    display: inline-block;
+    color: var(--textColor);
+    background-size: cover;
+    width: 22.5%;
+    padding: 18rem 0 0;
+    border-radius: .5rem;
+    overflow-y: hidden;
+    margin: 0 1rem 0 1rem;
+
+    transition: transform 500ms ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.cardContent {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    padding-top: 3.5rem;
+    background: linear-gradient( 
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, .3) 10%,
+    hsla(0, 0%, 0%, 1)
+    );
+    transform: translateY(50%);
+
+    transition: transform 500ms ease;
+}
+.cardContent > *:not(.playTitle) {
+    opacity: 0;
+    
+    transition: opacity 750ms linear;
+}
+.card:hover .cardContent {
+    transform: translateY(0);
+}
+.card:hover .cardContent > *:not(.playTitle){
+    opacity: 1;;
+}
+.ham{
+    background-image: url(/images/ham.jpg)
+}
+.oth{
+    background-image: url(/images/oth.jpg)
+}
+.mnd{
+    background-image: url(/images/mid.jpg)
+}
+.coe{
+    background-image: url(/images/coe.jpg)
+}
+.playTitle {
+    position: relative;
+    width: max-content;
+}
+.playTitle::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--padding) * -1); /* Ignore this error */
+    bottom: -5px;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    background: var(--hoverColor);
+    transform: scaleX(0);
+    transform-origin: left;
+    
+    transition: transform 1500ms ease;    
+}
+.card:hover .playTitle::after {
+    transform: scaleX(1);
+}
+.button {
+    cursor: pointer;
+    padding: .4em 1.25em;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textColor);
+    background-color: var(--hoverColor);
+    border-radius: .25rem;
+}
+.button:hover, .button:focus {
+    background-color: var(--headerColor)
+}
+.text-box {
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: var(--textColor);
+    width: 75%;
+}
+.aboutSub {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: left;
+    font-size: 2em;
+    color: var(--textColor);
+}
