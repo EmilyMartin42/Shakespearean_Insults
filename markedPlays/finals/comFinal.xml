@@ -1152,7 +1152,7 @@
             <insult xml:id="insult_0036">
                <insultStart insType="nameCall slander"
                             gender="female-male"
-                            rel="spouse-spouse"
+                            rel="couple-couple"
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
@@ -1372,7 +1372,7 @@
             <insult xml:id="insult_0044">
                <insultStart insType="nameCall pAttack"
                             gender="female-male"
-                            rel="spouse-spouse"
+                            rel="couple-couple"
                             rel-state="pos"
                             speechAct="direct"/>
                <w id="sha-com40405806" lemma="poor (aj)" pos="aj">poor</w>
@@ -1541,7 +1541,7 @@
             <insult xml:id="insult_0048">
                <insultStart insType=" nameCall pAttack sexGen"
                             gender="male-female"
-                            rel="spouse-spouse"
+                            rel="couple-couple"
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
@@ -1597,7 +1597,7 @@
             <insult xml:id="insult_0051">
                <insultStart insType="nameCall sexGen"
                             gender="male-female"
-                            rel="spouse-spouse"
+                            rel="couple-couple"
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
@@ -22896,7 +22896,7 @@
                   <wordHoardTaggedLine id="sha-com402019" n="19" rend="normal" align="left">
                      <insultStart insType="nameCall slander"
                                   gender="female-male"
-                                  rel="spouse-spouse"
+                                  rel="couple-couple"
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"
@@ -27237,7 +27237,7 @@
                      <punc>, </punc>
                      <insultStart insType="nameCall pAttack"
                                   gender="female-male"
-                                  rel="spouse-spouse"
+                                  rel="couple-couple"
                                   rel-state="pos"
                                   speechAct="direct"/>
                      <w id="sha-com40405806" lemma="poor (aj)" pos="aj">poor</w>
@@ -28115,7 +28115,7 @@
                   <wordHoardTaggedLine id="sha-com404100" n="100" rend="normal" align="left">
                      <insultStart insType=" nameCall pAttack sexGen"
                                   gender="male-female"
-                                  rel="spouse-spouse"
+                                  rel="couple-couple"
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"
@@ -28604,7 +28604,7 @@
                   <wordHoardTaggedLine id="sha-com404123" n="123" rend="normal" align="left">
                      <insultStart insType="nameCall sexGen"
                                   gender="male-female"
-                                  rel="spouse-spouse"
+                                  rel="couple-couple"
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"

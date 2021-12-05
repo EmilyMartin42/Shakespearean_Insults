@@ -618,7 +618,7 @@
             <insult xml:id="insult_0023">
                <insultStart insType="backComp"
                             gender="female-male"
-                            rel="freind-friend"
+                            rel="friend-friend"
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
@@ -22939,7 +22939,7 @@
 							<!--at multiple peole, but I think that in this context the tags could be considered applicable to both characters so I'm going with it-->
                      <insultStart insType="backComp"
                                   gender="female-male"
-                                  rel="freind-friend"
+                                  rel="friend-friend"
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"
