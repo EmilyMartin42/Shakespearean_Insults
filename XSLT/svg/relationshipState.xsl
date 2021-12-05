@@ -5,56 +5,59 @@
     <xsl:output method="xml" indent="yes"/>
     <!-- An attempt to run this on all the plays -->
     <xsl:variable name="all_plays" as="document-node()+"
-        select="collection('../markedPlays/finals/?select=*.xml')"/>
+        select="collection('../../markedPlays/finals/?select=*.xml')"/>
 
     <xsl:variable name="barWidth" as="xs:integer" select="100"/>
     <xsl:variable name="barSpacing" as="xs:float" select="$barWidth div 2"/>
     <xsl:variable name="relCount" as="xs:integer"
-        select="count(distinct-values(//insult/insultStart/@rel))"/>
+        select="count(distinct-values($all_plays//insult/insultStart/@rel))"/>
     <xsl:variable name="xLength" as="xs:float" select="$relCount * ($barWidth + $barSpacing)"/>
     <xsl:variable name="yScale" as="xs:integer" select="400"/>
-    <xsl:variable name="insults" as="element()*" select="//insults"/>
+    <xsl:variable name="insults" as="element()*" select="$all_plays//insults"/>
 
-    <xsl:template match="$all_plays">
-        <svg width="100%" height="100%">
-            <g transform="translate(200, 500)">
-                <xsl:apply-templates select="//insults" mode="insType"/>
-                <!-- ==================== AXES BELOW ==================== -->
-                <g>
-                    <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold">States
-                        of Relationship Based on Different Relationships</text>
-                    <text x="{$xLength div 2 - 125}" y="{50}" font-weight="bold">Relationship
-                        between perpatrator and victim.</text>
-                    <text x="200" y="-75" transform="rotate(-90)" font-weight="bold">% of insults</text>
-                    <!-- I have no idea how to center text -->
-                    <line x1="0" y1="0" x2="{$xLength}" y2="0" stroke="black"/>
-                    <line x1="0" y1="0" x2="0" y2="-{$yScale}" stroke="black"/>
-                    <xsl:for-each select="(1 to ($yScale div 100))">
-                        <line x1="0" y1="-{. * 100}" x2="{$xLength}" y2="-{. * 100}" stroke="black"
-                            stroke-dasharray="3"/>
-                        <text x="-45" y="-{. * 100 - 5}"><xsl:value-of select=". * 25"/>%</text>
-                    </xsl:for-each>
-                    <!-- ==================== LEGEND BELOW ==================== -->
+    <xsl:template name="xsl:initial-template">
+     <!--   <xsl:template match="$all_plays"> -->
+            <svg width="1000%" height="1000%">
+                <g transform="translate(200, 500)">
+                    <xsl:apply-templates select="$all_plays//insults" mode="insType"/>
+                    <!-- ==================== AXES BELOW ==================== -->
                     <g>
-                        <rect x="{$xLength + 20}" y="-{$yScale div 4}" height="15" width="15"
-                            fill="green"/>
-                        <text x="{$xLength + 45}" y="-{$yScale div 4 - 12.5}">Positive Relationship
-                            State</text>
-                        <rect x="{$xLength + 20}" y="-{$yScale div 4 * 2}" height="15" width="15"
-                            fill="gray"/>
-                        <text x="{$xLength + 45}" y="-{$yScale div 4 * 2 - 12.5}">Neutral
-                            Relationship State</text>
-                        <rect x="{$xLength + 20}" y="-{$yScale div 4 * 3}" height="15" width="15"
-                            fill="red"/>
-                        <text x="{$xLength + 45}" y="-{$yScale div 4 * 3 - 12.5}">Negative
-                            Relationship State</text>
+                        <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold"
+                            >States of Relationship Based on Different Relationships</text>
+                        <text x="{$xLength div 2 - 125}" y="{50}" font-weight="bold">Relationship
+                            between perpatrator and victim.</text>
+                        <text x="200" y="-75" transform="rotate(-90)" font-weight="bold">% of
+                            insults</text>
+                        <!-- I have no idea how to center text -->
+                        <line x1="0" y1="0" x2="{$xLength}" y2="0" stroke="black"/>
+                        <line x1="0" y1="0" x2="0" y2="-{$yScale}" stroke="black"/>
+                        <xsl:for-each select="(1 to ($yScale div 100))">
+                            <line x1="0" y1="-{. * 100}" x2="{$xLength}" y2="-{. * 100}"
+                                stroke="black" stroke-dasharray="3"/>
+                            <text x="-45" y="-{. * 100 - 5}"><xsl:value-of select=". * 25"/>%</text>
+                        </xsl:for-each>
+                        <!-- ==================== LEGEND BELOW ==================== -->
+                        <g>
+                            <rect x="{$xLength + 20}" y="-{$yScale div 4}" height="15" width="15"
+                                fill="green"/>
+                            <text x="{$xLength + 45}" y="-{$yScale div 4 - 12.5}">Positive
+                                Relationship State</text>
+                            <rect x="{$xLength + 20}" y="-{$yScale div 4 * 2}" height="15"
+                                width="15" fill="gray"/>
+                            <text x="{$xLength + 45}" y="-{$yScale div 4 * 2 - 12.5}">Neutral
+                                Relationship State</text>
+                            <rect x="{$xLength + 20}" y="-{$yScale div 4 * 3}" height="15"
+                                width="15" fill="red"/>
+                            <text x="{$xLength + 45}" y="-{$yScale div 4 * 3 - 12.5}">Negative
+                                Relationship State</text>
+                        </g>
                     </g>
                 </g>
-            </g>
-        </svg>
-    </xsl:template>
+            </svg>
+        </xsl:template>
+    
     <!-- This code is not optimized at all, I am aware, but it is a working solution and we'll leave it at that. This is already the product of multiple hours. -->
-    <xsl:template match="insults" mode="insType">
+    <xsl:template match="$all_plays//insults" mode="insType">
         <xsl:variable name="insultTotal" as="xs:integer" select="count(insult/insultStart)"/>
         <g transform="translate({$barSpacing}, 0)">
             <xsl:for-each select="1 to $relCount">
