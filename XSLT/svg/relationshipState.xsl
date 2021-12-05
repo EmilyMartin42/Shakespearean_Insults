@@ -3,6 +3,9 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns="http://www.w3.org/2000/svg" version="3.0">
     <xsl:output method="xml" indent="yes"/>
+    <!-- An attempt to run this on all the plays -->
+    <xsl:variable name="all_plays" as="document-node()+"
+        select="collection('../markedPlays/finals/?select=*.xml')"/>
 
     <xsl:variable name="barWidth" as="xs:integer" select="100"/>
     <xsl:variable name="barSpacing" as="xs:float" select="$barWidth div 2"/>
@@ -12,7 +15,7 @@
     <xsl:variable name="yScale" as="xs:integer" select="400"/>
     <xsl:variable name="insults" as="element()*" select="//insults"/>
 
-    <xsl:template match="/">
+    <xsl:template match="$all_plays">
         <svg width="100%" height="100%">
             <g transform="translate(200, 500)">
                 <xsl:apply-templates select="//insults" mode="insType"/>
