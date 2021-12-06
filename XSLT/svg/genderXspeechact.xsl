@@ -14,8 +14,13 @@
         select="($bar-wide + $space) * count(distinct-values($all_plays//@speechAct))"/>
     <xsl:variable name="y-scale" as="xs:integer" select="4"/>
     <xsl:variable name="max-high" as="xs:integer" select="$y-scale * 80"/>
+<<<<<<< HEAD
     
     
+=======
+
+
+>>>>>>> ed5eb6376315aa5b1a4ee8b089224bef5f441206
     <xsl:template name="xsl:initial-template">
         <svg height="1000" width="1000">
             <xsl:apply-templates select="$all_plays//insultStart[@gender = 'male-male']"/>
@@ -23,6 +28,7 @@
                 <xsl:variable name="currentGroup" as="xs:string" select="current-grouping-key()"/>
                 <xsl:variable name="gen_count" as="xs:integer" select="count(current-group())"/>
                 <xsl:variable name="yshift" as="xs:integer" select="
+<<<<<<< HEAD
                     if (current-grouping-key() = 'male-male') then
                     1
                     else
@@ -30,6 +36,15 @@
                     1
                     else
                     2"/>
+=======
+                        if (current-grouping-key() = 'male-male') then
+                            1
+                        else
+                            if (current-grouping-key() = 'female-female') then
+                                1
+                            else
+                                2"/>
+>>>>>>> ed5eb6376315aa5b1a4ee8b089224bef5f441206
                 <xsl:variable name="xshift" as="xs:integer" select="
                     if (current-grouping-key() = 'male-male') then
                     0
@@ -56,7 +71,11 @@
                             <xsl:value-of select=". * 10"/>
                         </text>
                     </xsl:for-each>
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> ed5eb6376315aa5b1a4ee8b089224bef5f441206
                     <!-- labels -->
                     <text x="75" y="-{$max-high + 130}" font-size="18">Direct vs. Indirect insult
                         counts between male speakers</text>
@@ -70,11 +89,19 @@
                         <xsl:variable name="x-pos" as="xs:double"
                             select="($space * 2) + (position() - 1) * ($bar-wide + $space)"/>
                         <xsl:variable name="color" as="xs:string" select="
+<<<<<<< HEAD
                             if (current-grouping-key() = ('direct')) then
                             '#D912F8'
                             else
                             '#12E6F8'"/>
                         
+=======
+                                if (current-grouping-key() = ('direct')) then
+                                    '#D912F8'
+                                else
+                                    '#12E6F8'"/>
+
+>>>>>>> ed5eb6376315aa5b1a4ee8b089224bef5f441206
                         <xsl:for-each select=".">
                             <rect x="{$x-pos}" y="-{$sA-count * $y-scale}" width="{$bar-wide}"
                                 height="{$sA-count * $y-scale}" fill="{$color}"/>
@@ -85,7 +112,11 @@
                                 <xsl:text>: </xsl:text>
                                 <xsl:value-of select="$sA-count"/>-->
                         </xsl:for-each>
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> ed5eb6376315aa5b1a4ee8b089224bef5f441206
                     </xsl:for-each-group>
                 </g>
             </xsl:for-each-group>
@@ -102,6 +133,12 @@
          <text x="125" y="20">Indirect</text>
          <text x="280" y="20">Direct</text>
      </xsl:template> -->
+<<<<<<< HEAD
     
     
 </xsl:stylesheet>
+=======
+
+
+</xsl:stylesheet>
+>>>>>>> ed5eb6376315aa5b1a4ee8b089224bef5f441206
