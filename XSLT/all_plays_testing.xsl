@@ -65,19 +65,6 @@
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- tokenized version, gets rid of multiple values -->
-                        <xsl:for-each-group select="$all_plays//insult"
-                            group-by="insultStart/@insType ! tokenize(.)">
-                            <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
-                            <tr>
-                                <td>
-                                    <xsl:value-of select="current-grouping-key()"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="count(current-group())"/>
-                                </td>
-                            </tr>
-                        </xsl:for-each-group>
                         <!-- not tokenized, counts instypes with multiple values as a singular unit -->
                         <xsl:for-each-group select="$all_plays//insult"
                             group-by="insultStart/@insType">
@@ -111,21 +98,7 @@
                                     <xsl:value-of select="count(current-group())"/>
                                 </td>
                             </tr>
-                        </xsl:for-each-group>
-                        <!-- not tokenized, counts instypes with multiple values as a singular unit -->
-                        <!--
-                        <xsl:for-each-group select="$tragedies//insult"
-                            group-by="insultStart/@insType">
-                            <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
-                            <tr>
-                                <td>
-                                    <xsl:value-of select="current-grouping-key()"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="count(current-group())"/>
-                                </td>
-                            </tr>
-                        </xsl:for-each-group>     -->                   
+                        </xsl:for-each-group>                                        
                     </table>
                     <p>Insults and their counts in the comedies</p>
                     <table>
@@ -145,21 +118,7 @@
                                     <xsl:value-of select="count(current-group())"/>
                                 </td>
                             </tr>
-                        </xsl:for-each-group>
-                        <!-- not tokenized, counts instypes with multiple values as a singular unit -->
-                        <!--
-                        <xsl:for-each-group select="$comedies//insult"
-                            group-by="insultStart/@insType">
-                            <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
-                            <tr>
-                                <td>
-                                    <xsl:value-of select="current-grouping-key()"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="count(current-group())"/>
-                                </td>
-                            </tr>
-                        </xsl:for-each-group>    -->                     
+                        </xsl:for-each-group>                                      
                     </table>
                 </div>
                 <h3 class="subTitle">Relationship state and insult type</h3>
@@ -191,6 +150,27 @@
                         </p>
                     </xsl:for-each-group>
                 </xsl:for-each-group>
+                </div>
+                <h3 class="subTitle">Gender and speech acts</h3>                
+                <div class="text-box">
+                    <p>Does the gender of either the speaker or the listener have an impact on the indirect versus directness of the speech act?</p>
+                    <div>
+                        <xsl:comment>#include virtual="genderXspeechact.svg"</xsl:comment>
+                    </div>
+                    <xsl:for-each-group select="$all_plays//insult" group-by="insultStart/@gender">
+                        <xsl:sort select="current-grouping-key()"/>
+                        <p>
+                            <xsl:value-of select="current-grouping-key(), ':', count(current-group())"/>
+                        </p>
+                        <xsl:for-each-group select="current-group()"
+                            group-by="insultStart/@speechAct">
+                            <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
+                            <p>
+                                <xsl:value-of
+                                    select="current-grouping-key(), ':', count(current-group())"/>
+                            </p>
+                        </xsl:for-each-group> 
+                    </xsl:for-each-group>
                 </div>
             </body>
         </html>

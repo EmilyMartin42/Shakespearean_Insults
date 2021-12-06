@@ -3,11 +3,12 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns="http://www.w3.org/2000/svg" version="3.0">
     <xsl:output method="xml" indent="yes"/>
-    <!-- An attempt to run this on all the plays -->
+    
+    <!-- set a variable for all the plays so this can be run on all of them -->
     <xsl:variable name="all_plays" as="document-node()+"
         select="collection('../../markedPlays/finals/?select=*.xml')"/>
 
-    <xsl:variable name="barWidth" as="xs:integer" select="100"/>
+    <xsl:variable name="barWidth" as="xs:integer" select="75"/>
     <xsl:variable name="barSpacing" as="xs:float" select="$barWidth div 2"/>
     <xsl:variable name="relCount" as="xs:integer"
         select="count(distinct-values($all_plays//insult/insultStart/@rel))"/>
@@ -16,8 +17,7 @@
     <xsl:variable name="insults" as="element()*" select="$all_plays//insults"/>
 
     <xsl:template name="xsl:initial-template">
-     <!--   <xsl:template match="$all_plays"> -->
-            <svg width="1000%" height="1000%">
+            <svg width="150%" height="150%">
                 <g transform="translate(200, 500)">
                     <xsl:apply-templates select="$all_plays//insults" mode="insType"/>
                     <!-- ==================== AXES BELOW ==================== -->
@@ -25,7 +25,7 @@
                         <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold"
                             >States of Relationship Based on Different Relationships</text>
                         <text x="{$xLength div 2 - 125}" y="{50}" font-weight="bold">Relationship
-                            between perpatrator and victim.</text>
+                            between speaker and hearer.</text>
                         <text x="200" y="-75" transform="rotate(-90)" font-weight="bold">% of
                             insults</text>
                         <!-- I have no idea how to center text -->
@@ -62,8 +62,8 @@
         <g transform="translate({$barSpacing}, 0)">
             <xsl:for-each select="1 to $relCount">
                 <xsl:variable name="i" as="xs:integer" select="."/>
-                <xsl:variable name="relType" as="xs:string"
-                    select="distinct-values($insults/insult/insultStart/@rel)[$i]"/>
+                <xsl:variable name="relType" as="xs:string" 
+                    select="distinct-values($insults/insult/insultStart/@rel)[$i]"/>                
                 <xsl:variable name="curTotal" as="xs:integer"
                     select="count($insults/insult/insultStart[@rel = $relType])"/>
                 <xsl:variable name="posTotal" as="xs:integer"
@@ -85,7 +85,7 @@
                 <rect x="{($i - 1) * ($barWidth + $barSpacing)}"
                     y="-{$negHeight + $posHeight + $neutralHeight}" height="{$negHeight}"
                     width="{$barWidth}" fill="crimson"/>
-                <text x="{($i - 1) * ($barWidth + $barSpacing)}" y="25">
+                <text x="{($i - 1) * ($barWidth + $barSpacing)}" y="25" text-anchor="start">
                     <xsl:value-of select="$relType"/>
                 </text>
             </xsl:for-each>
