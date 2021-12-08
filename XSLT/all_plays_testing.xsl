@@ -154,8 +154,8 @@
                 <h3 class="subTitle">Gender and speech acts</h3>                
                 <div class="text-box">
                     <p>Does the gender of either the speaker or the listener have an impact on the indirect versus directness of the speech act?</p>
-                    <div>
-                        <xsl:comment>#include virtual="genderXspeechAct.svg"</xsl:comment>
+                    <div class="image-container">
+                        <xsl:comment>#include virtual="images/genderXspeechAct.svg"</xsl:comment>
                     </div>
                     <xsl:for-each-group select="$all_plays//insult" group-by="insultStart/@gender">
                         <xsl:sort select="current-grouping-key()"/>
@@ -172,6 +172,7 @@
                         </xsl:for-each-group> 
                     </xsl:for-each-group>
                 </div>
+                <xsl:comment>#include virtual="footer.xhtml"</xsl:comment>
             </body>
         </html>
     </xsl:template>
