@@ -385,7 +385,7 @@
                <insultStart insType="pAttack"
                             gender="female-male"
                             rel="friend-friend"
-                            rel-state="positive"
+                            rel-state="pos"
                             speechAct="indirect"
                             illoc-type="declarative"
                             maxim="man"/>
@@ -402,7 +402,7 @@
                <insultStart insType="nameCall"
                             gender="female-male"
                             rel="friend-friend"
-                            rel-state="positive"
+                            rel-state="pos"
                             speechAct="direct"/>
                <w id="sha-oth20111405" lemma="slanderer (n)" pos="n-sg">slanderer</w>
                <punc>!</punc>
@@ -17826,7 +17826,7 @@
                      <insultStart insType="pAttack"
                                   gender="female-male"
                                   rel="friend-friend"
-                                  rel-state="positive"
+                                  rel-state="pos"
                                   speechAct="indirect"
                                   illoc-type="declarative"
                                   maxim="man"/>
@@ -17842,7 +17842,7 @@
                      <insultStart insType="nameCall"
                                   gender="female-male"
                                   rel="friend-friend"
-                                  rel-state="positive"
+                                  rel-state="pos"
                                   speechAct="direct"/>
                      <w id="sha-oth20111405" lemma="slanderer (n)" pos="n-sg">slanderer</w>
                      <punc>!</punc>
