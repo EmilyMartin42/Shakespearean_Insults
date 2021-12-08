@@ -548,7 +548,6 @@
                <insultStart insType="nameCall"
                             gender="male-male"
                             rel="self"
-                            rel-state="neutral"
                             speechAct="direct"/>
                <w id="sha-oth30309001" lemma="excellent (aj)" pos="aj">Excellent</w>
                <punc> </punc>
@@ -33410,7 +33409,6 @@
                      <insultStart insType="nameCall"
                                   gender="male-male"
                                   rel="self"
-                                  rel-state="neutral"
                                   speechAct="direct"/>
                      <w id="sha-oth30309001" lemma="excellent (aj)" pos="aj">Excellent</w>
                      <punc> </punc>
