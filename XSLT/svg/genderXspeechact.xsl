@@ -18,7 +18,7 @@
     <xsl:variable name="max-high" as="xs:integer" select="$y-scale * 80"/>
 
     <xsl:template name="xsl:initial-template">
-        <svg height="1500" width="1500">
+        <svg height="1500" width="1100">
             <!-- Group by gender -->
             <xsl:apply-templates select="$all_plays//insultStart[@gender = 'male-male']"/>
             <xsl:for-each-group select="$all_plays//insult" group-by="insultStart/@gender">
@@ -40,7 +40,7 @@
                     if (current-grouping-key() = 'female-male') then
                     0
                     else
-                    1"/>
+                    1.25"/>
                 
                 <g transform="translate({50 + $max-wide * $xshift}, {($max-high + 200) * $yshift})">
                     <!-- axis -->
@@ -56,7 +56,7 @@
                     </xsl:for-each>
 
                     <!-- labels -->
-                    <text x="75" y="-{$max-high + 80}" font-size="18">Direct vs. Indirect insult
+                    <text x="{($max-wide div 2) + 25}" y="-{$max-high + 80}" font-size="18" text-anchor="middle">Insult
                         counts between <xsl:value-of select="current-grouping-key()"/> speakers</text>
                     <text x="{$max-high div 2}" y="15" transform="rotate(-90)" text-anchor="middle">Insult count</text>
                     <text x="{$max-wide div 2}" y="45" text-anchor="middle">Speech act type</text>
@@ -71,9 +71,9 @@
                             select="($space * 2) + (position() - 1) * ($bar-wide + $space)"/>
                         <xsl:variable name="color" as="xs:string" select="
                             if (current-grouping-key() = ('direct')) then
-                            '#D912F8'
+                            '#870C1D'
                             else
-                            '#12E6F8'"/>
+                            '#5D81B9'"/>
                         
                         <xsl:for-each select=".">
                             <rect x="{$x-pos}" y="-{$sA-count * $y-scale}" width="{$bar-wide}"

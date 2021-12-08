@@ -155,7 +155,7 @@
                 <div class="text-box">
                     <p>Does the gender of either the speaker or the listener have an impact on the indirect versus directness of the speech act?</p>
                     <div>
-                        <xsl:comment>#include virtual="genderXspeechact.svg"</xsl:comment>
+                        <xsl:comment>#include virtual="genderXspeechAct.svg"</xsl:comment>
                     </div>
                     <xsl:for-each-group select="$all_plays//insult" group-by="insultStart/@gender">
                         <xsl:sort select="current-grouping-key()"/>
