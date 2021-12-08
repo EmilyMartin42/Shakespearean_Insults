@@ -1,23 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="150%" height="150%">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="100 0 1200 600"
+     width="100%">
    <g transform="translate(200, 500)">
       <g transform="translate(37.5, 0)">
          <rect x="0"
-               y="-63.448277"
-               height="63.448277"
+               y="-68.965515"
+               height="68.965515"
                width="75"
                fill="green"/>
          <rect x="0"
-               y="-135.17241"
+               y="-140.68965"
                height="71.72414"
                width="75"
                fill="gray"/>
-         <rect x="0"
-               y="-394.48273"
-               height="259.31033"
-               width="75"
-               fill="crimson"/>
-         <text x="0" y="25" text-anchor="start">friend-friend</text>
+         <rect x="0" y="-400" height="259.31033" width="75" fill="crimson"/>
+         <text x="37.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">friend-friend</text>
          <rect x="112.5"
                y="-171.42857"
                height="171.42857"
@@ -33,15 +34,19 @@
                height="171.42857"
                width="75"
                fill="crimson"/>
-         <text x="112.5" y="25" text-anchor="start">parent-child</text>
+         <text x="150"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">parent-child</text>
          <rect x="225" y="-0" height="0" width="75" fill="green"/>
-         <rect x="225"
-               y="-57.142857"
-               height="57.142857"
-               width="75"
-               fill="gray"/>
-         <rect x="225" y="-57.142857" height="0" width="75" fill="crimson"/>
-         <text x="225" y="25" text-anchor="start">self</text>
+         <rect x="225" y="-0" height="0" width="75" fill="gray"/>
+         <rect x="225" y="-0" height="0" width="75" fill="crimson"/>
+         <text x="262.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">self</text>
          <rect x="337.5"
                y="-59.25926"
                height="59.25926"
@@ -53,7 +58,11 @@
                height="340.74075"
                width="75"
                fill="crimson"/>
-         <text x="337.5" y="25" text-anchor="start">couple-couple</text>
+         <text x="375"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">couple-couple</text>
          <rect x="450" y="-0" height="0" width="75" fill="green"/>
          <rect x="450"
                y="-191.30435"
@@ -65,33 +74,45 @@
                height="208.69565"
                width="75"
                fill="crimson"/>
-         <text x="450" y="25" text-anchor="start">acq-acq</text>
+         <text x="487.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">acq-acq</text>
          <rect x="562.5" y="-0" height="0" width="75" fill="green"/>
          <rect x="562.5" y="-0" height="0" width="75" fill="gray"/>
          <rect x="562.5" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="562.5" y="25" text-anchor="start">sibling-sibling</text>
+         <text x="600"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">sibling-sibling</text>
          <rect x="675" y="-0" height="0" width="75" fill="green"/>
          <rect x="675" y="-0" height="0" width="75" fill="gray"/>
          <rect x="675" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="675" y="25" text-anchor="start">child-parent</text>
+         <text x="712.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">child-parent</text>
       </g>
       <g transform="translate(37.5, 0)">
          <rect x="0"
-               y="-63.448277"
-               height="63.448277"
+               y="-68.965515"
+               height="68.965515"
                width="75"
                fill="green"/>
          <rect x="0"
-               y="-135.17241"
+               y="-140.68965"
                height="71.72414"
                width="75"
                fill="gray"/>
-         <rect x="0"
-               y="-394.48273"
-               height="259.31033"
-               width="75"
-               fill="crimson"/>
-         <text x="0" y="25" text-anchor="start">friend-friend</text>
+         <rect x="0" y="-400" height="259.31033" width="75" fill="crimson"/>
+         <text x="37.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">friend-friend</text>
          <rect x="112.5"
                y="-171.42857"
                height="171.42857"
@@ -107,15 +128,19 @@
                height="171.42857"
                width="75"
                fill="crimson"/>
-         <text x="112.5" y="25" text-anchor="start">parent-child</text>
+         <text x="150"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">parent-child</text>
          <rect x="225" y="-0" height="0" width="75" fill="green"/>
-         <rect x="225"
-               y="-57.142857"
-               height="57.142857"
-               width="75"
-               fill="gray"/>
-         <rect x="225" y="-57.142857" height="0" width="75" fill="crimson"/>
-         <text x="225" y="25" text-anchor="start">self</text>
+         <rect x="225" y="-0" height="0" width="75" fill="gray"/>
+         <rect x="225" y="-0" height="0" width="75" fill="crimson"/>
+         <text x="262.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">self</text>
          <rect x="337.5"
                y="-59.25926"
                height="59.25926"
@@ -127,7 +152,11 @@
                height="340.74075"
                width="75"
                fill="crimson"/>
-         <text x="337.5" y="25" text-anchor="start">couple-couple</text>
+         <text x="375"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">couple-couple</text>
          <rect x="450" y="-0" height="0" width="75" fill="green"/>
          <rect x="450"
                y="-191.30435"
@@ -139,33 +168,45 @@
                height="208.69565"
                width="75"
                fill="crimson"/>
-         <text x="450" y="25" text-anchor="start">acq-acq</text>
+         <text x="487.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">acq-acq</text>
          <rect x="562.5" y="-0" height="0" width="75" fill="green"/>
          <rect x="562.5" y="-0" height="0" width="75" fill="gray"/>
          <rect x="562.5" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="562.5" y="25" text-anchor="start">sibling-sibling</text>
+         <text x="600"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">sibling-sibling</text>
          <rect x="675" y="-0" height="0" width="75" fill="green"/>
          <rect x="675" y="-0" height="0" width="75" fill="gray"/>
          <rect x="675" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="675" y="25" text-anchor="start">child-parent</text>
+         <text x="712.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">child-parent</text>
       </g>
       <g transform="translate(37.5, 0)">
          <rect x="0"
-               y="-63.448277"
-               height="63.448277"
+               y="-68.965515"
+               height="68.965515"
                width="75"
                fill="green"/>
          <rect x="0"
-               y="-135.17241"
+               y="-140.68965"
                height="71.72414"
                width="75"
                fill="gray"/>
-         <rect x="0"
-               y="-394.48273"
-               height="259.31033"
-               width="75"
-               fill="crimson"/>
-         <text x="0" y="25" text-anchor="start">friend-friend</text>
+         <rect x="0" y="-400" height="259.31033" width="75" fill="crimson"/>
+         <text x="37.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">friend-friend</text>
          <rect x="112.5"
                y="-171.42857"
                height="171.42857"
@@ -181,15 +222,19 @@
                height="171.42857"
                width="75"
                fill="crimson"/>
-         <text x="112.5" y="25" text-anchor="start">parent-child</text>
+         <text x="150"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">parent-child</text>
          <rect x="225" y="-0" height="0" width="75" fill="green"/>
-         <rect x="225"
-               y="-57.142857"
-               height="57.142857"
-               width="75"
-               fill="gray"/>
-         <rect x="225" y="-57.142857" height="0" width="75" fill="crimson"/>
-         <text x="225" y="25" text-anchor="start">self</text>
+         <rect x="225" y="-0" height="0" width="75" fill="gray"/>
+         <rect x="225" y="-0" height="0" width="75" fill="crimson"/>
+         <text x="262.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">self</text>
          <rect x="337.5"
                y="-59.25926"
                height="59.25926"
@@ -201,7 +246,11 @@
                height="340.74075"
                width="75"
                fill="crimson"/>
-         <text x="337.5" y="25" text-anchor="start">couple-couple</text>
+         <text x="375"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">couple-couple</text>
          <rect x="450" y="-0" height="0" width="75" fill="green"/>
          <rect x="450"
                y="-191.30435"
@@ -213,33 +262,45 @@
                height="208.69565"
                width="75"
                fill="crimson"/>
-         <text x="450" y="25" text-anchor="start">acq-acq</text>
+         <text x="487.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">acq-acq</text>
          <rect x="562.5" y="-0" height="0" width="75" fill="green"/>
          <rect x="562.5" y="-0" height="0" width="75" fill="gray"/>
          <rect x="562.5" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="562.5" y="25" text-anchor="start">sibling-sibling</text>
+         <text x="600"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">sibling-sibling</text>
          <rect x="675" y="-0" height="0" width="75" fill="green"/>
          <rect x="675" y="-0" height="0" width="75" fill="gray"/>
          <rect x="675" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="675" y="25" text-anchor="start">child-parent</text>
+         <text x="712.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">child-parent</text>
       </g>
       <g transform="translate(37.5, 0)">
          <rect x="0"
-               y="-63.448277"
-               height="63.448277"
+               y="-68.965515"
+               height="68.965515"
                width="75"
                fill="green"/>
          <rect x="0"
-               y="-135.17241"
+               y="-140.68965"
                height="71.72414"
                width="75"
                fill="gray"/>
-         <rect x="0"
-               y="-394.48273"
-               height="259.31033"
-               width="75"
-               fill="crimson"/>
-         <text x="0" y="25" text-anchor="start">friend-friend</text>
+         <rect x="0" y="-400" height="259.31033" width="75" fill="crimson"/>
+         <text x="37.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">friend-friend</text>
          <rect x="112.5"
                y="-171.42857"
                height="171.42857"
@@ -255,15 +316,19 @@
                height="171.42857"
                width="75"
                fill="crimson"/>
-         <text x="112.5" y="25" text-anchor="start">parent-child</text>
+         <text x="150"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">parent-child</text>
          <rect x="225" y="-0" height="0" width="75" fill="green"/>
-         <rect x="225"
-               y="-57.142857"
-               height="57.142857"
-               width="75"
-               fill="gray"/>
-         <rect x="225" y="-57.142857" height="0" width="75" fill="crimson"/>
-         <text x="225" y="25" text-anchor="start">self</text>
+         <rect x="225" y="-0" height="0" width="75" fill="gray"/>
+         <rect x="225" y="-0" height="0" width="75" fill="crimson"/>
+         <text x="262.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">self</text>
          <rect x="337.5"
                y="-59.25926"
                height="59.25926"
@@ -275,7 +340,11 @@
                height="340.74075"
                width="75"
                fill="crimson"/>
-         <text x="337.5" y="25" text-anchor="start">couple-couple</text>
+         <text x="375"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">couple-couple</text>
          <rect x="450" y="-0" height="0" width="75" fill="green"/>
          <rect x="450"
                y="-191.30435"
@@ -287,62 +356,88 @@
                height="208.69565"
                width="75"
                fill="crimson"/>
-         <text x="450" y="25" text-anchor="start">acq-acq</text>
+         <text x="487.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">acq-acq</text>
          <rect x="562.5" y="-0" height="0" width="75" fill="green"/>
          <rect x="562.5" y="-0" height="0" width="75" fill="gray"/>
          <rect x="562.5" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="562.5" y="25" text-anchor="start">sibling-sibling</text>
+         <text x="600"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">sibling-sibling</text>
          <rect x="675" y="-0" height="0" width="75" fill="green"/>
          <rect x="675" y="-0" height="0" width="75" fill="gray"/>
          <rect x="675" y="-400" height="400" width="75" fill="crimson"/>
-         <text x="675" y="25" text-anchor="start">child-parent</text>
+         <text x="712.5"
+               y="25"
+               text-anchor="middle"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">child-parent</text>
       </g>
       <g>
-         <text x="243.75" y="-425" font-weight="bold">States of Relationship Based on Different Relationships</text>
-         <text x="268.75" y="50" font-weight="bold">Relationship
-                            between speaker and hearer.</text>
-         <text x="200" y="-75" transform="rotate(-90)" font-weight="bold">% of
-                            insults</text>
-         <line x1="0" y1="0" x2="787.5" y2="0" stroke="black"/>
-         <line x1="0" y1="0" x2="0" y2="-400" stroke="black"/>
+         <text x="243.75"
+               y="-425"
+               font-weight="bold"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">States
+                        of Relationship Based on Different Relationships</text>
+         <text x="268.75"
+               y="50"
+               font-weight="bold"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">Relationship
+                        between speaker and hearer.</text>
+         <text x="200"
+               y="-75"
+               transform="rotate(-90)"
+               font-weight="bold"
+               stroke="#E0E0E0"
+               fill="#E0E0E0">% of
+                        insults</text>
+         <line x1="0" y1="0" x2="787.5" y2="0" stroke="#E0E0E0"/>
+         <line x1="0" y1="0" x2="0" y2="-400" stroke="#E0E0E0"/>
          <line x1="0"
                y1="-100"
                x2="787.5"
                y2="-100"
-               stroke="black"
+               stroke="#E0E0E0"
                stroke-dasharray="3"/>
-         <text x="-45" y="-95">25%</text>
+         <text x="-45" y="-95" stroke="#E0E0E0" fill="#E0E0E0">25%</text>
          <line x1="0"
                y1="-200"
                x2="787.5"
                y2="-200"
-               stroke="black"
+               stroke="#E0E0E0"
                stroke-dasharray="3"/>
-         <text x="-45" y="-195">50%</text>
+         <text x="-45" y="-195" stroke="#E0E0E0" fill="#E0E0E0">50%</text>
          <line x1="0"
                y1="-300"
                x2="787.5"
                y2="-300"
-               stroke="black"
+               stroke="#E0E0E0"
                stroke-dasharray="3"/>
-         <text x="-45" y="-295">75%</text>
+         <text x="-45" y="-295" stroke="#E0E0E0" fill="#E0E0E0">75%</text>
          <line x1="0"
                y1="-400"
                x2="787.5"
                y2="-400"
-               stroke="black"
+               stroke="#E0E0E0"
                stroke-dasharray="3"/>
-         <text x="-45" y="-395">100%</text>
+         <text x="-45" y="-395" stroke="#E0E0E0" fill="#E0E0E0">100%</text>
          <g>
             <rect x="807.5" y="-100" height="15" width="15" fill="green"/>
-            <text x="832.5" y="-87.5">Positive
-                                Relationship State</text>
+            <text x="832.5" y="-87.5" stroke="#E0E0E0" fill="#E0E0E0">Positive Relationship
+                            State</text>
             <rect x="807.5" y="-200" height="15" width="15" fill="gray"/>
-            <text x="832.5" y="-187.5">Neutral
-                                Relationship State</text>
+            <text x="832.5" y="-187.5" stroke="#E0E0E0" fill="#E0E0E0">Neutral
+                            Relationship State</text>
             <rect x="807.5" y="-300" height="15" width="15" fill="red"/>
-            <text x="832.5" y="-287.5">Negative
-                                Relationship State</text>
+            <text x="832.5" y="-287.5" stroke="#E0E0E0" fill="#E0E0E0">Negative
+                            Relationship State</text>
          </g>
       </g>
    </g>
