@@ -22,34 +22,36 @@
                 <xsl:apply-templates select="$all_plays//insults" mode="insType"/>
                 <!-- ==================== AXES BELOW ==================== -->
                 <g>
-                    <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold" stroke="#E0E0E0" fill="#E0E0E0">States
-                        of Relationship Based on Different Relationships</text>
-                    <text x="{$xLength div 2 - 125}" y="{50}" font-weight="bold" stroke="#E0E0E0" fill="#E0E0E0">Relationship
-                        between speaker and hearer.</text>
-                    <text x="200" y="-75" transform="rotate(-90)" font-weight="bold" stroke="#E0E0E0" fill="#E0E0E0">% of
-                        insults</text>
+                    <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold"
+                        stroke="#E0E0E0" fill="#E0E0E0">States of Relationship Based on Different
+                        Relationships</text>
+                    <text x="{$xLength div 2 - 125}" y="{50}" font-weight="bold" stroke="#E0E0E0"
+                        fill="#E0E0E0">Relationship between speaker and hearer.</text>
+                    <text x="200" y="-75" transform="rotate(-90)" font-weight="bold"
+                        stroke="#E0E0E0" fill="#E0E0E0">% of insults</text>
                     <!-- I have no idea how to center text -->
                     <line x1="0" y1="0" x2="{$xLength}" y2="0" stroke="#E0E0E0"/>
                     <line x1="0" y1="0" x2="0" y2="-{$yScale}" stroke="#E0E0E0"/>
                     <xsl:for-each select="(1 to ($yScale div 100))">
-                        <line x1="0" y1="-{. * 100}" x2="{$xLength}" y2="-{. * 100}" stroke="#E0E0E0"
-                            stroke-dasharray="3"/>
-                        <text x="-45" y="-{. * 100 - 5}" stroke="#E0E0E0" fill="#E0E0E0"><xsl:value-of select=". * 25"/>%</text>
+                        <line x1="0" y1="-{. * 100}" x2="{$xLength}" y2="-{. * 100}"
+                            stroke="#E0E0E0" stroke-dasharray="3"/>
+                        <text x="-45" y="-{. * 100 - 5}" stroke="#E0E0E0" fill="#E0E0E0"
+                                ><xsl:value-of select=". * 25"/>%</text>
                     </xsl:for-each>
                     <!-- ==================== LEGEND BELOW ==================== -->
                     <g>
                         <rect x="{$xLength + 20}" y="-{$yScale div 4}" height="15" width="15"
                             fill="green"/>
-                        <text x="{$xLength + 45}" y="-{$yScale div 4 - 12.5}" stroke="#E0E0E0" fill="#E0E0E0">Positive Relationship
-                            State</text>
+                        <text x="{$xLength + 45}" y="-{$yScale div 4 - 12.5}" stroke="#E0E0E0"
+                            fill="#E0E0E0">Positive Relationship State</text>
                         <rect x="{$xLength + 20}" y="-{$yScale div 4 * 2}" height="15" width="15"
                             fill="gray"/>
-                        <text x="{$xLength + 45}" y="-{$yScale div 4 * 2 - 12.5}" stroke="#E0E0E0" fill="#E0E0E0">Neutral
-                            Relationship State</text>
+                        <text x="{$xLength + 45}" y="-{$yScale div 4 * 2 - 12.5}" stroke="#E0E0E0"
+                            fill="#E0E0E0">Neutral Relationship State</text>
                         <rect x="{$xLength + 20}" y="-{$yScale div 4 * 3}" height="15" width="15"
                             fill="red"/>
-                        <text x="{$xLength + 45}" y="-{$yScale div 4 * 3 - 12.5}" stroke="#E0E0E0" fill="#E0E0E0">Negative
-                            Relationship State</text>
+                        <text x="{$xLength + 45}" y="-{$yScale div 4 * 3 - 12.5}" stroke="#E0E0E0"
+                            fill="#E0E0E0">Negative Relationship State</text>
                     </g>
                 </g>
             </g>
@@ -61,7 +63,7 @@
         <xsl:variable name="insultTotal" as="xs:integer" select="count(insult/insultStart)"/>
         <g transform="translate({$barSpacing}, 0)">
             <xsl:for-each select="1 to $relCount">
-                <xsl:sort select="."/>
+                <!--<xsl:sort select="count()"/>-->
                 <xsl:variable name="i" as="xs:integer" select="."/>
                 <xsl:variable name="relType" as="xs:string"
                     select="distinct-values($insults/insult/insultStart/@rel)[$i]"/>
@@ -79,16 +81,21 @@
                     select="count($insults/insult/insultStart[@rel = $relType and @rel-state = 'neg'])"/>
                 <xsl:variable name="negHeight" as="xs:float"
                     select="($negTotal div $curTotal * $yScale)"/>
-                <rect x="{($i - 1) * ($barWidth + $barSpacing)}" y="-{$posHeight}"
-                    height="{$posHeight}" width="{$barWidth}" fill="green"/>
-                <rect x="{($i - 1) * ($barWidth + $barSpacing)}" y="-{$neutralHeight + $posHeight}"
-                    height="{$neutralHeight}" width="{$barWidth}" fill="gray"/>
-                <rect x="{($i - 1) * ($barWidth + $barSpacing)}"
-                    y="-{$negHeight + $posHeight + $neutralHeight}" height="{$negHeight}"
-                    width="{$barWidth}" fill="crimson"/>
-                <text x="{($i - 1) * ($barWidth + $barSpacing)+ $barWidth div 2}" y="25" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
-                    <xsl:value-of select="$relType"/>
-                </text>
+                <xsl:for-each select=".">
+                    <xsl:sort select="$relType"/>
+                    <rect x="{($i - 1) * ($barWidth + $barSpacing)}" y="-{$posHeight}"
+                        height="{$posHeight}" width="{$barWidth}" fill="green"/>
+                    <rect x="{($i - 1) * ($barWidth + $barSpacing)}"
+                        y="-{$neutralHeight + $posHeight}" height="{$neutralHeight}"
+                        width="{$barWidth}" fill="gray"/>
+                    <rect x="{($i - 1) * ($barWidth + $barSpacing)}"
+                        y="-{$negHeight + $posHeight + $neutralHeight}" height="{$negHeight}"
+                        width="{$barWidth}" fill="crimson"/>
+                    <text x="{($i - 1) * ($barWidth + $barSpacing)+ $barWidth div 2}" y="25"
+                        text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
+                        <xsl:value-of select="$relType"/>
+                    </text>
+                </xsl:for-each>
             </xsl:for-each>
         </g>
     </xsl:template>

@@ -56,9 +56,9 @@
                     </xsl:for-each>
 
                     <!-- labels -->
-                    <text x="{($max-wide div 2) + 25}" y="-{$max-high + 80}" font-size="18" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Insult
-                        counts between <xsl:value-of select="current-grouping-key()"/> speakers</text>
-                    <text x="{$max-high div 2}" y="15" transform="rotate(-90)" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Insult count</text>
+                    <text x="{($max-wide div 2) + 25}" y="-{$max-high + 80}" font-size="18" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
+                        Speech act counts between <xsl:value-of select="current-grouping-key()" /></text>
+                    <text x="{$max-high div 2}" y="15" transform="rotate(-90)" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Speech act count</text>
                     <text x="{$max-wide div 2}" y="45" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Speech act type</text>
                     
                     <!-- sub-group by speech act -->
@@ -80,6 +80,9 @@
                                 height="{$sA-count * $y-scale}" fill="{$color}"/>
                             <text x="{$x-pos + $bar-wide div 2}" y="{$max-high div 15}" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
                                 <xsl:value-of select="current-grouping-key()"/>
+                            </text>
+                            <text x="{$x-pos + $bar-wide div 2}" y="-{$sA-count * $y-scale + 5}" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
+                                <xsl:value-of select="$sA-count"/>
                             </text>
                             
                         </xsl:for-each>
