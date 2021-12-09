@@ -51,7 +51,11 @@ body {
     font-family: 'pt';
     overflow-x: hidden;
 }
-
+.p {
+    font-family: 'pt';
+    color: var(--textColor);
+    margin: 2em 1em;
+}
 #head {
     display: flex;
     align-items: center;
@@ -318,24 +322,19 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
   outline: none;
   font-size: 15px;
 }
-
 .active, .collapsible:hover {
   background-color: #B80003;
 }
-
-
 table, th, tr, td {
     border: 2px #E0E0E0 solid;
     border-collapse: collapse;
     text-align: center;
     padding: 15px;
 }
-
 table {
     margin-right: auto;
     margin-left: auto;
 }
-
 .content {
   padding: 0 18px;
   display: none;
@@ -343,10 +342,15 @@ table {
   background-color: #8F0002;
   width: 87%;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+}
 .pagination a {
   color: white;
   float: left;
   padding: 8px 16px;
+  margin: 0 1em;
   text-decoration: none;
   transition: background-color .3s;
 }

@@ -21,7 +21,10 @@
                 />
             </xsl:when>
             <xsl:when test="$iteration = 3">
-                <xsl:value-of select="sha:normalize(replace($input, ' !', '!'), -1)"/>
+                <xsl:value-of select="sha:normalize(replace($input, ' !', '!'), ($iteration + 1))"/>
+            </xsl:when>
+            <xsl:when test="$iteration = 4">
+                <xsl:value-of select="sha:normalize(replace($input, ' ;', ';'), -1)"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="replace($input, ' :', ':')"/>
@@ -38,10 +41,32 @@
             <body>
                 <xsl:comment>#include virtual="menu.xhtml"</xsl:comment>
                 <div class="pagination">
-                    <a class="active" href="hamInsults.xhtml">Hamlet</a>
-                    <a href="othInsults.xhtml">Othello</a>
-                    <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
-                    <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                    <xsl:choose>
+                        <xsl:when test="//titleStmt/shortTitle = 'Hamlet'">
+                            <a class="active" href="hamInsults.xhtml">Hamlet</a>
+                            <a href="othInsults.xhtml">Othello</a>
+                            <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
+                            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                        </xsl:when>
+                        <xsl:when test="//titleStmt/shortTitle = 'Othello'">
+                            <a href="hamInsults.xhtml">Hamlet</a>
+                            <a class="active" href="othInsults.xhtml">Othello</a>
+                            <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
+                            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                        </xsl:when>
+                        <xsl:when test="//titleStmt/shortTitle = 'Midsummer Nights Dream'">
+                            <a href="hamInsults.xhtml">Hamlet</a>
+                            <a href="othInsults.xhtml">Othello</a>
+                            <a class="active" href="mndInsults.xhtml">A Midsummer Night's Dream</a>
+                            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                        </xsl:when>
+                        <xsl:when test="//titleStmt/shortTitle = 'Comedy of Errors'">
+                            <a href="hamInsults.xhtml">Hamlet</a>
+                            <a href="othInsults.xhtml">Othello</a>
+                            <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
+                            <a class="active" href="coeInsults.xhtml">The Comedy of Errors</a>
+                        </xsl:when>
+                    </xsl:choose>
                 </div>
                 <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/></h1> <!-- This needs changed per insultPage -->
                 <div id="insultFlex"> <!-- This is where insults would go -->
@@ -164,7 +189,7 @@
     </xsl:template>
     <xsl:template match="insult" mode="readView">
         <p>
-            <xsl:attribute name="class"><xsl:value-of select="insultStart/@*"/></xsl:attribute>
+            <xsl:attribute name="class"><xsl:value-of select="insultStart/@*"/><xsl:text> p</xsl:text></xsl:attribute>
             <xsl:apply-templates select="sha:normalize(normalize-space(.), 1)"/>
         </p>
     </xsl:template>
