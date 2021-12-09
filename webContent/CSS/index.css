@@ -52,18 +52,6 @@ body {
     overflow-x: hidden;
 }
 
-table, th, tr, td {
-    border: 2px #E0E0E0;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 25px;
-}
-
-table {
-    margin-right: auto;
-    margin-left: auto;
-}
-
 #head {
     display: flex;
     align-items: center;
@@ -249,3 +237,14 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
 }
 
+table, th, tr, td {
+    border: 2px #E0E0E0 solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 25px;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
