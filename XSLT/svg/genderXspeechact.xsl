@@ -18,7 +18,7 @@
     <xsl:variable name="max-high" as="xs:integer" select="$y-scale * 80"/>
 
     <xsl:template name="xsl:initial-template">
-        <svg height="1500" width="1100">
+        <svg viewBox="50 0 1000 1100" width="100%" class="speech_acts">
             <!-- Group by gender -->
             <xsl:apply-templates select="$all_plays//insultStart[@gender = 'male-male']"/>
             <xsl:for-each-group select="$all_plays//insult" group-by="insultStart/@gender">
@@ -44,22 +44,22 @@
                 
                 <g transform="translate({50 + $max-wide * $xshift}, {($max-high + 200) * $yshift})">
                     <!-- axis -->
-                    <line x1="50" x2="{$max-wide}" y1="0" y2="0" stroke="black"/>
-                    <line x1="50" x2="50" y1="0" y2="-{$max-high + 20}" stroke="black"/>
+                    <line x1="50" x2="{$max-wide}" y1="0" y2="0" stroke="#E0E0E0"/>
+                    <line x1="50" x2="50" y1="0" y2="-{$max-high + 20}" stroke="#E0E0E0"/>
                     <!-- scale markers -->
                     <xsl:for-each select="(1 to ($max-high div 40))">
                         <line x1="50" y1="-{. * $y-scale * 10}" x2="{$max-wide}"
-                            y2="-{. * $y-scale * 10}" stroke="black" stroke-dasharray="3"/>
-                        <text x="25" y="-{. * ($y-scale * 10) - 5}">
+                            y2="-{. * $y-scale * 10}" stroke="#E0E0E0" stroke-dasharray="3"/>
+                        <text x="25" y="-{. * ($y-scale * 10) - 5}" stroke="#E0E0E0" fill="#E0E0E0">
                             <xsl:value-of select=". * 10"/>
                         </text>
                     </xsl:for-each>
 
                     <!-- labels -->
-                    <text x="{($max-wide div 2) + 25}" y="-{$max-high + 80}" font-size="18" text-anchor="middle">Insult
+                    <text x="{($max-wide div 2) + 25}" y="-{$max-high + 80}" font-size="18" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Insult
                         counts between <xsl:value-of select="current-grouping-key()"/> speakers</text>
-                    <text x="{$max-high div 2}" y="15" transform="rotate(-90)" text-anchor="middle">Insult count</text>
-                    <text x="{$max-wide div 2}" y="45" text-anchor="middle">Speech act type</text>
+                    <text x="{$max-high div 2}" y="15" transform="rotate(-90)" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Insult count</text>
+                    <text x="{$max-wide div 2}" y="45" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">Speech act type</text>
                     
                     <!-- sub-group by speech act -->
                     <xsl:for-each-group select="current-group()" group-by="insultStart/@speechAct">
@@ -78,7 +78,7 @@
                         <xsl:for-each select=".">
                             <rect x="{$x-pos}" y="-{$sA-count * $y-scale}" width="{$bar-wide}"
                                 height="{$sA-count * $y-scale}" fill="{$color}"/>
-                            <text x="{$x-pos + $bar-wide div 2}" y="{$max-high div 15}" text-anchor="middle">
+                            <text x="{$x-pos + $bar-wide div 2}" y="{$max-high div 15}" text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
                                 <xsl:value-of select="current-grouping-key()"/>
                             </text>
                             
