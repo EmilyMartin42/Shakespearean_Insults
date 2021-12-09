@@ -342,3 +342,15 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
   background-color: #8F0002;
   width: 87%;
 }
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.active {
+  background-color: #958975;
+  color: white;
+}
+.pagination a:hover:not(.active) {background-color: #958975;}
