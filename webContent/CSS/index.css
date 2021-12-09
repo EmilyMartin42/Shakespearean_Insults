@@ -328,7 +328,7 @@ table, th, tr, td {
     border: 2px #E0E0E0 solid;
     border-collapse: collapse;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
 }
 
 table {
@@ -356,3 +356,6 @@ table {
 }
 .pagination a:hover:not(.active) {background-color: #958975;}
 
+.wTable {
+    text-align: center;
+}
