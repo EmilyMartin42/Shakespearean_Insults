@@ -78,7 +78,7 @@ body {
     width: auto;
     margin: auto;
     justify-content: space-between;
-    
+    z-index: 2;
 }
 .navItem {
     margin-left: 1em;
@@ -264,6 +264,9 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     width: 15%;
     height: auto;
     margin-left: .5%;
+    position: fixed;
+    left: 0;
+    top: 35vh;
 }
 .accordionListAll {
     font-family: "ptBold";
