@@ -3,95 +3,132 @@
 <?xml-stylesheet type="text/css" href="CSS/index.css"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Hamlet Insults</title> <!-- This needs changed for each specific insult page -->
-        <script src="accordion.js"></script> <!-- This links the javascript for the accordion box-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+        <title>A Midsummer Night's Dream Insults</title> <!-- This needs changed per insultPage -->
     </head>
-    <body class="insultPage">
+    <body>
         <!--#include virtual="menu.xhtml" -->
-        <h1 id="mainTitle">Insults In Midsummer Night's Dream</h1> <!-- This needs changed for each specific insult page -->
+        <div class="pagination">
+            <a href="hamInsults.xhtml">Hamlet</a>
+            <a href="othInsults.xhtml">Othello</a>
+            <a class="active" href="mndInsults.xhtml">A Midsummer Night's Dream</a>
+            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+        </div>
+        <h1 id="mainTitle">Insults in A Midsummer Night's Dream</h1> <!-- This needs changed per insultPage -->
+        <div id="insultFlex"> <!-- This is where insults would go -->
+            <h3>Header3</h3>
+            <p>Text</p>
+        </div>
         <div id="mainContainer">
-            <div id="accordionTree">
-                <div class="accordionCategories">
-                    <div class="accordionListAll"> <!-- This houses all of the categories -->
-                        <!-- This is the START of a category -->
-                        <div class="accordion">
-                            <h5>Sort by tags</h5>
-                            <button onclick="myFunction('Demo1')" id="accordionHeader">Insult Type</button> <!-- Category Title -->
-                            <div id="Demo1" class="w3-hide">
-                                <a class="w3-button" href="#">Personal Attack</a>
-                                <a class="w3-button" href="#">Name Calling</a>
-                                <a class="w3-button" href="#">Sex/Gender-based Insult</a>
-                                <a class="w3-button" href="#">Backhanded Compliment</a>
-                                <a class="w3-button" href="#">Slander</a>
-                            </div>
-                        </div>
-                        <!-- This is the START of a category -->
-                        <div class="accordion">
-                            <button onclick="myFunction('Demo2')" id="accordionHeader2">Gender</button> <!-- Category Title -->
-                            <div id="Demo2" class="w3-hide">
-                                <a class="w3-button" href="#">Male to male</a>
-                                <a class="w3-button" href="#">Male to female</a>
-                                <a class="w3-button" href="#">Female to female</a>
-                                <a class="w3-button" href="#">Female to male</a>
-                            </div>
-                        </div>
-                        <!-- This is the START of a category -->
-                        <div class="accordion">
-                            <button onclick="myFunction('Demo3')" id="accordionHeader3">Relationship</button> <!-- Category Title -->
-                            <div id="Demo3" class="w3-hide">
-                                <a class="w3-button" href="#">Parent to child</a>
-                                <a class="w3-button" href="#">Child to parent</a>
-                                <a class="w3-button" href="#">Sibling to sibling</a>
-                                <a class="w3-button" href="#">Friend to friend</a>
-                                <a class="w3-button" href="#">Couple to couple</a>
-                                <a class="w3-button" href="#">Acquantance to acquantance</a>
-                                <a class="w3-button" href="#">Self</a>
-                            </div>
-                        </div>
-                        <!-- This is the START of a category -->
-                        <div class="accordion">
-                            <button onclick="myFunction('Demo4')" id="accordionHeader4">Speech Act</button>
-                            <!-- Category Title -->
-                            <div id="Demo4" class="w3-hide">
-                                <a class="w3-button" href="#">Direct</a>
-                                <button onclick="myFunction('Demo5')" class="w3-button">Indirect</button>
-                                <div id="Demo5" class="w3-hide">
-                                    <button onclick="myFunction('Demo6')" class="w3-button">Illoqutionary
-                                        Acts</button>
-                                    <div id="Demo6" class="w3-hide">
-                                        <a class="w3-button" href="#">Representative</a>
-                                        <a class="w3-button" href="#">Directive</a>
-                                        <a class="w3-button" href="#">Commissive</a>
-                                        <a class="w3-button" href="#">Expressive</a>
-                                        <a class="w3-button" href="#">Declarative</a>
-                                    </div>
-                                    <button onclick="myFunction('Demo7')" class="w3-button">Maxims
-                                    </button>
-                                    <div id="Demo7" class="w3-hide">
-                                        <a class="w3-button" href="#">Quality</a>
-                                        <a class="w3-button" href="#">Quantity</a>
-                                        <a class="w3-button" href="#">Relevance</a>
-                                        <a class="w3-button" href="#">Manner</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <h3>Sort by tags:</h3>
+            <!-- Start of collapsible -->
+            <button type="button" class="collapsible">Insult Type</button>
+            <div class="content">
+                <label class="container">Personal Attack <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Name Calling <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Sex/Gender-based Insult <input type="checkbox"
+                    checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Backhanded Compliment <input type="checkbox"
+                    checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Slander <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+            </div>
+            <!-- Start of collapsible -->
+            <button type="button" class="collapsible">Gender</button>
+            <div class="content">
+                <label class="container">Male to male <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Male to female <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Female to female <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Female to male <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+            </div>
+            <!-- Start of collapsible -->
+            <button type="button" class="collapsible">Relationship</button>
+            <div class="content">
+                <label class="container">Parent to child <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Child to parent <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Sibling to sibling <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Friend to friend <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Couple to couple <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Acquantance to acquantance <input type="checkbox"
+                    checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <label class="container">Self <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+            </div>
+            <!-- Start of collapsible -->
+            <button type="button" class="collapsible">Speech Act</button> <!-- This portion needs to be renamed and new CSS elements created -->
+            <div class="content">
+                <label class="container">Direct <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span><br />
+                </label>
+                <button type="button" class="collapsible">Indirect</button>
+                <div class="content">
+                    <button type="button" class="collapsible">Maxims</button>
+                    <div class="content">
+                        <label class="container">Quality <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Quantity <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Relevance <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Manner <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                    </div>
+                    <button type="button" class="collapsible">Illocutionary Acts</button>
+                    <div class="content">
+                        <label class="container">Representative <input type="checkbox"
+                            checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Directive <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Commissive <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Expressive <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Declarative <input type="checkbox"
+                            checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mndInsults">
-            <h4>Insults</h4>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-            <p>Your shoes smell like butt!</p>
-        </div>
-        <!--#include virtual="footer.html" -->
+        <script src="collapsible.js"></script>
     </body>
 </html>

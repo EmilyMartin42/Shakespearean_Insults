@@ -89,7 +89,7 @@ body {
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
-body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl body.insultPage {
+body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl body.insultPage a.insultPage {
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
@@ -98,7 +98,6 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 1%;
-    font-family: "ptBold";
     font-size: 3em;
     font-weight: 900;
     color: var(--textColor)
@@ -236,6 +235,14 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     font-size: 2em;
     color: var(--textColor);
 }
+
+/* These are specific to the insult pages */
+#insultFlex {
+    margin-left: 20%;
+    border: 2px solid black;
+    text-align: center;
+    width: 75%;
+}
 .mndInsults {
     border: 2px solid black;
     margin-top: -230px;
@@ -247,13 +254,12 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     width: 75%;
 }
 #mainContainer {
-    display: flex;
+    flex-direction: column;
     border: 2px solid black;
-    background: var(--headerColor);
-    justify-content: left;
+    background-color: #B80003;
     width: 15%;
     height: auto;
-    margin-left: 15px;
+    margin-left: .5%;
 }
 .accordionListAll {
     font-family: "ptBold";
@@ -263,6 +269,60 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+.w3-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+.w3-disabled,
+.w3-btn:disabled,
+.w3-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+.w3-btn.w3-disabled:hover,
+.w3-btn:disabled:hover {
+    box-shadow: none
+}
+.w3-hide {
+    display: none !important
+}
+.w3-show {
+    display: block !important
+}
+.collapsible {
+  background-color: #8F0002;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-color: black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #B80003;
+}
+
 
 table, th, tr, td {
     border: 2px #E0E0E0 solid;
@@ -275,3 +335,24 @@ table {
     margin-right: auto;
     margin-left: auto;
 }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #8F0002;
+  width: 87%;
+}
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.active {
+  background-color: #958975;
+  color: white;
+}
+.pagination a:hover:not(.active) {background-color: #958975;}
+
