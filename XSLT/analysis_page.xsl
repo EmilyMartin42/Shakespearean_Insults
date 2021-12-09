@@ -47,11 +47,14 @@
                     Below is our analysis and overall findings. Because we looked at so many different factors not all of them can be explored in detail here however, 
                     through careful examination we were able to pull out the factors we thought were the most useful for answering our four sub-research questions. 
                     <ol>
-                        <li>What role does insult type play and how does it influence other interconnected features?</li>
-                        <li>What types of relationship state are more common for those who are closer, and do the insults they use on each other have a distinct type. 
-                            Does the state of the relationship lend to distinct insult types?</li>
-                        <li>Do particular illocutionary speech act types tend to employ to the flouting of a specific maxim in order to convey them?</li>
-                        <li>Does gender have an effect on insult type and does it effect the direct vs indirectness of the speech act?</li>
+                        <li>Do the other features influence insult type? Specifically, is there any correlation between insult count and insult type to play genre 
+                            (tragedy vs comedy)</li>
+                        <li>Is there a correlation between type of relationship and relationship status (i.e is there animosity or not) and does
+                            the state of the relationship lend to distinct insult types?</li>
+                        <li>In order to convey to the insultee that they are indeed being insulted is there a particular maxim that is most often flouted? Is there
+                            any correlation between maxim flouted and illocutionary speech act type?</li>
+                        <li>Is there a correlation between the gender of the speaker and the type of speech act (direct vs. indirect)? Are there certain combinations
+                            of gender between speaker and hearer that lead to a particular type of speech act and does it effect the direct vs indirectness of the speech act?</li>
                     </ol>
                 </p>
                 </div>
@@ -80,7 +83,7 @@
                         </xsl:for-each-group>                        
                     </table>
                     <!-- Insults and their counts between comedies and tragedies -->
-                    <p>Insults and their counts in the tragedies</p>
+                    <p class="wTable">Insults and their counts in the tragedies. In total there are: <xsl:value-of select="count($tragedies//insult)"/></p>
                     <table>
                         <tr>
                             <th>Insult type</th>
@@ -100,7 +103,7 @@
                             </tr>
                         </xsl:for-each-group>                                        
                     </table>
-                    <p>Insults and their counts in the comedies</p>
+                    <p class="wTable">Insults and their counts in the comedies. In total there are: <xsl:value-of select="count($comedies//insult)"/></p>
                     <table>
                         <tr>
                             <th>Insult type</th>
