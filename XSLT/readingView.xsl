@@ -30,7 +30,137 @@
     </xsl:function>
 
     <xsl:template match="/">
-        <xsl:apply-templates select="//insult" mode="readView"/>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title><xsl:value-of select="//titleStmt/title"/> Insults</title> <!-- This needs changed per insultPage -->
+                <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+            </head>
+            <body>
+                <xsl:comment>#include virtual="menu.xhtml"</xsl:comment>
+                <div class="pagination">
+                    <a class="active" href="hamInsults.xhtml">Hamlet</a>
+                    <a href="othInsults.xhtml">Othello</a>
+                    <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
+                    <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                </div>
+                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/></h1> <!-- This needs changed per insultPage -->
+                <div id="insultFlex"> <!-- This is where insults would go -->
+                    <xsl:apply-templates select="//insult" mode="readView"/>
+                </div>
+                <div id="mainContainer">
+                    <h3>Sort by tags:</h3>
+                    <!-- Start of collapsible -->
+                    <button type="button" class="collapsible">Insult Type</button>
+                    <div class="content">
+                        <label class="container">Personal Attack <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Name Calling <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Sex/Gender-based Insult <input type="checkbox"
+                            checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Backhanded Compliment <input type="checkbox"
+                            checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Slander <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                    </div>
+                    <!-- Start of collapsible -->
+                    <button type="button" class="collapsible">Gender</button>
+                    <div class="content">
+                        <label class="container">Male to male <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Male to female <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Female to female <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Female to male <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                    </div>
+                    <!-- Start of collapsible -->
+                    <button type="button" class="collapsible">Relationship</button>
+                    <div class="content">
+                        <label class="container">Parent to child <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Child to parent <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Sibling to sibling <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Friend to friend <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Couple to couple <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Acquantance to acquantance <input type="checkbox"
+                            checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <label class="container">Self <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                    </div>
+                    <!-- Start of collapsible -->
+                    <button type="button" class="collapsible">Speech Act</button> <!-- This portion needs to be renamed and new CSS elements created -->
+                    <div class="content">
+                        <label class="container">Direct <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span><br />
+                        </label>
+                        <button type="button" class="collapsible">Indirect</button>
+                        <div class="content">
+                            <button type="button" class="collapsible">Maxims</button>
+                            <div class="content">
+                                <label class="container">Quality <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Quantity <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Relevance <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Manner <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                            </div>
+                            <button type="button" class="collapsible">Illocutionary Acts</button>
+                            <div class="content">
+                                <label class="container">Representative <input type="checkbox"
+                                    checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Directive <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Commissive <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Expressive <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                                <label class="container">Declarative <input type="checkbox"
+                                    checked="checked" />
+                                    <span class="checkmark"></span><br />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="collapsible.js"></script>
+            </body>
+        </html>
     </xsl:template>
     <xsl:template match="insult" mode="readView">
         <p>
