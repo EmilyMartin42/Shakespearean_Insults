@@ -25,8 +25,8 @@
                     <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold"
                         stroke="#E0E0E0" fill="#E0E0E0">States of Relationship Based on Different
                         Relationships</text>
-                    <text x="{$xLength div 2 - 125}" y="{50}" font-weight="bold" stroke="#E0E0E0"
-                        fill="#E0E0E0">Relationship between speaker and hearer.</text>
+                    <text x="{$xLength div 2 - 125}" y="{60}" font-weight="bold" stroke="#E0E0E0"
+                        fill="#E0E0E0">Relationship between insulter and insultee</text>
                     <text x="200" y="-75" transform="rotate(-90)" font-weight="bold"
                         stroke="#E0E0E0" fill="#E0E0E0">% of insults</text>
                     <!-- I have no idea how to center text -->
