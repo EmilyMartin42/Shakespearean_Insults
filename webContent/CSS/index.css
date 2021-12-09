@@ -101,7 +101,7 @@ table {
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
-body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl {
+body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl body.insultPage {
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
@@ -247,5 +247,32 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     justify-content: left;
     font-size: 2em;
     color: var(--textColor);
+}
+.mndInsults {
+    border: 2px solid black;
+    margin-top: -230px;
+    margin-bottom: 25px;
+    margin-left: 350px;
+    margin-right: auto;
+    padding: 30px;
+    color: var(--textColor);
+    width: 75%;
+}
+#mainContainer {
+    display: flex;
+    border: 2px solid black;
+    background: var(--headerColor);
+    justify-content: left;
+    width: 15%;
+    height: auto;
+    margin-left: 15px;
+}
+.accordionListAll {
+    font-family: "ptBold";
+}
+.accordion {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 

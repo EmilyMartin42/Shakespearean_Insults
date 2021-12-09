@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<?xml-stylesheet type="text/css" href="CSS/index.css"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Hamlet Insults</title> <!-- This needs changed for each specific insult page -->
+        <script src="accordion.js"></script> <!-- This links the javascript for the accordion box-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+    </head>
+    <body class="insultPage">
+        <!--#include virtual="menu.xhtml" -->
+        <h1 id="mainTitle">Insults In Midsummer Night's Dream</h1> <!-- This needs changed for each specific insult page -->
+        <div id="mainContainer">
+            <div id="accordionTree">
+                <div class="accordionCategories">
+                    <div class="accordionListAll"> <!-- This houses all of the categories -->
+                        <!-- This is the START of a category -->
+                        <div class="accordion">
+                            <h5>Sort by tags</h5>
+                            <button onclick="myFunction('Demo1')" id="accordionHeader">Insult Type</button> <!-- Category Title -->
+                            <div id="Demo1" class="w3-hide">
+                                <a class="w3-button" href="#">Personal Attack</a>
+                                <a class="w3-button" href="#">Name Calling</a>
+                                <a class="w3-button" href="#">Sex/Gender-based Insult</a>
+                                <a class="w3-button" href="#">Backhanded Compliment</a>
+                                <a class="w3-button" href="#">Slander</a>
+                            </div>
+                        </div>
+                        <!-- This is the START of a category -->
+                        <div class="accordion">
+                            <button onclick="myFunction('Demo2')" id="accordionHeader2">Gender</button> <!-- Category Title -->
+                            <div id="Demo2" class="w3-hide">
+                                <a class="w3-button" href="#">Male to male</a>
+                                <a class="w3-button" href="#">Male to female</a>
+                                <a class="w3-button" href="#">Female to female</a>
+                                <a class="w3-button" href="#">Female to male</a>
+                            </div>
+                        </div>
+                        <!-- This is the START of a category -->
+                        <div class="accordion">
+                            <button onclick="myFunction('Demo3')" id="accordionHeader3">Relationship</button> <!-- Category Title -->
+                            <div id="Demo3" class="w3-hide">
+                                <a class="w3-button" href="#">Parent to child</a>
+                                <a class="w3-button" href="#">Child to parent</a>
+                                <a class="w3-button" href="#">Sibling to sibling</a>
+                                <a class="w3-button" href="#">Friend to friend</a>
+                                <a class="w3-button" href="#">Couple to couple</a>
+                                <a class="w3-button" href="#">Acquantance to acquantance</a>
+                                <a class="w3-button" href="#">Self</a>
+                            </div>
+                        </div>
+                        <!-- This is the START of a category -->
+                        <div class="accordion">
+                            <button onclick="myFunction('Demo4')" id="accordionHeader4">Speech Act</button>
+                            <!-- Category Title -->
+                            <div id="Demo4" class="w3-hide">
+                                <a class="w3-button" href="#">Direct</a>
+                                <button onclick="myFunction('Demo5')" class="w3-button">Indirect</button>
+                                <div id="Demo5" class="w3-hide">
+                                    <button onclick="myFunction('Demo6')" class="w3-button">Illoqutionary
+                                        Acts</button>
+                                    <div id="Demo6" class="w3-hide">
+                                        <a class="w3-button" href="#">Representative</a>
+                                        <a class="w3-button" href="#">Directive</a>
+                                        <a class="w3-button" href="#">Commissive</a>
+                                        <a class="w3-button" href="#">Expressive</a>
+                                        <a class="w3-button" href="#">Declarative</a>
+                                    </div>
+                                    <button onclick="myFunction('Demo7')" class="w3-button">Maxims
+                                    </button>
+                                    <div id="Demo7" class="w3-hide">
+                                        <a class="w3-button" href="#">Quality</a>
+                                        <a class="w3-button" href="#">Quantity</a>
+                                        <a class="w3-button" href="#">Relevance</a>
+                                        <a class="w3-button" href="#">Manner</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mndInsults">
+            <h4>Insults</h4>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+            <p>Your shoes smell like butt!</p>
+        </div>
+        <!--#include virtual="footer.html" -->
+    </body>
+</html>
