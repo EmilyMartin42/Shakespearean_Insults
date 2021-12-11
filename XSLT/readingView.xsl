@@ -24,6 +24,9 @@
                 <xsl:value-of select="sha:normalize(replace($input, ' !', '!'), ($iteration + 1))"/>
             </xsl:when>
             <xsl:when test="$iteration = 4">
+                <xsl:value-of select="sha:normalize(replace($input, ' \?', '?'), ($iteration + 1))"/>
+            </xsl:when>
+            <xsl:when test="$iteration = 5">
                 <xsl:value-of select="sha:normalize(replace($input, ' ;', ';'), -1)"/>
             </xsl:when>
             <xsl:otherwise>
@@ -76,7 +79,7 @@
                     <xsl:apply-templates select="//insult" mode="readView"/>
                 </div>
                 <xsl:comment>#include virtual="insultSort.xhtml"</xsl:comment>
-                <script src="collapsible.js"/>
+                <script src="sort.js"/>
             </body>
         </html>
     </xsl:template>
@@ -91,7 +94,7 @@
         <p>
             <xsl:attribute name="class">
                 <xsl:value-of select="insultStart/@*"/>
-                <xsl:text> p</xsl:text>
+                <xsl:text> insult</xsl:text>
             </xsl:attribute>
             <xsl:apply-templates select="sha:normalize(normalize-space(.), 1)"/>
             <span>
