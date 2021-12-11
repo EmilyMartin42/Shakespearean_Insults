@@ -276,44 +276,6 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap
-}
-.w3-btn:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-.w3-button {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-.w3-disabled,
-.w3-btn:disabled,
-.w3-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.3
-}
-.w3-btn.w3-disabled:hover,
-.w3-btn:disabled:hover {
-    box-shadow: none
-}
-.w3-hide {
-    display: none !important
-}
-.w3-show {
-    display: block !important
-}
 .collapsible {
   background-color: #8F0002;
   color: black;
