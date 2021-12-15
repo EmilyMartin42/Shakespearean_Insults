@@ -68,14 +68,18 @@
                 <!-- I am going to start by creating a section for each of our research questions and print info/stats for each -->
                 <h3 class="subTitle">Insult type</h3>
                 <div class="text-box">
-                    <p class="wTable"> Here are the different types of insults and their counts, because multiple
-                        insults types were allowed on one insult there are double counts. </p>
-                    <table>
+                    <p class="wTable">Does play genre have any influence on insult type? 
+                        This plot shows the differences in the insult types between comedies and tragedies.</p>                    
+                    <div class="image-container">
+                        <xsl:comment>#include virtual="images/ins_typeXgenre-djb.svg"</xsl:comment>
+                    </div>
+                    
+                    <!--<table>
                         <tr>
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- not tokenized, counts instypes with multiple values as a singular unit -->
+                        <!-\- not tokenized, counts instypes with multiple values as a singular unit -\->
                         <xsl:for-each-group select="$all_plays//insult"
                             group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
@@ -89,7 +93,7 @@
                             </tr>
                         </xsl:for-each-group>
                     </table>
-                    <!-- Insults and their counts between comedies and tragedies -->
+                    <!-\- Insults and their counts between comedies and tragedies -\->
                     <p class="wTable">Insults and their counts in the tragedies. In total there are:
                             <xsl:value-of select="count($tragedies//insult)"/></p>
                     <table>
@@ -97,9 +101,9 @@
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- tokenized version, gets rid of multiple values -->
+                        <!-\- tokenized version, gets rid of multiple values -\->
                         <xsl:for-each-group select="$tragedies//insult"
-                            group-by="insultStart/@insType ! tokenize(.)">
+                            group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
                             <tr>
                                 <td>
@@ -118,9 +122,9 @@
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- tokenized version, gets rid of multiple values -->
+                        <!-\- tokenized version, gets rid of multiple values -\->
                         <xsl:for-each-group select="$comedies//insult"
-                            group-by="insultStart/@insType ! tokenize(.)">
+                            group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
                             <tr>
                                 <td>
@@ -131,8 +135,8 @@
                                 </td>
                             </tr>
                         </xsl:for-each-group>
-                    </table>
-                </div>
+                    </table> -->
+                </div> 
                 <h3 class="subTitle">Relationship state and insult type</h3>
                 <div class="text-box">
                     <p>What effect do different types of relationships have on the state of those
@@ -144,8 +148,12 @@
 
                 <h3 class="subTitle">Speech acts and Gricean maxims</h3>
                 <div class="text-box">
-                    <p class="wTable">These are the illocutionary act types present on our insults</p>
-                    <table>
+                    <p class="wTable">Is there a particular maxim that is most often flouted and does it co-occur with any
+                    illocutionary acts in particular?</p>
+                    <div class="image-container">
+                        <xsl:comment>#include virtual="images/maximXilloc.svg"</xsl:comment>
+                    </div>
+                    <!--<table>
                         <tr>
                             <th>Illocutionary type</th>
                             <th>Count</th>
@@ -154,18 +162,18 @@
                             group-by="insultStart/@speechAct">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
 
-                            <!--<p>
+                            <!-\-<p>
                                 <xsl:value-of
                                     select="current-grouping-key(), ':', count(current-group())"/>
-                            </p>-->
+                            </p>-\->
                             <xsl:for-each-group select="current-group()"
                                 group-by="insultStart/@illoc-type ! tokenize(.)">
                                 <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
-                                <!--<p>
+                                <!-\-<p>
                                     <xsl:value-of
                                         select="current-grouping-key(), ':', count(current-group())"
                                     />
-                                </p>-->
+                                </p>-\->
                                 <tr>
                                     <td>
                                         <xsl:value-of select="current-grouping-key()"/>
@@ -179,6 +187,7 @@
                         </xsl:for-each-group>
                     </table>
                     <p class="wTable">These are the maxims flouted in order to convey that these are, in fact, insults</p>
+                    <p>There are <xsl:value-of select="count(distinct-values($all_plays//@maxim))"/> maxims</p>
                     <table>
                         <tr>
                             <th>Maxim flouted</th>
@@ -200,7 +209,7 @@
                                 </tr>
                             </xsl:for-each-group>
                         </xsl:for-each-group>
-                    </table>
+                    </table>-->
                 </div>
                 <h3 class="subTitle">Gender and speech acts</h3>
                 <div class="text-box">

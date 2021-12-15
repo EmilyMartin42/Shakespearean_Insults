@@ -1,0 +1,833 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="980" width="1450">
+   <g transform="translate(150, 880)">
+      <line x1="50" x2="1100" y1="0" y2="0" stroke="#E0E0E0"/>
+      <line x1="50" x2="1100" y1="-780" y2="-780" stroke="#E0E0E0"/>
+      <line x1="50" x2="50" y1="0" y2="-780" stroke="#E0E0E0"/>
+      <line x1="1100" x2="1100" y1="0" y2="-780" stroke="#E0E0E0"/>
+      <line x1="575" x2="575" y1="0" y2="-780" stroke="#E0E0E0"/>
+      <text x="575"
+            y="-840"
+            stroke="#E0E0E0"
+            font-size="22"
+            fill="#E0E0E0"
+            text-anchor="middle">Insult type counts by genre</text>
+      <text x="287.5"
+            y="-810"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">Tragedies</text>
+      <text x="862.5"
+            y="-810"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">Comedies</text>
+      <line x1="575" y1="0" x2="575" y2="-780"/>
+      <text x="575" y="-785" stroke="#E0E0E0" text-anchor="middle">0</text>
+      <line x1="675"
+            y1="0"
+            x2="675"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="675"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">10</text>
+      <line x1="775"
+            y1="0"
+            x2="775"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="775"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">20</text>
+      <line x1="875"
+            y1="0"
+            x2="875"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="875"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">30</text>
+      <line x1="975"
+            y1="0"
+            x2="975"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="975"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">40</text>
+      <line x1="1075"
+            y1="0"
+            x2="1075"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="1075"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">50</text>
+      <line x1="475"
+            y1="0"
+            x2="475"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="475"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">10</text>
+      <line x1="375"
+            y1="0"
+            x2="375"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="375"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">20</text>
+      <line x1="275"
+            y1="0"
+            x2="275"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="275"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">30</text>
+      <line x1="175"
+            y1="0"
+            x2="175"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="175"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">40</text>
+      <line x1="75"
+            y1="0"
+            x2="75"
+            y2="-780"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="75"
+            y="-785"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">50</text>
+      <rect x="575" y="-80" height="40" width="10" fill="red"/>
+      <text x="1110"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning"> nameCall pAttack sexGen</text>
+      <text x="40"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end"> nameCall pAttack sexGen</text>
+      <text x="595"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">1</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-80" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-55"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="20" fill="red"/>
+      <text x="1110"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">backComp</text>
+      <text x="40"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">backComp</text>
+      <text x="605"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">2</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-140" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-115"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="20" fill="red"/>
+      <text x="1110"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">sexGen</text>
+      <text x="40"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">sexGen</text>
+      <text x="605"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">2</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-200" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-175"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-260" height="40" width="20" fill="red"/>
+      <text x="1110"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">slander</text>
+      <text x="40"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">slander</text>
+      <text x="605"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">2</text>
+      <rect x="575" y="-260" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="535" y="-260" height="40" width="40" fill="green"/>
+      <text x="530"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">4</text>
+      <rect x="575" y="-260" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-260" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-260" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-260" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-260" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-235"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="40" fill="red"/>
+      <text x="1110"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">nameCall sexGen</text>
+      <text x="40"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">nameCall sexGen</text>
+      <text x="625"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">4</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-320" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-295"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-380" height="40" width="50" fill="red"/>
+      <text x="1110"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">pAttack sexGen</text>
+      <text x="40"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">pAttack sexGen</text>
+      <text x="635"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">5</text>
+      <rect x="545" y="-380" height="40" width="30" fill="green"/>
+      <text x="540"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">3</text>
+      <rect x="575" y="-380" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-380" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-380" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-380" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-380" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-380" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-355"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-440" height="40" width="80" fill="red"/>
+      <text x="1110"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">pAttack slander</text>
+      <text x="40"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">pAttack slander</text>
+      <text x="665"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">8</text>
+      <rect x="575" y="-440" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-440" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-440" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-440" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-440" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="535" y="-440" height="40" width="40" fill="green"/>
+      <text x="530"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">4</text>
+      <rect x="575" y="-440" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-415"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-500" height="40" width="90" fill="red"/>
+      <text x="1110"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">nameCall slander</text>
+      <text x="40"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">nameCall slander</text>
+      <text x="675"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">9</text>
+      <rect x="575" y="-500" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-500" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-500" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-500" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-500" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-500" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="555" y="-500" height="40" width="20" fill="green"/>
+      <text x="550"
+            y="-475"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">2</text>
+      <rect x="575" y="-560" height="40" width="90" fill="red"/>
+      <text x="1110"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">nameCall pAttack</text>
+      <text x="40"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">nameCall pAttack</text>
+      <text x="675"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">9</text>
+      <rect x="575" y="-560" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-560" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-560" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="305" y="-560" height="40" width="270" fill="green"/>
+      <text x="300"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">27</text>
+      <rect x="575" y="-560" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-560" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-560" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-535"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-620" height="40" width="170" fill="red"/>
+      <text x="1110"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">pAttack</text>
+      <text x="40"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">pAttack</text>
+      <text x="755"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">17</text>
+      <rect x="575" y="-620" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-620" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-620" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-620" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="245" y="-620" height="40" width="330" fill="green"/>
+      <text x="240"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">33</text>
+      <rect x="575" y="-620" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-620" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-595"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="200" fill="red"/>
+      <text x="1110"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">sexGen slander</text>
+      <text x="40"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">sexGen slander</text>
+      <text x="785"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">20</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-680" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-655"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-740" height="40" width="390" fill="red"/>
+      <text x="1110"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="beginning">nameCall</text>
+      <text x="40"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">nameCall</text>
+      <text x="975"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="middle">39</text>
+      <rect x="575" y="-740" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-740" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="195" y="-740" height="40" width="380" fill="green"/>
+      <text x="190"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">38</text>
+      <rect x="575" y="-740" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-740" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-740" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+      <rect x="575" y="-740" height="40" width="0" fill="green"/>
+      <text x="570"
+            y="-715"
+            stroke="#E0E0E0"
+            fill="#E0E0E0"
+            text-anchor="end">0</text>
+   </g>
+</svg>

@@ -1664,7 +1664,7 @@
                <insultEnd/>
             </insult>
             <insult xml:id="insult_0056">
-               <insultStart insType="nameCall pAttack "
+               <insultStart insType="nameCall pAttack"
                             gender="male-male"
                             rel="acq-acq"
                             rel-state="neg"
