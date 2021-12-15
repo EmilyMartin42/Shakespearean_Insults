@@ -99,7 +99,7 @@
                         </tr>
                         <!-- tokenized version, gets rid of multiple values -->
                         <xsl:for-each-group select="$tragedies//insult"
-                            group-by="insultStart/@insType ! tokenize(.)">
+                            group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
                             <tr>
                                 <td>
@@ -120,7 +120,7 @@
                         </tr>
                         <!-- tokenized version, gets rid of multiple values -->
                         <xsl:for-each-group select="$comedies//insult"
-                            group-by="insultStart/@insType ! tokenize(.)">
+                            group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
                             <tr>
                                 <td>
@@ -144,8 +144,12 @@
 
                 <h3 class="subTitle">Speech acts and Gricean maxims</h3>
                 <div class="text-box">
-                    <p class="wTable">These are the illocutionary act types present on our insults</p>
-                    <table>
+                    <p class="wTable">Is there a particular maxim that is most often flouted and does it co-occur with any
+                    illocutionary acts in particular?</p>
+                    <div class="image-container">
+                        <xsl:comment>#include virtual="images/maximXilloc.svg"</xsl:comment>
+                    </div>
+                    <!--<table>
                         <tr>
                             <th>Illocutionary type</th>
                             <th>Count</th>
@@ -154,18 +158,18 @@
                             group-by="insultStart/@speechAct">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
 
-                            <!--<p>
+                            <!-\-<p>
                                 <xsl:value-of
                                     select="current-grouping-key(), ':', count(current-group())"/>
-                            </p>-->
+                            </p>-\->
                             <xsl:for-each-group select="current-group()"
                                 group-by="insultStart/@illoc-type ! tokenize(.)">
                                 <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
-                                <!--<p>
+                                <!-\-<p>
                                     <xsl:value-of
                                         select="current-grouping-key(), ':', count(current-group())"
                                     />
-                                </p>-->
+                                </p>-\->
                                 <tr>
                                     <td>
                                         <xsl:value-of select="current-grouping-key()"/>
@@ -179,6 +183,7 @@
                         </xsl:for-each-group>
                     </table>
                     <p class="wTable">These are the maxims flouted in order to convey that these are, in fact, insults</p>
+                    <p>There are <xsl:value-of select="count(distinct-values($all_plays//@maxim))"/> maxims</p>
                     <table>
                         <tr>
                             <th>Maxim flouted</th>
@@ -200,7 +205,7 @@
                                 </tr>
                             </xsl:for-each-group>
                         </xsl:for-each-group>
-                    </table>
+                    </table>-->
                 </div>
                 <h3 class="subTitle">Gender and speech acts</h3>
                 <div class="text-box">
