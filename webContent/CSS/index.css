@@ -239,7 +239,15 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     font-size: 2em;
     color: var(--textColor);
 }
-
+.externalLink {
+    color: var(--hoverColor);
+}
+.externalLink:hover {
+    color: var(--textColor);
+}
+.externalLink:visited {
+    color: var(--textColor);
+}
 /* These are specific to the insult pages */
 #insultFlex {
     margin-left: 20%;
@@ -257,37 +265,29 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
     width: 75%;
 }
-#mainContainer {
+#sortContainer {
     flex-direction: column;
     border: 2px solid black;
     background-color: #B80003;
     width: 15%;
     height: auto;
     margin-left: .5%;
-    position: fixed;
-    left: 0;
+    position: sticky;
     top: 35vh;
 }
-.accordionListAll {
+.sort {
     font-family: "ptBold";
-}
-.accordion {
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.collapsible {
-  background-color: #8F0002;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border-color: black;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+details.sort:hover {
+    cursor: pointer;
 }
-.active, .collapsible:hover {
+details.sort > p {
+    font-size: .85em;
+}
+.active {
   background-color: #B80003;
 }
 table, th, tr, td {
