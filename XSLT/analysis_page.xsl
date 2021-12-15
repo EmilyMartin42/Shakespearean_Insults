@@ -68,14 +68,18 @@
                 <!-- I am going to start by creating a section for each of our research questions and print info/stats for each -->
                 <h3 class="subTitle">Insult type</h3>
                 <div class="text-box">
-                    <p class="wTable"> Here are the different types of insults and their counts, because multiple
-                        insults types were allowed on one insult there are double counts. </p>
-                    <table>
+                    <p class="wTable">Does play genre have any influence on insult type? 
+                        This plot shows the differences in the insult types between comedies and tragedies.</p>                    
+                    <div class="image-container">
+                        <xsl:comment>#include virtual="images/ins_typeXgenre-djb.svg"</xsl:comment>
+                    </div>
+                    
+                    <!--<table>
                         <tr>
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- not tokenized, counts instypes with multiple values as a singular unit -->
+                        <!-\- not tokenized, counts instypes with multiple values as a singular unit -\->
                         <xsl:for-each-group select="$all_plays//insult"
                             group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
@@ -89,7 +93,7 @@
                             </tr>
                         </xsl:for-each-group>
                     </table>
-                    <!-- Insults and their counts between comedies and tragedies -->
+                    <!-\- Insults and their counts between comedies and tragedies -\->
                     <p class="wTable">Insults and their counts in the tragedies. In total there are:
                             <xsl:value-of select="count($tragedies//insult)"/></p>
                     <table>
@@ -97,7 +101,7 @@
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- tokenized version, gets rid of multiple values -->
+                        <!-\- tokenized version, gets rid of multiple values -\->
                         <xsl:for-each-group select="$tragedies//insult"
                             group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
@@ -118,7 +122,7 @@
                             <th>Insult type</th>
                             <th>Count</th>
                         </tr>
-                        <!-- tokenized version, gets rid of multiple values -->
+                        <!-\- tokenized version, gets rid of multiple values -\->
                         <xsl:for-each-group select="$comedies//insult"
                             group-by="insultStart/@insType">
                             <xsl:sort select="current-grouping-key() ! lower-case(.)"/>
@@ -131,8 +135,8 @@
                                 </td>
                             </tr>
                         </xsl:for-each-group>
-                    </table>
-                </div>
+                    </table> -->
+                </div> 
                 <h3 class="subTitle">Relationship state and insult type</h3>
                 <div class="text-box">
                     <p>What effect do different types of relationships have on the state of those

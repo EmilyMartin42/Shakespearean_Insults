@@ -4,11 +4,6 @@
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" exclude-result-prefixes="#all"
     version="3.0">
     <!-- =============================================================== -->
-    <!-- TODO: Compute max width and use to determine:                   -->
-    <!--   extent of vertical ruling lines                               -->
-    <!--   position of bar labels (insult types)                         -->
-    <!--   width setting on <svg>                                        -->
-    <!--   ruling lines at left and right edges (currently at about 72)  -->
     <!--                                                                 -->
     <!-- For future reference:                                           -->
     <!--   I find it easiest to draw a butterfly chart directly in the   -->
@@ -29,24 +24,24 @@
     <!-- Variables -->
     <xsl:variable name="bar-wide" as="xs:integer" select="40"/>
     <xsl:variable name="space" as="xs:integer" select="$bar-wide div 2"/>
-    <xsl:variable name="max-wide" as="xs:integer" select="1500"/>
+    <xsl:variable name="max-wide" as="xs:integer" select="(count($all-plays//insultStart[@insType='nameCall']) * $x-scale) + 60"/>
     <xsl:variable name="y-scale" as="xs:integer" select="4"/>
     <xsl:variable name="x-scale" as="xs:integer" select="10"/>
     <xsl:variable name="distinct-insult-types" as="xs:string+"
         select="$all-plays//@insType => distinct-values()"/>
     <xsl:variable name="max-high" as="xs:integer"
         select="($bar-wide + $space) * count($distinct-insult-types)"/>
-    <xsl:variable name="mid" as="xs:integer" select="($max-wide div 2) + 25"/>
+    <xsl:variable name="mid" as="xs:integer" select="($max-wide div 2)"/>
     <xsl:variable name="ruling-color" as="xs:string" select="'#E0E0E0'"/>
 
     <xsl:template name="xsl:initial-template">
-        <svg height="{$max-high + 200}" width="{$max-wide + 350}">
+        <svg viewBox="-100 0 2100 1000" width="100%">
             <g transform="translate(150, {$max-high + 100})">
                 <!-- axes-->
-                <line x1="50" x2="{$max-wide}" y1="0" y2="0" stroke="{$ruling-color}"/>
-                <line x1="50" x2="{$max-wide}" y1="-{$max-high}" y2="-{$max-high}"
+                <line x1="0" x2="{$max-wide}" y1="0" y2="0" stroke="{$ruling-color}"/>
+                <line x1="0" x2="{$max-wide}" y1="-{$max-high}" y2="-{$max-high}"
                     stroke="{$ruling-color}"/>
-                <line x1="50" x2="50" y1="0" y2="-{$max-high}" stroke="{$ruling-color}"/>
+                <line x1="0" x2="0" y1="0" y2="-{$max-high}" stroke="{$ruling-color}"/>
                 <line x1="{$max-wide}" x2="{$max-wide}" y1="0" y2="-{$max-high}"
                     stroke="{$ruling-color}"/>
                 <line x1="{$mid}" x2="{$mid}" y1="0" y2="-{$max-high}" stroke="{$ruling-color}"/>
@@ -62,16 +57,15 @@
                 <!-- ==================================================== -->
                 <!-- Vertical ruling lines and labels                     -->
                 <!--                                                      -->
-                <!-- TODO: Compute width instead of hard-coding to 80     -->
                 <!-- ==================================================== -->
-                <xsl:for-each select="0 to 8">
-                    <xsl:variable name="left-x-pos" as="xs:integer" select="$mid + 100 * current()"/>
-                    <xsl:variable name="right-x-pos" as="xs:integer" select="$mid - 100 * current()"/>
+                <xsl:for-each select="0 to ($mid div 100)">
+                    <xsl:variable name="left-x-pos" as="xs:double" select="$mid + 100 * current()"/>
+                    <xsl:variable name="right-x-pos" as="xs:double" select="$mid - 100 * current()"/>
                     <!-- ================================================ -->
                     <!-- Comedies on right                                -->
                     <!-- ================================================ -->
                     <line x1="{$left-x-pos}" y1="0" x2="{$left-x-pos}" y2="-{$max-high}"
-                        stroke="{$ruling-color}"/>
+                        stroke="{$ruling-color}" stroke-dasharray="3"/>
                     <text x="{$left-x-pos}" y="-{$max-high + 5}" fill="{$ruling-color}"
                         text-anchor="middle">
                         <xsl:value-of select="(position() - 1) * 10"/>
@@ -80,7 +74,7 @@
                     <!-- Tragedies on left                                -->
                     <!-- ================================================ -->
                     <line x1="{$right-x-pos}" y1="0" x2="{$right-x-pos}" y2="-{$max-high}"
-                        stroke="{$ruling-color}"/>
+                        stroke="{$ruling-color}" stroke-dasharray="3"/>
                     <text x="{$right-x-pos}" y="-{$max-high + 5}" fill="{$ruling-color}"
                         text-anchor="middle">
                         <xsl:value-of select="(position() - 1) * 10"/>
@@ -101,33 +95,36 @@
                         select="($space * 4) + (position() - 1.5) * ($bar-wide + $space)"/>
                     <xsl:variable name="y-pos-text" as="xs:double" select="$y-pos - $bar-wide div 2"/>
                     <!-- ================================================ -->
-                    <!-- Comedies (right, red)                            -->
+                    <!-- Comedies (right, blue)                            -->
                     <!-- ================================================ -->
                     <xsl:variable name="com-insult-count" as="xs:integer"
                         select="count($comedies//@insType[. eq current()])"/>
                     <xsl:variable name="bar-width" as="xs:integer"
                         select="$com-insult-count * $x-scale"/>
                     <rect x="{$mid}" y="-{$y-pos}" width="{$bar-width}" height="{$bar-wide}"
-                        fill="red"/>
+                        fill="#5D81B9"/>
                     <text x="{$mid + $bar-width + 10}" y="-{$y-pos-text}" dominant-baseline="middle"
-                        fill="black">
+                        fill="{$ruling-color}">
                         <xsl:value-of select="$com-insult-count"/>
                     </text>
-                    <text x="{$mid + 820}" y="-{$y-pos-text}" fill="black">
+                    <text x="{$mid + 820}" y="-{$y-pos-text}" fill="{$ruling-color}">
                         <xsl:value-of select="current()"/>
                     </text>
                     <!-- ================================================ -->
-                    <!-- Tragedies (left, green)                          -->
+                    <!-- Tragedies (left, red)                          -->
                     <!-- ================================================ -->
                     <xsl:variable name="trag-insult-count" as="xs:integer"
                         select="count($tragedies//@insType[. eq current()])"/>
                     <xsl:variable name="bar-width" as="xs:integer"
                         select="$trag-insult-count * $x-scale"/>
                     <rect x="{$mid - $bar-width}" y="-{$y-pos}" width="{$bar-width}"
-                        height="{$bar-wide}" fill="green"/>
+                        height="{$bar-wide}" fill="#870C1D"/>
                     <text x="{$mid - $bar-width - 10}" y="-{$y-pos - $bar-wide div 2}"
-                        dominant-baseline="middle" fill="black" text-anchor="end">
+                        dominant-baseline="middle" fill="{$ruling-color}" text-anchor="end">
                         <xsl:value-of select="$trag-insult-count"/>
+                    </text>
+                    <text x="{$mid - 820}" y="-{$y-pos-text}" fill="{$ruling-color}" text-anchor="end">
+                        <xsl:value-of select="current()"/>
                     </text>
                 </xsl:for-each>
             </g>
