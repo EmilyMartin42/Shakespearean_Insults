@@ -249,11 +249,14 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
 }
 /* These are specific to the insult pages */
+#insultPageContainer {
+    display: flex;
+}
 #insultFlex {
-    margin-left: 20%;
     border: 2px solid black;
     text-align: center;
     width: 75%;
+    margin-right: 2.5%;
 }
 .mndInsults {
     border: 2px solid black;
@@ -269,8 +272,9 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     flex-direction: column;
     border: 2px solid black;
     background-color: #B80003;
-    width: 15%;
-    height: auto;
+    width: 20%;
+    margin-right: 5%;
+    height: min-content;
     margin-left: .5%;
     position: sticky;
     top: 35vh;
