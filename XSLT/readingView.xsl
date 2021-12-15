@@ -24,7 +24,8 @@
                 <xsl:value-of select="sha:normalize(replace($input, ' !', '!'), ($iteration + 1))"/>
             </xsl:when>
             <xsl:when test="$iteration = 4">
-                <xsl:value-of select="sha:normalize(replace($input, ' \?', '?'), ($iteration + 1))"/>
+                <xsl:value-of select="sha:normalize(replace($input, ' \?', '?'), ($iteration + 1))"
+                />
             </xsl:when>
             <xsl:when test="$iteration = 5">
                 <xsl:value-of select="sha:normalize(replace($input, ' ;', ';'), -1)"/>
@@ -74,11 +75,13 @@
                 </div>
                 <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/></h1>
                 <!-- This needs changed per insultPage -->
-                <div id="insultFlex">
-                    <!-- This is where insults would go -->
-                    <xsl:apply-templates select="//insult" mode="readView"/>
+                <div>
+                    <xsl:comment>#include virtual="insultSort.xhtml"</xsl:comment>
+                    <div id="insultFlex">
+                        <!-- This is where insults would go -->
+                        <xsl:apply-templates select="//insult" mode="readView"/>
+                    </div>
                 </div>
-                <xsl:comment>#include virtual="insultSort.xhtml"</xsl:comment>
                 <script src="sort.js"/>
             </body>
         </html>
@@ -99,7 +102,7 @@
             <xsl:apply-templates select="sha:normalize(normalize-space(.), 1)"/>
             <span>
                 <xsl:attribute name="title" select="
-                    concat('Insult Type: ', $insType, codepoints-to-string(9), 'Gender: ', $gender, codepoints-to-string(10), 'Relationship: ', $rel, codepoints-to-string(9), 'Relationship State: ', $relState, codepoints-to-string(10), 'Speech Act: ', $speechAct, codepoints-to-string(9), 'Illocutionary Type: ', $illocType, codepoints-to-string(10), 'Maxim: ', $maxim)"/>
+                        concat('Insult Type: ', $insType, codepoints-to-string(9), 'Gender: ', $gender, codepoints-to-string(10), 'Relationship: ', $rel, codepoints-to-string(9), 'Relationship State: ', $relState, codepoints-to-string(10), 'Speech Act: ', $speechAct, codepoints-to-string(9), 'Illocutionary Type: ', $illocType, codepoints-to-string(10), 'Maxim: ', $maxim)"/>
                 <xsl:text>  &#9432;</xsl:text>
             </span>
         </p>
