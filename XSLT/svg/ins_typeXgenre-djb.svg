@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="980" width="1850">
+   <g transform="translate(150, 880)">
+      <line x1="50" x2="1500" y1="0" y2="0" stroke="#E0E0E0"/>
+      <line x1="50" x2="1500" y1="-780" y2="-780" stroke="#E0E0E0"/>
+      <line x1="50" x2="50" y1="0" y2="-780" stroke="#E0E0E0"/>
+      <line x1="1500" x2="1500" y1="0" y2="-780" stroke="#E0E0E0"/>
+      <line x1="775" x2="775" y1="0" y2="-780" stroke="#E0E0E0"/>
+      <text x="775"
+            y="-840"
+            fill="#E0E0E0"
+            font-size="22"
+            text-anchor="middle">Insult type counts by genre</text>
+      <text x="387.5" y="-810" fill="#E0E0E0" text-anchor="middle">Tragedies</text>
+      <text x="1162.5" y="-810" fill="#E0E0E0" text-anchor="middle">Comedies</text>
+      <line x1="775" y1="0" x2="775" y2="-780" stroke="#E0E0E0"/>
+      <text x="775" y="-785" fill="#E0E0E0" text-anchor="middle">0</text>
+      <line x1="775" y1="0" x2="775" y2="-780" stroke="#E0E0E0"/>
+      <text x="775" y="-785" fill="#E0E0E0" text-anchor="middle">0</text>
+      <line x1="875" y1="0" x2="875" y2="-780" stroke="#E0E0E0"/>
+      <text x="875" y="-785" fill="#E0E0E0" text-anchor="middle">10</text>
+      <line x1="675" y1="0" x2="675" y2="-780" stroke="#E0E0E0"/>
+      <text x="675" y="-785" fill="#E0E0E0" text-anchor="middle">10</text>
+      <line x1="975" y1="0" x2="975" y2="-780" stroke="#E0E0E0"/>
+      <text x="975" y="-785" fill="#E0E0E0" text-anchor="middle">20</text>
+      <line x1="575" y1="0" x2="575" y2="-780" stroke="#E0E0E0"/>
+      <text x="575" y="-785" fill="#E0E0E0" text-anchor="middle">20</text>
+      <line x1="1075" y1="0" x2="1075" y2="-780" stroke="#E0E0E0"/>
+      <text x="1075" y="-785" fill="#E0E0E0" text-anchor="middle">30</text>
+      <line x1="475" y1="0" x2="475" y2="-780" stroke="#E0E0E0"/>
+      <text x="475" y="-785" fill="#E0E0E0" text-anchor="middle">30</text>
+      <line x1="1175" y1="0" x2="1175" y2="-780" stroke="#E0E0E0"/>
+      <text x="1175" y="-785" fill="#E0E0E0" text-anchor="middle">40</text>
+      <line x1="375" y1="0" x2="375" y2="-780" stroke="#E0E0E0"/>
+      <text x="375" y="-785" fill="#E0E0E0" text-anchor="middle">40</text>
+      <line x1="1275" y1="0" x2="1275" y2="-780" stroke="#E0E0E0"/>
+      <text x="1275" y="-785" fill="#E0E0E0" text-anchor="middle">50</text>
+      <line x1="275" y1="0" x2="275" y2="-780" stroke="#E0E0E0"/>
+      <text x="275" y="-785" fill="#E0E0E0" text-anchor="middle">50</text>
+      <line x1="1375" y1="0" x2="1375" y2="-780" stroke="#E0E0E0"/>
+      <text x="1375" y="-785" fill="#E0E0E0" text-anchor="middle">60</text>
+      <line x1="175" y1="0" x2="175" y2="-780" stroke="#E0E0E0"/>
+      <text x="175" y="-785" fill="#E0E0E0" text-anchor="middle">60</text>
+      <line x1="1475" y1="0" x2="1475" y2="-780" stroke="#E0E0E0"/>
+      <text x="1475" y="-785" fill="#E0E0E0" text-anchor="middle">70</text>
+      <line x1="75" y1="0" x2="75" y2="-780" stroke="#E0E0E0"/>
+      <text x="75" y="-785" fill="#E0E0E0" text-anchor="middle">70</text>
+      <line x1="1575" y1="0" x2="1575" y2="-780" stroke="#E0E0E0"/>
+      <text x="1575" y="-785" fill="#E0E0E0" text-anchor="middle">80</text>
+      <line x1="-25" y1="0" x2="-25" y2="-780" stroke="#E0E0E0"/>
+      <text x="-25" y="-785" fill="#E0E0E0" text-anchor="middle">80</text>
+      <rect x="775" y="-50" width="10" height="40" fill="red"/>
+      <text x="795" y="-30" dominant-baseline="middle" fill="black">1</text>
+      <text x="1595" y="-30" fill="black">nameCall pAttack </text>
+      <rect x="775" y="-50" width="0" height="40" fill="green"/>
+      <text x="765"
+            y="-30"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">0</text>
+      <rect x="775" y="-110" width="20" height="40" fill="red"/>
+      <text x="805" y="-90" dominant-baseline="middle" fill="black">2</text>
+      <text x="1595" y="-90" fill="black"> nameCall pAttack sexGen</text>
+      <rect x="775" y="-110" width="0" height="40" fill="green"/>
+      <text x="765"
+            y="-90"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">0</text>
+      <rect x="775" y="-170" width="40" height="40" fill="red"/>
+      <text x="825" y="-150" dominant-baseline="middle" fill="black">4</text>
+      <text x="1595" y="-150" fill="black">backComp</text>
+      <rect x="775" y="-170" width="0" height="40" fill="green"/>
+      <text x="765"
+            y="-150"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">0</text>
+      <rect x="775" y="-230" width="40" height="40" fill="red"/>
+      <text x="825" y="-210" dominant-baseline="middle" fill="black">4</text>
+      <text x="1595" y="-210" fill="black">sexGen</text>
+      <rect x="775" y="-230" width="0" height="40" fill="green"/>
+      <text x="765"
+            y="-210"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">0</text>
+      <rect x="775" y="-290" width="80" height="40" fill="red"/>
+      <text x="865" y="-270" dominant-baseline="middle" fill="black">8</text>
+      <text x="1595" y="-270" fill="black">nameCall sexGen</text>
+      <rect x="775" y="-290" width="0" height="40" fill="green"/>
+      <text x="765"
+            y="-270"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">0</text>
+      <rect x="775" y="-350" width="40" height="40" fill="red"/>
+      <text x="825" y="-330" dominant-baseline="middle" fill="black">4</text>
+      <text x="1595" y="-330" fill="black">slander</text>
+      <rect x="695" y="-350" width="80" height="40" fill="green"/>
+      <text x="685"
+            y="-330"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">8</text>
+      <rect x="775" y="-410" width="100" height="40" fill="red"/>
+      <text x="885" y="-390" dominant-baseline="middle" fill="black">10</text>
+      <text x="1595" y="-390" fill="black">pAttack sexGen</text>
+      <rect x="715" y="-410" width="60" height="40" fill="green"/>
+      <text x="705"
+            y="-390"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">6</text>
+      <rect x="775" y="-470" width="180" height="40" fill="red"/>
+      <text x="965" y="-450" dominant-baseline="middle" fill="black">18</text>
+      <text x="1595" y="-450" fill="black">nameCall slander</text>
+      <rect x="735" y="-470" width="40" height="40" fill="green"/>
+      <text x="725"
+            y="-450"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">4</text>
+      <rect x="775" y="-530" width="160" height="40" fill="red"/>
+      <text x="945" y="-510" dominant-baseline="middle" fill="black">16</text>
+      <text x="1595" y="-510" fill="black">pAttack slander</text>
+      <rect x="695" y="-530" width="80" height="40" fill="green"/>
+      <text x="685"
+            y="-510"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">8</text>
+      <rect x="775" y="-590" width="400" height="40" fill="red"/>
+      <text x="1185" y="-570" dominant-baseline="middle" fill="black">40</text>
+      <text x="1595" y="-570" fill="black">sexGen slander</text>
+      <rect x="775" y="-590" width="0" height="40" fill="green"/>
+      <text x="765"
+            y="-570"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">0</text>
+      <rect x="775" y="-650" width="170" height="40" fill="red"/>
+      <text x="955" y="-630" dominant-baseline="middle" fill="black">17</text>
+      <text x="1595" y="-630" fill="black">nameCall pAttack</text>
+      <rect x="235" y="-650" width="540" height="40" fill="green"/>
+      <text x="225"
+            y="-630"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">54</text>
+      <rect x="775" y="-710" width="340" height="40" fill="red"/>
+      <text x="1125" y="-690" dominant-baseline="middle" fill="black">34</text>
+      <text x="1595" y="-690" fill="black">pAttack</text>
+      <rect x="115" y="-710" width="660" height="40" fill="green"/>
+      <text x="105"
+            y="-690"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">66</text>
+      <rect x="775" y="-770" width="780" height="40" fill="red"/>
+      <text x="1565" y="-750" dominant-baseline="middle" fill="black">78</text>
+      <text x="1595" y="-750" fill="black">nameCall</text>
+      <rect x="15" y="-770" width="760" height="40" fill="green"/>
+      <text x="5"
+            y="-750"
+            dominant-baseline="middle"
+            fill="black"
+            text-anchor="end">76</text>
+   </g>
+</svg>
