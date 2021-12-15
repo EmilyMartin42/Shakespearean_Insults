@@ -325,6 +325,6 @@ table {
 }
 .pagination a:hover:not(.active) {background-color: #958975;}
 
-.wTable {
+.analysis {
     text-align: center;
 }

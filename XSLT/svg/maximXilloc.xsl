@@ -16,7 +16,7 @@
 
 
     <xsl:template name="xsl:initial-template">
-        <svg viewBox="-75 100 1000 800" width="100%">
+        <svg viewBox="-75 100 1000 720" width="100%">
             <g transform="translate(100, {$max-wide + 200})">
                 <!-- axes -->
                 <line x1="50" x2="{$max-wide + 100}" y1="0" y2="0" stroke="#E0E0E0"/>
