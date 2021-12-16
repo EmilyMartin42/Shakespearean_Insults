@@ -73,6 +73,10 @@ body {
     font-weight: 300;
     color: var(--textColor);
 }
+a {
+    color: var(--textColor);
+    text-decoration: none;
+}
 .nav {
     display: flex;
     width: auto;
@@ -93,7 +97,7 @@ body {
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
-body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl body.insultPage a.insultPage {
+body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis, body.concl a.concl, body.insultPage a.insultPage {
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
