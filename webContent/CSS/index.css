@@ -284,7 +284,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     height: min-content;
     margin-left: .5%;
     position: sticky;
-    top: 35vh;
+    top: 5vh;
 }
 .sort {
     font-family: "ptBold";
