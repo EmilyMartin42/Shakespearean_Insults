@@ -245,12 +245,15 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
 }
 .externalLink {
     color: var(--hoverColor);
+    text-decoration: underline;
 }
 .externalLink:hover {
     color: var(--textColor);
+    text-decoration: underline;
 }
 .externalLink:visited {
     color: var(--textColor);
+    text-decoration: underline;
 }
 /* These are specific to the insult pages */
 #insultPageContainer {
