@@ -60,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     width: auto;
-    height: 5em;
+    height: 10vh;
     margin: auto;
     background-color: var(--headerColor);
     margin: -8px -8px 0 -8px;
@@ -69,7 +69,7 @@ body {
 #title {
     display: flex;
     font-family: 'sea';
-    font-size: 3em;
+    font-size: 4vw;
     font-weight: 300;
     color: var(--textColor);
 }
@@ -77,7 +77,7 @@ body {
     display: flex;
     width: auto;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 2;
 }
 .navItem {
@@ -85,9 +85,9 @@ body {
     margin-right: 1em;
     color: var(--textColor);
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.6vw;
     font-weight: 900;
-    padding: .9em;
+    padding: 1em;
 }
 .navItem:hover {
     background-color: var(--hoverColor);
