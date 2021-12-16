@@ -52,18 +52,20 @@ body {
     overflow-x: hidden;
 }
 p {
-    text-align: center;
     font-family: 'pt';
     color: var(--textColor);
-    width: 60vw;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
 }
 .insult {
     font-family: 'pt';
     color: var(--textColor);
     margin: 2em 1em;
+}
+.notice {
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 #head {
     display: flex;
