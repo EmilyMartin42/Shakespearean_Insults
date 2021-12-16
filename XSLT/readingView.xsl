@@ -43,7 +43,7 @@
                 <!-- This needs changed per insultPage -->
                 <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
-            <body>
+            <body class="corp">
                 <xsl:comment>#include virtual="menu.xhtml"</xsl:comment>
                 <div class="pagination">
                     <xsl:choose>
@@ -74,8 +74,15 @@
                     </xsl:choose>
                 </div>
                 <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/></h1>
+                <p>Notice: While using the sorting box on the left, that the intended use is not
+                    that of a filter system. Instead, when any of the checkboxes is selected any
+                    insult which has a matching attribute value will be displayed. E.g. If I have
+                    selected slander and direct speech, I will get insults that have slander with
+                    indirect speech and direct insults with types other than slander. While this
+                    system is confusing, it is a product of time limits placed upon the creation of
+                    this system.</p>
                 <!-- This needs changed per insultPage -->
-                <div>
+                <div id="insultPageContainer">
                     <xsl:comment>#include virtual="insultSort.xhtml"</xsl:comment>
                     <div id="insultFlex">
                         <!-- This is where insults would go -->
