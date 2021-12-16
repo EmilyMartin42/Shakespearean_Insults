@@ -51,6 +51,15 @@ body {
     font-family: 'pt';
     overflow-x: hidden;
 }
+p {
+    text-align: center;
+    font-family: 'pt';
+    color: var(--textColor);
+    width: 60vw;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
 .insult {
     font-family: 'pt';
     color: var(--textColor);
@@ -104,7 +113,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
 #mainTitle {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 3vh;
     margin-bottom: 1%;
     font-size: 3em;
     font-weight: 900;
