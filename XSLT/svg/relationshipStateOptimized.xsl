@@ -16,10 +16,10 @@
     <xsl:variable name="yScale" as="xs:integer" select="400"/>
     <xsl:variable name="insults" as="element()*" select="//insults"/>
 
-    <xsl:template match="/">
+    <xsl:template name="xsl:initial-template">
         <svg width="150%" height="150%">
             <g transform="translate(200, 500)">
-                <xsl:apply-templates select="//insults" mode="insType"/>
+                <xsl:apply-templates select="$all_plays//insults" mode="insType"/>
                 <!-- ==================== AXES BELOW ==================== -->
                 <g>
                     <text x="{$xLength div 2 - 150}" y="-{$yScale + 25}" font-weight="bold">States

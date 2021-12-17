@@ -41,7 +41,7 @@
                     <!-- ==================== LEGEND BELOW ==================== -->
                     <g>
                         <rect x="{$xLength + 20}" y="-{$yScale div 4}" height="15" width="15"
-                            fill="green"/>
+                            fill="#5D81B9"/>
                         <text x="{$xLength + 45}" y="-{$yScale div 4 - 12.5}" stroke="#E0E0E0"
                             fill="#E0E0E0">Positive Relationship State</text>
                         <rect x="{$xLength + 20}" y="-{$yScale div 4 * 2}" height="15" width="15"
@@ -49,7 +49,7 @@
                         <text x="{$xLength + 45}" y="-{$yScale div 4 * 2 - 12.5}" stroke="#E0E0E0"
                             fill="#E0E0E0">Neutral Relationship State</text>
                         <rect x="{$xLength + 20}" y="-{$yScale div 4 * 3}" height="15" width="15"
-                            fill="red"/>
+                            fill="#870C1D"/>
                         <text x="{$xLength + 45}" y="-{$yScale div 4 * 3 - 12.5}" stroke="#E0E0E0"
                             fill="#E0E0E0">Negative Relationship State</text>
                     </g>
@@ -62,11 +62,10 @@
     <xsl:template match="$all_plays//insults" mode="insType">
         <xsl:variable name="insultTotal" as="xs:integer" select="count(insult/insultStart)"/>
         <g transform="translate({$barSpacing}, 0)">
-            <xsl:for-each select="1 to $relCount">
-                <!--<xsl:sort select="count()"/>-->
+            <xsl:for-each select="1 to $relCount">               
                 <xsl:variable name="i" as="xs:integer" select="."/>
                 <xsl:variable name="relType" as="xs:string"
-                    select="distinct-values($insults/insult/insultStart/@rel)[$i]"/>
+                    select="distinct-values($all_plays//insult/insultStart/@rel)[$i]"/>
                 <xsl:variable name="curTotal" as="xs:integer"
                     select="count($insults/insult/insultStart[@rel = $relType])"/>
                 <xsl:variable name="posTotal" as="xs:integer"
@@ -82,15 +81,15 @@
                 <xsl:variable name="negHeight" as="xs:float"
                     select="($negTotal div $curTotal * $yScale)"/>
                 <xsl:for-each select=".">
-                    <xsl:sort select="$relType"/>
+                    <xsl:sort select="$posTotal" data-type="number" order="descending"/>
                     <rect x="{($i - 1) * ($barWidth + $barSpacing)}" y="-{$posHeight}"
-                        height="{$posHeight}" width="{$barWidth}" fill="green"/>
+                        height="{$posHeight}" width="{$barWidth}" fill="#5D81B9"/>
                     <rect x="{($i - 1) * ($barWidth + $barSpacing)}"
                         y="-{$neutralHeight + $posHeight}" height="{$neutralHeight}"
                         width="{$barWidth}" fill="gray"/>
                     <rect x="{($i - 1) * ($barWidth + $barSpacing)}"
                         y="-{$negHeight + $posHeight + $neutralHeight}" height="{$negHeight}"
-                        width="{$barWidth}" fill="crimson"/>
+                        width="{$barWidth}" fill="#870C1D"/>
                     <text x="{($i - 1) * ($barWidth + $barSpacing)+ $barWidth div 2}" y="25"
                         text-anchor="middle" stroke="#E0E0E0" fill="#E0E0E0">
                         <xsl:value-of select="$relType"/>
