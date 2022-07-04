@@ -191,7 +191,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     transform: translateY(0);
 }
 .card:hover .cardContent > *:not(.playTitle){
-    opacity: 1;;
+    opacity: 1;
 }
 .ham{
     background-image: url(/images/ham.jpg)
