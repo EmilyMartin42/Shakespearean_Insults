@@ -51,14 +51,14 @@
                         <ol class="list">
                             <li>Do the other features influence insult type? Specifically, is there
                                 any correlation between insult count and insult type to play genre
-                                (tragedy vs comedy)</li><br/>
+                                (tragedy vs comedy)</li>
                             <li>Is there a correlation between type of relationship and relationship
                                 status (i.e is there animosity or not) and does the state of the
-                                relationship lend to distinct insult types?</li><br/>
+                                relationship lend to distinct insult types?</li>
                             <li>In order to convey to the insultee that they are indeed being
                                 insulted is there a particular maxim that is most often flouted? Is
                                 there any correlation between maxim flouted and illocutionary speech
-                                act type?</li><br/>
+                                act type?</li>
                             <li>Is there a correlation between the gender of the speaker and the
                                 type of speech act (direct vs. indirect)? Are there certain
                                 combinations of gender between speaker and hearer that lead to a

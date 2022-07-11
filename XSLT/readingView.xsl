@@ -101,17 +101,60 @@
         <xsl:variable name="speechAct" as="xs:string?" select="insultStart/@speechAct"/>
         <xsl:variable name="illocType" as="xs:string?" select="insultStart/@illoc-type"/>
         <xsl:variable name="maxim" as="xs:string?" select="insultStart/@maxim"/>
-        <p>
+        <a>
             <xsl:attribute name="class">
                 <xsl:value-of select="insultStart/@*"/>
                 <xsl:text> insult</xsl:text>
             </xsl:attribute>
-            <xsl:apply-templates select="sha:normalize(normalize-space(.), 1)"/>
+            <xsl:attribute name="href">
+                <xsl:text>hamReading.xhtml/#</xsl:text>
+                <xsl:value-of select="position()"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="sha:normalize(normalize-space(), 1)"/>
             <span>
-                <xsl:attribute name="title" select="
-                        concat('Insult Type: ', $insType, codepoints-to-string(9), 'Gender: ', $gender, codepoints-to-string(10), 'Relationship: ', $rel, codepoints-to-string(9), 'Relationship State: ', $relState, codepoints-to-string(10), 'Speech Act: ', $speechAct, codepoints-to-string(9), 'Illocutionary Type: ', $illocType, codepoints-to-string(10), 'Maxim: ', $maxim)"/>
-                <xsl:text>  &#9432;</xsl:text>
+                <xsl:attribute name="class">
+                    <xsl:text>infoSymbol</xsl:text>
+                </xsl:attribute>
+                <xsl:text> ⓘ</xsl:text>
             </span>
-        </p>
+            <span>
+                <xsl:attribute name="class">
+                    <xsl:text>infoBox</xsl:text>
+                </xsl:attribute>
+                <table>
+                    <xsl:attribute name="class">
+                        <xsl:text>infoTable</xsl:text>
+                    </xsl:attribute>
+                    <tr>
+                        <td>Insult type:</td>
+                        <td><xsl:value-of select="$insType"/></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><xsl:value-of select="$gender"/></td>
+                    </tr>
+                    <tr>
+                        <td>Relationship:</td>
+                        <td><xsl:value-of select="$rel"/></td>
+                    </tr>
+                    <tr>
+                        <td>Relationship State:</td>
+                        <td><xsl:value-of select="$relState"/></td>
+                    </tr>
+                    <tr>
+                        <td>Speech Act:</td>
+                        <td><xsl:value-of select="$speechAct"/></td>
+                    </tr>
+                    <tr>
+                        <td>Illocutionary Type:</td>
+                        <td><xsl:value-of select="$illocType"/></td>
+                    </tr>
+                    <tr>
+                        <td>Maxim:</td>
+                        <td><xsl:value-of select="$maxim"/></td>
+                    </tr>
+                </table>
+            </span>
+        </a>
     </xsl:template>
 </xsl:stylesheet>
