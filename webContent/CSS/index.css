@@ -293,7 +293,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     border: 2px solid black;
     background-color: #B80003;
     width: 22.5%;
-    margin-right: 5%;
+    margin-right: 2.5%;
     height: min-content;
     margin-left: .5%;
     position: sticky;
