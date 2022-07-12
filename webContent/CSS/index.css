@@ -1,3 +1,6 @@
+/* 
+ * Root elements belo
+ */
 @font-face {
     font-family: 'ptBold';
     src: url('/../Fonts/ptserif-bold-webfont.woff2') format('woff2'),
@@ -6,7 +9,6 @@
     font-style: normal;
 
 }
-
 @font-face {
     font-family: 'ptBoldItalic';
     src: url('/../Fonts/ptserif-bolditalic-webfont.woff2') format('woff2'),
@@ -15,7 +17,6 @@
     font-style: normal;
 
 }
-
 @font-face {
     font-family: 'ptItalic';
     src: url('/../Fonts/ptserif-italic-webfont.woff2') format('woff2'),
@@ -24,7 +25,6 @@
     font-style: normal;
 
 }
-
 @font-face {
     font-family: 'pt';
     src: url('/../Fonts/ptserif-regular-webfont.woff2') format('woff2'),
@@ -46,6 +46,9 @@
     --headerColor: #8F0002;
     --hoverColor: #B80003;
 }
+/* 
+ * Default element styling below
+ */
 body {
     background-color: var(--backgroundColor);
     font-family: 'pt';
@@ -55,6 +58,23 @@ p {
     font-family: 'pt';
     color: var(--textColor);
 }
+a {
+    color: var(--textColor);
+    text-decoration: none;
+}
+table, th, tr, td {
+    border: 2px #E0E0E0 solid;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px;
+}
+table {
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 
+ * Class styling below
+ */
 .insult {
     display: block;
     font-family: 'pt';
@@ -68,27 +88,6 @@ p {
     margin: auto;
     margin-top: 1em;
     margin-bottom: 2em;
-}
-#head {
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: 10vh;
-    margin: auto;
-    background-color: var(--headerColor);
-    margin: -8px -8px 0 -8px;
-    padding: 0em 0em 0em 1em;
-}
-#title {
-    display: flex;
-    font-family: 'sea';
-    font-size: 4vw;
-    font-weight: 300;
-    color: var(--textColor);
-}
-a {
-    color: var(--textColor);
-    text-decoration: none;
 }
 .nav {
     display: flex;
@@ -114,15 +113,6 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     background-color: var(--hoverColor);
     box-shadow: 10px 5px #958975;
 }
-#mainTitle {
-    display: flex;
-    justify-content: center;
-    margin-top: 3vh;
-    margin-bottom: 1%;
-    font-size: 3em;
-    font-weight: 900;
-    color: var(--textColor)
-}
 .subTitle {
     margin-top: 25px;
     margin-bottom: 1px;
@@ -130,31 +120,6 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     justify-content: center;
     font-size: 2.5em;
     color: var(--textColor);
-}
-#abtDev, #over, .bordered {
-    border: 2px solid black;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    color: var(--textColor);
-    width: 75%;
-}
-#devTitle {
-    flex-basis: 100%;
-}
-#footer {
-    display: flex;
-    justify-content: center;
-    width: 102%;
-    margin-left: -8px;
-    margin-bottom: -8px;
-    height: auto;
-    color: #494132;
-    background-color: #161513;
-}
-#abtDev ul li {
-    margin-bottom: 1em;
 }
 .card {
     display: inline-block;
@@ -268,16 +233,6 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
     text-decoration: underline;
 }
-/* These are specific to the insult pages */
-#insultPageContainer {
-    display: flex;
-}
-#insultFlex {
-    border: 2px solid black;
-    text-align: center;
-    width: 75%;
-    margin-right: 2.5%;
-}
 .mndInsults {
     border: 2px solid black;
     margin-top: -230px;
@@ -288,41 +243,19 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
     width: 75%;
 }
-#sortContainer {
-    flex-direction: column;
-    border: 2px solid black;
-    background-color: #B80003;
-    width: 20%;
-    margin-right: 5%;
-    height: min-content;
-    margin-left: .5%;
-    position: sticky;
-    top: 5vh;
-}
 .sort {
     font-family: "ptBold";
-    margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 5px 0 5px 15px;
 }
 details.sort:hover {
     cursor: pointer;
 }
-details.sort > p {
+details.sort > p, details.sort > details > details > p {
     font-size: .85em;
+    margin: .25em auto;
 }
 .active {
   background-color: #B80003;
-}
-table, th, tr, td {
-    border: 2px #E0E0E0 solid;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 15px;
-}
-table {
-    margin-right: auto;
-    margin-left: auto;
 }
 .content {
   padding: 0 18px;
@@ -352,7 +285,6 @@ table {
 .analysis {
     text-align: center;
 }
-
 .list {
     text-align: left;
 }
@@ -362,10 +294,88 @@ table {
 .infoSymbol:hover + .infoBox {
     display: inline-block;
     position: absolute;
+    right: 0;
 }
 .infoTable {
     font-size: .75em;
     color: #E0E0E0;
     padding: 0;
     background: #2C2A25;
+}
+/* 
+ * Id styling below
+ */
+#head {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 10vh;
+    margin: auto;
+    background-color: var(--headerColor);
+    margin: -8px -8px 0 -8px;
+    padding: 0em 0em 0em 1em;
+}
+#title {
+    display: flex;
+    font-family: 'sea';
+    font-size: 4vw;
+    font-weight: 300;
+    color: var(--textColor);
+}
+#mainTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 1%;
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--textColor)
+}
+#devTitle {
+    flex-basis: 100%;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 102%;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    height: auto;
+    color: #494132;
+    background-color: #161513;
+}
+#insultPageContainer {
+    display: flex;
+}
+#insultFlex {
+    border: 2px solid black;
+    text-align: center;
+    width: 75%;
+    margin-right: 2.5%;
+}
+#sortContainer {
+    flex-direction: column;
+    border: 2px solid black;
+    background-color: #B80003;
+    width: 22.5%;
+    margin-right: 2.5%;
+    height: min-content;
+    margin-left: .5%;
+    position: sticky;
+    top: 5vh;
+}
+/* 
+ * Mixed styling below
+ */
+#abtDev, #over, .bordered {
+    border: 2px solid black;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: var(--textColor);
+    width: 75%;
+}
+#abtDev ul li {
+    margin-bottom: 1em;
 }
