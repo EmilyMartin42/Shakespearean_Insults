@@ -292,7 +292,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     flex-direction: column;
     border: 2px solid black;
     background-color: #B80003;
-    width: 20%;
+    width: 22.5%;
     margin-right: 5%;
     height: min-content;
     margin-left: .5%;
@@ -301,15 +301,14 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
 }
 .sort {
     font-family: "ptBold";
-    margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 5px 0 5px 15px;
 }
 details.sort:hover {
     cursor: pointer;
 }
-details.sort > p {
+details.sort > p, details.sort > details > details > p {
     font-size: .85em;
+    margin: .25em auto;
 }
 .active {
   background-color: #B80003;
@@ -362,6 +361,7 @@ table {
 .infoSymbol:hover + .infoBox {
     display: inline-block;
     position: absolute;
+    right: 0;
 }
 .infoTable {
     font-size: .75em;
