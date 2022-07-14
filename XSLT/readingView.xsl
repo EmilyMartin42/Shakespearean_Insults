@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sha="http://insults.obdurodon.org"
-    exclude-result-prefixes="xs" xmlns="http://www.w3.org/1999/xhtml" version="3.0">
-    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no"
-        indent="yes"/>
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:sha="http://insults.obdurodon.org" exclude-result-prefixes="xs"
+    xmlns="http://www.w3.org/1999/xhtml" version="3.0">
+    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no" indent="yes"/>
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <title><xsl:value-of select="//titleStmt/title"/> Insults</title>
+                <title>
+                    <xsl:value-of select="//titleStmt/title"/>
+ Insults</title>
                 <!-- This needs changed per insultPage -->
                 <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
@@ -41,7 +43,8 @@
                         </xsl:when>
                     </xsl:choose>
                 </div>
-                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/></h1>
+                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/>
+                </h1>
                 <p class="notice">Notice: While using the sorting box on the left, that the intended use is not
                     that of a filter system. Instead, when any of the checkboxes is selected any
                     insult which has a matching attribute value will be displayed. E.g. If I have
@@ -79,50 +82,64 @@
                 <xsl:value-of select="position()"/>
             </xsl:attribute>
             <xsl:apply-templates select="replace(normalize-space(), ' ([,.!?;:])', '$1')"/>
-            <span>
-                <xsl:attribute name="class">
-                    <xsl:text>infoSymbol</xsl:text>
-                </xsl:attribute>
-                <xsl:text> ⓘ</xsl:text>
-            </span>
-            <span>
-                <xsl:attribute name="class">
-                    <xsl:text>infoBox</xsl:text>
-                </xsl:attribute>
-                <table>
-                    <xsl:attribute name="class">
-                        <xsl:text>infoTable</xsl:text>
-                    </xsl:attribute>
-                    <tr>
-                        <td>Insult type:</td>
-                        <td><xsl:value-of select="$insType"/></td>
-                    </tr>
-                    <tr>
-                        <td>Gender:</td>
-                        <td><xsl:value-of select="$gender"/></td>
-                    </tr>
-                    <tr>
-                        <td>Relationship:</td>
-                        <td><xsl:value-of select="$rel"/></td>
-                    </tr>
-                    <tr>
-                        <td>Relationship State:</td>
-                        <td><xsl:value-of select="$relState"/></td>
-                    </tr>
-                    <tr>
-                        <td>Speech Act:</td>
-                        <td><xsl:value-of select="$speechAct"/></td>
-                    </tr>
-                    <tr>
-                        <td>Illocutionary Type:</td>
-                        <td><xsl:value-of select="$illocType"/></td>
-                    </tr>
-                    <tr>
-                        <td>Maxim:</td>
-                        <td><xsl:value-of select="$maxim"/></td>
-                    </tr>
-                </table>
-            </span>
         </a>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>infoSymbol</xsl:text>
+            </xsl:attribute>
+            <xsl:text> ⓘ</xsl:text>
+        </span>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>infoBox</xsl:text>
+            </xsl:attribute>
+            <table>
+                <xsl:attribute name="class">
+                    <xsl:text>infoTable</xsl:text>
+                </xsl:attribute>
+                <tr>
+                    <td>Insult type:</td>
+                    <td>
+                        <xsl:value-of select="$insType"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <xsl:value-of select="$gender"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Relationship:</td>
+                    <td>
+                        <xsl:value-of select="$rel"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Relationship State:</td>
+                    <td>
+                        <xsl:value-of select="$relState"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Speech Act:</td>
+                    <td>
+                        <xsl:value-of select="$speechAct"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Illocutionary Type:</td>
+                    <td>
+                        <xsl:value-of select="$illocType"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maxim:</td>
+                    <td>
+                        <xsl:value-of select="$maxim"/>
+                    </td>
+                </tr>
+            </table>
+        </span>
     </xsl:template>
 </xsl:stylesheet>
