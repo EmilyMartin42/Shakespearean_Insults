@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sha="http://insults.obdurodon.org"
-    exclude-result-prefixes="xs" xmlns="http://www.w3.org/1999/xhtml" version="3.0">
-    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no"
-        indent="yes"/>
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:sha="http://insults.obdurodon.org" exclude-result-prefixes="xs"
+    xmlns="http://www.w3.org/1999/xhtml" version="3.0">
+    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no" indent="yes"/>
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <title><xsl:value-of select="//titleStmt/title"/> Reading View</title>
+                <title>
+                    <xsl:value-of select="//titleStmt/title"/>
+ Reading View</title>
                 <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
             <body class="corp">
@@ -40,8 +42,30 @@
                         </xsl:when>
                     </xsl:choose>
                 </div>
-                <h1 id="mainTitle"><xsl:value-of select="//titleStmt/title"/></h1>
+                <h1 id="mainTitle">
+                    <xsl:value-of select="//titleStmt/title"/>
+                </h1>
+                <xsl:apply-templates select="//body/div/div/*[name() ne 'wordHoardHeader']"/>
             </body>
         </html>
     </xsl:template>
-</xsl:stylesheet>
+    <xsl:template match="head">
+        <h2>
+            <xsl:value-of select="."/>
+        </h2>
+    </xsl:template>
+    <xsl:template match="stage">
+        <p class="stage">
+            <xsl:value-of select="."/>
+        </p>
+    </xsl:template>
+    <xsl:template match="sp">
+        <p>
+            <span class="speaker">
+                <xsl:value-of select="speaker"/>
+            </span>
+            <xsl:text>: </xsl:text>
+            <xsl:value-of select="wordHoardTaggedLine ! normalize-space(.) ! replace(., ' ([,.!?;:])', '$1')"/>
+        </p>
+    </xsl:template>
+    </xsl:stylesheet>
