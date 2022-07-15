@@ -64,8 +64,13 @@
             <span class="speaker">
                 <xsl:value-of select="speaker"/>
             </span>
-            <xsl:apply-templates select="wordHoardTaggedLine ! normalize-space(.) ! replace(., ' ([,.!?;:])', '$1') => replace(., '([,.!?:;])([A-Z])', '$1 $2')"/>
+            <xsl:apply-templates select="wordHoardTaggedLine"/>
             <xsl:apply-templates select="wordHoardTaggedLine/stage"/>
         </div>
+    </xsl:template>
+    <xsl:template match="wordHoardTaggedLine">
+        <p>
+            <xsl:value-of select="string-join(node()[name() ne 'stage']) => normalize-space() => replace(' ([.,:;?!])', '$1')"/>
+        </p>
     </xsl:template>
 </xsl:stylesheet>
