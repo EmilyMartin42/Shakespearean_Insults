@@ -9,8 +9,7 @@
             <head>
                 <title>
                     <xsl:value-of select="//titleStmt/title"/>
- Insults</title>
-                <!-- This needs changed per insultPage -->
+ Reading View</title>
                 <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
             <body class="corp">
@@ -18,128 +17,60 @@
                 <div class="pagination">
                     <xsl:choose>
                         <xsl:when test="//titleStmt/shortTitle = 'Hamlet'">
-                            <a class="active" href="hamInsults.xhtml">Hamlet</a>
-                            <a href="othInsults.xhtml">Othello</a>
-                            <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
-                            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                            <a class="active" href="hamReading.xhtml">Hamlet</a>
+                            <a href="othReading.xhtml">Othello</a>
+                            <a href="mndReading.xhtml">A Midsummer Night's Dream</a>
+                            <a href="coeReading.xhtml">The Comedy of Errors</a>
                         </xsl:when>
                         <xsl:when test="//titleStmt/shortTitle = 'Othello'">
-                            <a href="hamInsults.xhtml">Hamlet</a>
-                            <a class="active" href="othInsults.xhtml">Othello</a>
-                            <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
-                            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                            <a href="hamReading.xhtml">Hamlet</a>
+                            <a class="active" href="othReading.xhtml">Othello</a>
+                            <a href="mndReading.xhtml">A Midsummer Night's Dream</a>
+                            <a href="coeReading.xhtml">The Comedy of Errors</a>
                         </xsl:when>
                         <xsl:when test="//titleStmt/shortTitle = 'Midsummer Nights Dream'">
-                            <a href="hamInsults.xhtml">Hamlet</a>
-                            <a href="othInsults.xhtml">Othello</a>
-                            <a class="active" href="mndInsults.xhtml">A Midsummer Night's Dream</a>
-                            <a href="coeInsults.xhtml">The Comedy of Errors</a>
+                            <a href="hamReading.xhtml">Hamlet</a>
+                            <a href="othReading.xhtml">Othello</a>
+                            <a class="active" href="mndReading.xhtml">A Midsummer Night's Dream</a>
+                            <a href="coeReading.xhtml">The Comedy of Errors</a>
                         </xsl:when>
                         <xsl:when test="//titleStmt/shortTitle = 'Comedy of Errors'">
-                            <a href="hamInsults.xhtml">Hamlet</a>
-                            <a href="othInsults.xhtml">Othello</a>
-                            <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
-                            <a class="active" href="coeInsults.xhtml">The Comedy of Errors</a>
+                            <a href="hamReading.xhtml">Hamlet</a>
+                            <a href="othReading.xhtml">Othello</a>
+                            <a href="mndReading.xhtml">A Midsummer Night's Dream</a>
+                            <a class="active" href="coeReading.xhtml">The Comedy of Errors</a>
                         </xsl:when>
                     </xsl:choose>
                 </div>
-                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/>
+                <h1 id="mainTitle">
+                    <xsl:value-of select="//titleStmt/title"/>
                 </h1>
-                <p class="notice">Notice: While using the sorting box on the left, that the intended use is not
-                    that of a filter system. Instead, when any of the checkboxes is selected any
-                    insult which has a matching attribute value will be displayed. E.g. If I have
-                    selected slander and direct speech, I will get insults that have slander with
-                    indirect speech and direct insults with types other than slander. While this
-                    system is confusing, it is a product of time limits placed upon the creation of
-                    this system.</p>
-                <!-- This needs changed per insultPage -->
-                <div id="insultPageContainer">
-                    <xsl:comment>#include virtual="insultSort.xhtml"</xsl:comment>
-                    <div id="insultFlex">
-                        <!-- This is where insults would go -->
-                        <xsl:apply-templates select="//insult" mode="readView"/>
-                    </div>
-                </div>
-                <script src="sort.js"/>
+                <xsl:apply-templates select="//body/div/div/*[name() ne 'wordHoardHeader']"/>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="insult" mode="readView">
-        <xsl:variable name="insType" as="xs:string" select="insultStart/@insType"/>
-        <xsl:variable name="gender" as="xs:string?" select="insultStart/@gender"/>
-        <xsl:variable name="rel" as="xs:string?" select="insultStart/@rel"/>
-        <xsl:variable name="relState" as="xs:string?" select="insultStart/@rel-state"/>
-        <xsl:variable name="speechAct" as="xs:string?" select="insultStart/@speechAct"/>
-        <xsl:variable name="illocType" as="xs:string?" select="insultStart/@illoc-type"/>
-        <xsl:variable name="maxim" as="xs:string?" select="insultStart/@maxim"/>
-        <a>
-            <xsl:attribute name="class">
-                <xsl:value-of select="insultStart/@*"/>
-                <xsl:text> insult</xsl:text>
-            </xsl:attribute>
-            <xsl:attribute name="href">
-                <xsl:text>hamReading.xhtml/#</xsl:text>
-                <xsl:value-of select="position()"/>
-            </xsl:attribute>
-            <xsl:apply-templates select="replace(normalize-space(), ' ([,.!?;:])', '$1')"/>
-        </a>
-        <span>
-            <xsl:attribute name="class">
-                <xsl:text>infoSymbol</xsl:text>
-            </xsl:attribute>
-            <xsl:text> ⓘ</xsl:text>
-        </span>
-        <span>
-            <xsl:attribute name="class">
-                <xsl:text>infoBox</xsl:text>
-            </xsl:attribute>
-            <table>
-                <xsl:attribute name="class">
-                    <xsl:text>infoTable</xsl:text>
-                </xsl:attribute>
-                <tr>
-                    <td>Insult type:</td>
-                    <td>
-                        <xsl:value-of select="$insType"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Gender:</td>
-                    <td>
-                        <xsl:value-of select="$gender"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Relationship:</td>
-                    <td>
-                        <xsl:value-of select="$rel"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Relationship State:</td>
-                    <td>
-                        <xsl:value-of select="$relState"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Speech Act:</td>
-                    <td>
-                        <xsl:value-of select="$speechAct"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Illocutionary Type:</td>
-                    <td>
-                        <xsl:value-of select="$illocType"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Maxim:</td>
-                    <td>
-                        <xsl:value-of select="$maxim"/>
-                    </td>
-                </tr>
-            </table>
-        </span>
+    <xsl:template match="head">
+        <h2 class="actHead">
+            <xsl:value-of select="."/>
+        </h2>
+    </xsl:template>
+    <xsl:template match="stage">
+        <p class="stage">
+            <xsl:value-of select="."/>
+        </p>
+    </xsl:template>
+    <xsl:template match="sp">
+        <div class="speech">
+            <span class="speaker">
+                <xsl:value-of select="speaker"/>
+            </span>
+            <xsl:apply-templates select="wordHoardTaggedLine"/>
+            <xsl:apply-templates select="wordHoardTaggedLine/stage"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="wordHoardTaggedLine">
+        <p>
+            <xsl:value-of select="string-join(node()[name() ne 'stage']) => normalize-space() => replace(' ([.,:;?!])', '$1')"/>
+        </p>
     </xsl:template>
 </xsl:stylesheet>
