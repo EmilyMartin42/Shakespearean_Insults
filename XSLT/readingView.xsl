@@ -1,45 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sha="http://insults.obdurodon.org"
-    exclude-result-prefixes="xs" xmlns="http://www.w3.org/1999/xhtml" version="3.0">
-    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no"
-        indent="yes"/>
-    <!-- Yes, this function is recursive. Yes, there is probably a better way to do this. 
-        No, I don't care to spend 5 hours figuring it out. 
-        Yes, you can add more punctuation marks as you need them. 
-        Just add another iteration check and change the end case (make sure it's always negative one.)
-        Yes, this function gets less efficient the more punctuation marks you add.-->
-    <xsl:function name="sha:normalize" as="xs:string">
-        <xsl:param name="input" as="xs:string"/>
-        <xsl:param name="iteration" as="xs:integer"/>
-        <xsl:choose>
-            <xsl:when test="$iteration = 1">
-                <xsl:value-of select="sha:normalize(replace($input, ' ,', ','), ($iteration + 1))"/>
-            </xsl:when>
-            <xsl:when test="$iteration = 2">
-                <xsl:value-of select="sha:normalize(replace($input, ' \.', '.'), ($iteration + 1))"
-                />
-            </xsl:when>
-            <xsl:when test="$iteration = 3">
-                <xsl:value-of select="sha:normalize(replace($input, ' !', '!'), ($iteration + 1))"/>
-            </xsl:when>
-            <xsl:when test="$iteration = 4">
-                <xsl:value-of select="sha:normalize(replace($input, ' \?', '?'), ($iteration + 1))"
-                />
-            </xsl:when>
-            <xsl:when test="$iteration = 5">
-                <xsl:value-of select="sha:normalize(replace($input, ' ;', ';'), -1)"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="replace($input, ' :', ':')"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:sha="http://insults.obdurodon.org" exclude-result-prefixes="xs"
+    xmlns="http://www.w3.org/1999/xhtml" version="3.0">
+    <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no" indent="yes"/>
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <title><xsl:value-of select="//titleStmt/title"/> Insults</title>
+                <title>
+                    <xsl:value-of select="//titleStmt/title"/>
+ Insults</title>
                 <!-- This needs changed per insultPage -->
                 <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
@@ -73,7 +43,8 @@
                         </xsl:when>
                     </xsl:choose>
                 </div>
-                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/></h1>
+                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/>
+                </h1>
                 <p class="notice">Notice: While using the sorting box on the left, that the intended use is not
                     that of a filter system. Instead, when any of the checkboxes is selected any
                     insult which has a matching attribute value will be displayed. E.g. If I have
@@ -110,51 +81,65 @@
                 <xsl:text>hamReading.xhtml/#</xsl:text>
                 <xsl:value-of select="position()"/>
             </xsl:attribute>
-            <xsl:apply-templates select="sha:normalize(normalize-space(), 1)"/>
-            <span>
-                <xsl:attribute name="class">
-                    <xsl:text>infoSymbol</xsl:text>
-                </xsl:attribute>
-                <xsl:text> ⓘ</xsl:text>
-            </span>
-            <span>
-                <xsl:attribute name="class">
-                    <xsl:text>infoBox</xsl:text>
-                </xsl:attribute>
-                <table>
-                    <xsl:attribute name="class">
-                        <xsl:text>infoTable</xsl:text>
-                    </xsl:attribute>
-                    <tr>
-                        <td>Insult type:</td>
-                        <td><xsl:value-of select="$insType"/></td>
-                    </tr>
-                    <tr>
-                        <td>Gender:</td>
-                        <td><xsl:value-of select="$gender"/></td>
-                    </tr>
-                    <tr>
-                        <td>Relationship:</td>
-                        <td><xsl:value-of select="$rel"/></td>
-                    </tr>
-                    <tr>
-                        <td>Relationship State:</td>
-                        <td><xsl:value-of select="$relState"/></td>
-                    </tr>
-                    <tr>
-                        <td>Speech Act:</td>
-                        <td><xsl:value-of select="$speechAct"/></td>
-                    </tr>
-                    <tr>
-                        <td>Illocutionary Type:</td>
-                        <td><xsl:value-of select="$illocType"/></td>
-                    </tr>
-                    <tr>
-                        <td>Maxim:</td>
-                        <td><xsl:value-of select="$maxim"/></td>
-                    </tr>
-                </table>
-            </span>
+            <xsl:apply-templates select="replace(normalize-space(), ' ([,.!?;:])', '$1')"/>
         </a>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>infoSymbol</xsl:text>
+            </xsl:attribute>
+            <xsl:text> ⓘ</xsl:text>
+        </span>
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>infoBox</xsl:text>
+            </xsl:attribute>
+            <table>
+                <xsl:attribute name="class">
+                    <xsl:text>infoTable</xsl:text>
+                </xsl:attribute>
+                <tr>
+                    <td>Insult type:</td>
+                    <td>
+                        <xsl:value-of select="$insType"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <xsl:value-of select="$gender"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Relationship:</td>
+                    <td>
+                        <xsl:value-of select="$rel"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Relationship State:</td>
+                    <td>
+                        <xsl:value-of select="$relState"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Speech Act:</td>
+                    <td>
+                        <xsl:value-of select="$speechAct"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Illocutionary Type:</td>
+                    <td>
+                        <xsl:value-of select="$illocType"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maxim:</td>
+                    <td>
+                        <xsl:value-of select="$maxim"/>
+                    </td>
+                </tr>
+            </table>
+        </span>
     </xsl:template>
 </xsl:stylesheet>
