@@ -4,6 +4,7 @@
     exclude-result-prefixes="xs" xmlns="http://www.w3.org/1999/xhtml" version="3.0">
     <xsl:output method="xhtml" html-version="5" omit-xml-declaration="no" include-content-type="no"
         indent="yes"/>
+    <xsl:variable name="title" select="//titleStmt/shortTitle" as="xs:string"/>
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -16,25 +17,25 @@
                 <xsl:comment>#include virtual="menu.xhtml"</xsl:comment>
                 <div class="pagination">
                     <xsl:choose>
-                        <xsl:when test="//titleStmt/shortTitle = 'Hamlet'">
+                        <xsl:when test="$title eq 'Hamlet'">
                             <a class="active" href="hamInsults.xhtml">Hamlet</a>
                             <a href="othInsults.xhtml">Othello</a>
                             <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
                             <a href="coeInsults.xhtml">The Comedy of Errors</a>
                         </xsl:when>
-                        <xsl:when test="//titleStmt/shortTitle = 'Othello'">
+                        <xsl:when test="$title eq 'Othello'">
                             <a href="hamInsults.xhtml">Hamlet</a>
                             <a class="active" href="othInsults.xhtml">Othello</a>
                             <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
                             <a href="coeInsults.xhtml">The Comedy of Errors</a>
                         </xsl:when>
-                        <xsl:when test="//titleStmt/shortTitle = 'Midsummer Nights Dream'">
+                        <xsl:when test="$title eq 'Midsummer Nights Dream'">
                             <a href="hamInsults.xhtml">Hamlet</a>
                             <a href="othInsults.xhtml">Othello</a>
                             <a class="active" href="mndInsults.xhtml">A Midsummer Night's Dream</a>
                             <a href="coeInsults.xhtml">The Comedy of Errors</a>
                         </xsl:when>
-                        <xsl:when test="//titleStmt/shortTitle = 'Comedy of Errors'">
+                        <xsl:when test="$title eq 'Comedy of Errors'">
                             <a href="hamInsults.xhtml">Hamlet</a>
                             <a href="othInsults.xhtml">Othello</a>
                             <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
@@ -77,8 +78,20 @@
                 <xsl:text> insult</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="href">
-                <xsl:text>hamReading.xhtml#</xsl:text>
-                <xsl:value-of select="position()"/>
+                <xsl:choose>
+                    <xsl:when test="$title eq 'Hamlet'">ham</xsl:when>
+                </xsl:choose>
+                <xsl:choose>
+                    <xsl:when test="$title eq 'Othello'">oth</xsl:when>
+                </xsl:choose>
+                <xsl:choose>
+                    <xsl:when test="$title eq 'Midsummer Nights Dream'">mnd</xsl:when>
+                </xsl:choose>
+                <xsl:choose>
+                    <xsl:when test="$title eq 'Comedy of Errors'">coe</xsl:when>
+                </xsl:choose>
+                <xsl:text>Reading.xhtml#</xsl:text>
+                <xsl:value-of select="position() - 1"/>
             </xsl:attribute>
             <xsl:apply-templates select="replace(normalize-space(), ' ([,.!?;:])', '$1')"/>
 
