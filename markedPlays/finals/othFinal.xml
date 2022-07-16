@@ -385,7 +385,7 @@
                <insultStart insType="pAttack"
                             gender="female-male"
                             rel="friend-friend"
-                            rel-state="pos"
+                            rel-state="positive"
                             speechAct="indirect"
                             illoc-type="declarative"
                             maxim="man"/>
@@ -402,7 +402,7 @@
                <insultStart insType="nameCall"
                             gender="female-male"
                             rel="friend-friend"
-                            rel-state="pos"
+                            rel-state="positive"
                             speechAct="direct"/>
                <w id="sha-oth20111405" lemma="slanderer (n)" pos="n-sg">slanderer</w>
                <punc>!</punc>
@@ -413,7 +413,7 @@
                             gender="male-male"
                             rel="friend-friend"
                             rel-state="neg"
-                            speechAct="indirect"
+                            speechAct="ind"
                             illoc-type="representative"
                             maxim="man"/>
                <w id="sha-oth20124106" lemma="a (at)" pos="at">a</w>
@@ -548,6 +548,7 @@
                <insultStart insType="nameCall"
                             gender="male-male"
                             rel="self"
+                            rel-state="neutral"
                             speechAct="direct"/>
                <w id="sha-oth30309001" lemma="excellent (aj)" pos="aj">Excellent</w>
                <punc> </punc>
@@ -591,7 +592,7 @@
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
-                            maxim="quant"/>
+                            maxim="quan"/>
                <w id="sha-oth30341701" lemma="there (pcl)" pos="pcl-ex">There</w>
                <punc> </punc>
                <w id="sha-oth30341702" lemma="be (vp)" pos="vp-pr">are</w>
@@ -682,7 +683,7 @@
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
-                            maxim="relev"/>
+                            maxim="rel"/>
                <w id="sha-oth40102502" lemma="hear (v)" pos="v-pt">heard</w>
                <punc> </punc>
                <w id="sha-oth40102503" lemma="he (pnp)" pos="pnp-3sg.ob">him</w>
@@ -17825,7 +17826,7 @@
                      <insultStart insType="pAttack"
                                   gender="female-male"
                                   rel="friend-friend"
-                                  rel-state="pos"
+                                  rel-state="positive"
                                   speechAct="indirect"
                                   illoc-type="declarative"
                                   maxim="man"/>
@@ -17841,7 +17842,7 @@
                      <insultStart insType="nameCall"
                                   gender="female-male"
                                   rel="friend-friend"
-                                  rel-state="pos"
+                                  rel-state="positive"
                                   speechAct="direct"/>
                      <w id="sha-oth20111405" lemma="slanderer (n)" pos="n-sg">slanderer</w>
                      <punc>!</punc>
@@ -33409,6 +33410,7 @@
                      <insultStart insType="nameCall"
                                   gender="male-male"
                                   rel="self"
+                                  rel-state="neutral"
                                   speechAct="direct"/>
                      <w id="sha-oth30309001" lemma="excellent (aj)" pos="aj">Excellent</w>
                      <punc> </punc>
@@ -40016,7 +40018,7 @@
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"
-                                  maxim="quant"/>
+                                  maxim="quan"/>
                      <w id="sha-oth30341701" lemma="there (pcl)" pos="pcl-ex">There</w>
                      <punc> </punc>
                      <w id="sha-oth30341702" lemma="be (vp)" pos="vp-pr">are</w>
@@ -45968,7 +45970,7 @@
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"
-                                  maxim="relev"/>
+                                  maxim="rel"/>
                      <w id="sha-oth40102502" lemma="hear (v)" pos="v-pt">heard</w>
                      <punc> </punc>
                      <w id="sha-oth40102503" lemma="he (pnp)" pos="pnp-3sg.ob">him</w>

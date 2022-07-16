@@ -61,15 +61,20 @@
     </xsl:template>
     <xsl:template match="sp">
         <div class="speech">
-            <span class="speaker">
+            <h3 class="speaker">
                 <xsl:value-of select="speaker"/>
-            </span>
+            </h3>
             <xsl:apply-templates select="wordHoardTaggedLine"/>
             <xsl:apply-templates select="wordHoardTaggedLine/stage"/>
         </div>
     </xsl:template>
     <xsl:template match="wordHoardTaggedLine">
         <p>
+            <xsl:if test=".[child::node()/name() = ('insultStart', 'insultEnd')]">
+                <xsl:attribute name="class">
+                    <xsl:text>textInsult</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:value-of select="string-join(node()[name() ne 'stage']) => normalize-space() => replace(' ([.,:;?!])', '$1')"/>
         </p>
     </xsl:template>
