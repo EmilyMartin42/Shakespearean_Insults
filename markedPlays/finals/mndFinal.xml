@@ -20,7 +20,7 @@
       <fileDesc>
          <titleStmt>
             <title>A Midsummer Night's Dream</title>
-            <shortTitle>Midsummer Nights Dream</shortTitle>
+            <shortTitle>Midsummer Night's Dream</shortTitle>
             <author>William Shakespeare</author>
             <respStmt>
                <name>Craig A. Berry, Martin Mueller, and Clifford Wulfman</name>
@@ -618,7 +618,7 @@
             <insult xml:id="insult_0023">
                <insultStart insType="backComp"
                             gender="female-male"
-                            rel="friend-friend"
+                            rel="freind-friend"
                             rel-state="neg"
                             speechAct="indirect"
                             illoc-type="representative"
@@ -1286,7 +1286,7 @@
                             rel-state="neutral"
                             speechAct="indirect"
                             illoc-type="representative"
-                            maxim="man"/>
+                            maxim="manner"/>
                <w id="sha-mnd50112101" lemma="he (pnp)" pos="pnp-3sg.ge-dt">His</w>
                <punc> </punc>
                <w id="sha-mnd50112102" lemma="speech (n)" pos="n-sg">speech</w>
@@ -22939,7 +22939,7 @@
 							<!--at multiple peole, but I think that in this context the tags could be considered applicable to both characters so I'm going with it-->
                      <insultStart insType="backComp"
                                   gender="female-male"
-                                  rel="friend-friend"
+                                  rel="freind-friend"
                                   rel-state="neg"
                                   speechAct="indirect"
                                   illoc-type="representative"
