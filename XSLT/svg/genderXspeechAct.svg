@@ -3,65 +3,65 @@
      width="100%"
      class="speech_acts">
    <g transform="translate(50, 520)">
-      <line x1="50" x2="450" y1="0" y2="0" stroke="#E0E0E0"/>
+      <line x1="50" x2="300" y1="0" y2="0" stroke="#E0E0E0"/>
       <line x1="50" x2="50" y1="0" y2="-340" stroke="#E0E0E0"/>
       <line x1="50"
             y1="-40"
-            x2="450"
+            x2="300"
             y2="-40"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-35" stroke="#E0E0E0" fill="#E0E0E0">10</text>
       <line x1="50"
             y1="-80"
-            x2="450"
+            x2="300"
             y2="-80"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-75" stroke="#E0E0E0" fill="#E0E0E0">20</text>
       <line x1="50"
             y1="-120"
-            x2="450"
+            x2="300"
             y2="-120"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-115" stroke="#E0E0E0" fill="#E0E0E0">30</text>
       <line x1="50"
             y1="-160"
-            x2="450"
+            x2="300"
             y2="-160"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-155" stroke="#E0E0E0" fill="#E0E0E0">40</text>
       <line x1="50"
             y1="-200"
-            x2="450"
+            x2="300"
             y2="-200"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-195" stroke="#E0E0E0" fill="#E0E0E0">50</text>
       <line x1="50"
             y1="-240"
-            x2="450"
+            x2="300"
             y2="-240"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-235" stroke="#E0E0E0" fill="#E0E0E0">60</text>
       <line x1="50"
             y1="-280"
-            x2="450"
+            x2="300"
             y2="-280"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-275" stroke="#E0E0E0" fill="#E0E0E0">70</text>
       <line x1="50"
             y1="-320"
-            x2="450"
+            x2="300"
             y2="-320"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-315" stroke="#E0E0E0" fill="#E0E0E0">80</text>
-      <text x="250"
+      <text x="175"
             y="-400"
             font-size="18"
             text-anchor="middle"
@@ -74,7 +74,7 @@
             text-anchor="middle"
             stroke="#E0E0E0"
             fill="#E0E0E0">Speech act count</text>
-      <text x="225"
+      <text x="150"
             y="45"
             text-anchor="middle"
             stroke="#E0E0E0"
@@ -102,166 +102,66 @@
             stroke="#E0E0E0"
             fill="#E0E0E0">42</text>
    </g>
-   <g transform="translate(612.5, 1040)">
-      <line x1="50" x2="450" y1="0" y2="0" stroke="#E0E0E0"/>
-      <line x1="50" x2="50" y1="0" y2="-340" stroke="#E0E0E0"/>
-      <line x1="50"
-            y1="-40"
-            x2="450"
-            y2="-40"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-35" stroke="#E0E0E0" fill="#E0E0E0">10</text>
-      <line x1="50"
-            y1="-80"
-            x2="450"
-            y2="-80"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-75" stroke="#E0E0E0" fill="#E0E0E0">20</text>
-      <line x1="50"
-            y1="-120"
-            x2="450"
-            y2="-120"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-115" stroke="#E0E0E0" fill="#E0E0E0">30</text>
-      <line x1="50"
-            y1="-160"
-            x2="450"
-            y2="-160"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-155" stroke="#E0E0E0" fill="#E0E0E0">40</text>
-      <line x1="50"
-            y1="-200"
-            x2="450"
-            y2="-200"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-195" stroke="#E0E0E0" fill="#E0E0E0">50</text>
-      <line x1="50"
-            y1="-240"
-            x2="450"
-            y2="-240"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-235" stroke="#E0E0E0" fill="#E0E0E0">60</text>
-      <line x1="50"
-            y1="-280"
-            x2="450"
-            y2="-280"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-275" stroke="#E0E0E0" fill="#E0E0E0">70</text>
-      <line x1="50"
-            y1="-320"
-            x2="450"
-            y2="-320"
-            stroke="#E0E0E0"
-            stroke-dasharray="3"/>
-      <text x="25" y="-315" stroke="#E0E0E0" fill="#E0E0E0">80</text>
-      <text x="250"
-            y="-400"
-            font-size="18"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">
-                        Speech act counts between male-female</text>
-      <text x="160"
-            y="15"
-            transform="rotate(-90)"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">Speech act count</text>
-      <text x="225"
-            y="45"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">Speech act type</text>
-      <rect x="100" y="-88" width="100" height="88" fill="#870C1D"/>
-      <text x="150"
-            y="21.333333333333333333"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">direct</text>
-      <text x="150"
-            y="-93"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">22</text>
-      <rect x="250" y="-148" width="100" height="148" fill="#5D81B9"/>
-      <text x="300"
-            y="21.333333333333333333"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">indirect</text>
-      <text x="300"
-            y="-153"
-            text-anchor="middle"
-            stroke="#E0E0E0"
-            fill="#E0E0E0">37</text>
-   </g>
    <g transform="translate(50, 1040)">
-      <line x1="50" x2="450" y1="0" y2="0" stroke="#E0E0E0"/>
+      <line x1="50" x2="300" y1="0" y2="0" stroke="#E0E0E0"/>
       <line x1="50" x2="50" y1="0" y2="-340" stroke="#E0E0E0"/>
       <line x1="50"
             y1="-40"
-            x2="450"
+            x2="300"
             y2="-40"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-35" stroke="#E0E0E0" fill="#E0E0E0">10</text>
       <line x1="50"
             y1="-80"
-            x2="450"
+            x2="300"
             y2="-80"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-75" stroke="#E0E0E0" fill="#E0E0E0">20</text>
       <line x1="50"
             y1="-120"
-            x2="450"
+            x2="300"
             y2="-120"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-115" stroke="#E0E0E0" fill="#E0E0E0">30</text>
       <line x1="50"
             y1="-160"
-            x2="450"
+            x2="300"
             y2="-160"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-155" stroke="#E0E0E0" fill="#E0E0E0">40</text>
       <line x1="50"
             y1="-200"
-            x2="450"
+            x2="300"
             y2="-200"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-195" stroke="#E0E0E0" fill="#E0E0E0">50</text>
       <line x1="50"
             y1="-240"
-            x2="450"
+            x2="300"
             y2="-240"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-235" stroke="#E0E0E0" fill="#E0E0E0">60</text>
       <line x1="50"
             y1="-280"
-            x2="450"
+            x2="300"
             y2="-280"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-275" stroke="#E0E0E0" fill="#E0E0E0">70</text>
       <line x1="50"
             y1="-320"
-            x2="450"
+            x2="300"
             y2="-320"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-315" stroke="#E0E0E0" fill="#E0E0E0">80</text>
-      <text x="250"
+      <text x="175"
             y="-400"
             font-size="18"
             text-anchor="middle"
@@ -274,7 +174,7 @@
             text-anchor="middle"
             stroke="#E0E0E0"
             fill="#E0E0E0">Speech act count</text>
-      <text x="225"
+      <text x="150"
             y="45"
             text-anchor="middle"
             stroke="#E0E0E0"
@@ -302,66 +202,166 @@
             stroke="#E0E0E0"
             fill="#E0E0E0">14</text>
    </g>
-   <g transform="translate(612.5, 520)">
-      <line x1="50" x2="450" y1="0" y2="0" stroke="#E0E0E0"/>
+   <g transform="translate(425, 1040)">
+      <line x1="50" x2="300" y1="0" y2="0" stroke="#E0E0E0"/>
       <line x1="50" x2="50" y1="0" y2="-340" stroke="#E0E0E0"/>
       <line x1="50"
             y1="-40"
-            x2="450"
+            x2="300"
             y2="-40"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-35" stroke="#E0E0E0" fill="#E0E0E0">10</text>
       <line x1="50"
             y1="-80"
-            x2="450"
+            x2="300"
             y2="-80"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-75" stroke="#E0E0E0" fill="#E0E0E0">20</text>
       <line x1="50"
             y1="-120"
-            x2="450"
+            x2="300"
             y2="-120"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-115" stroke="#E0E0E0" fill="#E0E0E0">30</text>
       <line x1="50"
             y1="-160"
-            x2="450"
+            x2="300"
             y2="-160"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-155" stroke="#E0E0E0" fill="#E0E0E0">40</text>
       <line x1="50"
             y1="-200"
-            x2="450"
+            x2="300"
             y2="-200"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-195" stroke="#E0E0E0" fill="#E0E0E0">50</text>
       <line x1="50"
             y1="-240"
-            x2="450"
+            x2="300"
             y2="-240"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-235" stroke="#E0E0E0" fill="#E0E0E0">60</text>
       <line x1="50"
             y1="-280"
-            x2="450"
+            x2="300"
             y2="-280"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-275" stroke="#E0E0E0" fill="#E0E0E0">70</text>
       <line x1="50"
             y1="-320"
-            x2="450"
+            x2="300"
             y2="-320"
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="25" y="-315" stroke="#E0E0E0" fill="#E0E0E0">80</text>
-      <text x="250"
+      <text x="175"
+            y="-400"
+            font-size="18"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">
+                        Speech act counts between male-female</text>
+      <text x="160"
+            y="15"
+            transform="rotate(-90)"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">Speech act count</text>
+      <text x="150"
+            y="45"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">Speech act type</text>
+      <rect x="100" y="-88" width="100" height="88" fill="#870C1D"/>
+      <text x="150"
+            y="21.333333333333333333"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">direct</text>
+      <text x="150"
+            y="-93"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">22</text>
+      <rect x="250" y="-148" width="100" height="148" fill="#5D81B9"/>
+      <text x="300"
+            y="21.333333333333333333"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">indirect</text>
+      <text x="300"
+            y="-153"
+            text-anchor="middle"
+            stroke="#E0E0E0"
+            fill="#E0E0E0">37</text>
+   </g>
+   <g transform="translate(425, 520)">
+      <line x1="50" x2="300" y1="0" y2="0" stroke="#E0E0E0"/>
+      <line x1="50" x2="50" y1="0" y2="-340" stroke="#E0E0E0"/>
+      <line x1="50"
+            y1="-40"
+            x2="300"
+            y2="-40"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-35" stroke="#E0E0E0" fill="#E0E0E0">10</text>
+      <line x1="50"
+            y1="-80"
+            x2="300"
+            y2="-80"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-75" stroke="#E0E0E0" fill="#E0E0E0">20</text>
+      <line x1="50"
+            y1="-120"
+            x2="300"
+            y2="-120"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-115" stroke="#E0E0E0" fill="#E0E0E0">30</text>
+      <line x1="50"
+            y1="-160"
+            x2="300"
+            y2="-160"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-155" stroke="#E0E0E0" fill="#E0E0E0">40</text>
+      <line x1="50"
+            y1="-200"
+            x2="300"
+            y2="-200"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-195" stroke="#E0E0E0" fill="#E0E0E0">50</text>
+      <line x1="50"
+            y1="-240"
+            x2="300"
+            y2="-240"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-235" stroke="#E0E0E0" fill="#E0E0E0">60</text>
+      <line x1="50"
+            y1="-280"
+            x2="300"
+            y2="-280"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-275" stroke="#E0E0E0" fill="#E0E0E0">70</text>
+      <line x1="50"
+            y1="-320"
+            x2="300"
+            y2="-320"
+            stroke="#E0E0E0"
+            stroke-dasharray="3"/>
+      <text x="25" y="-315" stroke="#E0E0E0" fill="#E0E0E0">80</text>
+      <text x="175"
             y="-400"
             font-size="18"
             text-anchor="middle"
@@ -374,7 +374,7 @@
             text-anchor="middle"
             stroke="#E0E0E0"
             fill="#E0E0E0">Speech act count</text>
-      <text x="225"
+      <text x="150"
             y="45"
             text-anchor="middle"
             stroke="#E0E0E0"

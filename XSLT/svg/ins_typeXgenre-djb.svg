@@ -140,26 +140,26 @@
             stroke="#E0E0E0"
             stroke-dasharray="3"/>
       <text x="0" y="-785" fill="#E0E0E0" text-anchor="middle">80</text>
-      <rect x="800" y="-50" width="10" height="40" fill="#5D81B9"/>
-      <text x="820" y="-30" dominant-baseline="middle" fill="#E0E0E0">1</text>
-      <text x="1620" y="-30" fill="#E0E0E0">nameCall pAttack </text>
+      <rect x="800" y="-50" width="20" height="40" fill="#5D81B9"/>
+      <text x="830" y="-30" dominant-baseline="middle" fill="#E0E0E0">2</text>
+      <text x="1620" y="-30" fill="#E0E0E0"> nameCall pAttack sexGen</text>
       <rect x="800" y="-50" width="0" height="40" fill="#870C1D"/>
       <text x="790"
             y="-30"
             dominant-baseline="middle"
             fill="#E0E0E0"
             text-anchor="end">0</text>
-      <text x="-20" y="-30" fill="#E0E0E0" text-anchor="end">nameCall pAttack </text>
+      <text x="-20" y="-30" fill="#E0E0E0" text-anchor="end"> nameCall pAttack sexGen</text>
       <rect x="800" y="-110" width="20" height="40" fill="#5D81B9"/>
       <text x="830" y="-90" dominant-baseline="middle" fill="#E0E0E0">2</text>
-      <text x="1620" y="-90" fill="#E0E0E0"> nameCall pAttack sexGen</text>
+      <text x="1620" y="-90" fill="#E0E0E0">nameCall pAttack </text>
       <rect x="800" y="-110" width="0" height="40" fill="#870C1D"/>
       <text x="790"
             y="-90"
             dominant-baseline="middle"
             fill="#E0E0E0"
             text-anchor="end">0</text>
-      <text x="-20" y="-90" fill="#E0E0E0" text-anchor="end"> nameCall pAttack sexGen</text>
+      <text x="-20" y="-90" fill="#E0E0E0" text-anchor="end">nameCall pAttack </text>
       <rect x="800" y="-170" width="40" height="40" fill="#5D81B9"/>
       <text x="850" y="-150" dominant-baseline="middle" fill="#E0E0E0">4</text>
       <text x="1620" y="-150" fill="#E0E0E0">backComp</text>
@@ -240,8 +240,8 @@
             fill="#E0E0E0"
             text-anchor="end">0</text>
       <text x="-20" y="-570" fill="#E0E0E0" text-anchor="end">sexGen slander</text>
-      <rect x="800" y="-650" width="170" height="40" fill="#5D81B9"/>
-      <text x="980" y="-630" dominant-baseline="middle" fill="#E0E0E0">17</text>
+      <rect x="800" y="-650" width="160" height="40" fill="#5D81B9"/>
+      <text x="970" y="-630" dominant-baseline="middle" fill="#E0E0E0">16</text>
       <text x="1620" y="-630" fill="#E0E0E0">nameCall pAttack</text>
       <rect x="260" y="-650" width="540" height="40" fill="#870C1D"/>
       <text x="250"
