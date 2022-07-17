@@ -1,7 +1,7 @@
 /* 
  * Root elements belo
  */
-@font-face {
+ @font-face {
     font-family: 'ptBold';
     src: url('/../Fonts/ptserif-bold-webfont.woff2') format('woff2'),
          url('ptserif-bold-webfont.woff') format('woff');
@@ -301,6 +301,32 @@ details.sort > p, details.sort > details > details > p {
     color: #E0E0E0;
     padding: 0;
     background: #2C2A25;
+}
+.actHead {
+    color: var(--textColor)
+}
+.speaker {
+    color: var(--textColor);
+    font-size: 1.2em;
+    margin: .25em;
+}
+.speech > p {
+    font-size: 1.1em;
+    margin: .5em 0 .5em 3em;
+}
+.stage {
+    text-align: right;
+    font-style: italic;
+}
+.stage::before {
+    content: "{";
+}
+.stage::after {
+    content: "}";
+}
+.textInsult {
+    display: table;
+    background-color: var(--headerColor)
 }
 /* 
  * Id styling below
