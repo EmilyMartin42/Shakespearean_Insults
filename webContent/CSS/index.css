@@ -166,16 +166,20 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     opacity: 1;
 }
 .ham{
-    background-image: url(/images/ham.jpg)
+    background-image: url(/images/ham.jpg);
+    background-position: center;
 }
 .oth{
-    background-image: url(/images/oth.jpg)
+    background-image: url(/images/oth.jpg);
+    background-position: center;
 }
 .mnd{
-    background-image: url(/images/mid.jpg)
+    background-image: url(/images/mid.jpg);
+    background-position: center;
 }
 .coe{
-    background-image: url(/images/coe.jpg)
+    background-image: url(/images/coe.jpg);
+    background-position: center;
 }
 .playTitle {
     position: relative;
