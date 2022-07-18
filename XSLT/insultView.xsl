@@ -9,7 +9,7 @@
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <title>
-                    <xsl:value-of select="//titleStmt/title"/> Insults</title>
+                    <xsl:value-of select="$title"/> Insults</title>
                 <!-- This needs changed per insultPage -->
                 <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
             </head>
@@ -29,7 +29,7 @@
                             <a href="mndInsults.xhtml">A Midsummer Night's Dream</a>
                             <a href="coeInsults.xhtml">The Comedy of Errors</a>
                         </xsl:when>
-                        <xsl:when test="$title eq 'Midsummer Nights Dream'">
+                        <xsl:when test="$title eq 'Midsummer Night''s Dream'">
                             <a href="hamInsults.xhtml">Hamlet</a>
                             <a href="othInsults.xhtml">Othello</a>
                             <a class="active" href="mndInsults.xhtml">A Midsummer Night's Dream</a>
@@ -43,7 +43,7 @@
                         </xsl:when>
                     </xsl:choose>
                 </div>
-                <h1 id="mainTitle">Insults in <xsl:value-of select="//titleStmt/title"/>
+                <h1 id="mainTitle">Insults in <xsl:value-of select="$title"/>
                 </h1>
                 <p class="notice">Notice: While using the sorting box on the left, that the intended
                     use is not that of a filter system. Instead, when any of the checkboxes is
@@ -85,7 +85,7 @@
                     <xsl:when test="$title eq 'Othello'">oth</xsl:when>
                 </xsl:choose>
                 <xsl:choose>
-                    <xsl:when test="$title eq 'Midsummer Nights Dream'">mnd</xsl:when>
+                    <xsl:when test="$title eq 'Midsummer Night''s Dream'">mnd</xsl:when>
                 </xsl:choose>
                 <xsl:choose>
                     <xsl:when test="$title eq 'Comedy of Errors'">coe</xsl:when>
