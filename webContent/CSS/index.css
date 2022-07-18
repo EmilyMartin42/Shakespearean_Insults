@@ -121,15 +121,19 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     font-size: 2.5em;
     color: var(--textColor);
 }
+.playCards{
+    display: flex;
+    justify-content: space-between;
+}
 .card {
     display: inline-block;
     color: var(--textColor);
     background-size: cover;
-    width: 22.5%;
-    padding: 18rem 0 0;
+    width: 23.5%;
+    padding: 30% 0 0;
     border-radius: .5rem;
-    overflow-y: hidden;
-    margin: 0 1rem 0 1rem;
+    overflow: hidden;
+    margin: 0 1%;
 
     transition: transform 500ms ease;
 }
@@ -137,9 +141,10 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     transform: scale(1.05);
 }
 .cardContent {
-    --padding: 1.5rem;
+    --padding: 10%;
+    --verticalPadding: 10%;
     padding: var(--padding);
-    padding-top: 3.5rem;
+    padding-top: var(--verticalPadding);
     background: linear-gradient( 
     hsla(0, 0%, 0%, 0),
     hsla(0, 0%, 0%, .3) 10%,
@@ -161,20 +166,25 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     opacity: 1;
 }
 .ham{
-    background-image: url(/images/ham.jpg)
+    background-image: url(/images/ham.jpg);
+    background-position: center;
 }
 .oth{
-    background-image: url(/images/oth.jpg)
+    background-image: url(/images/oth.jpg);
+    background-position: center;
 }
 .mnd{
-    background-image: url(/images/mid.jpg)
+    background-image: url(/images/mid.jpg);
+    background-position: center;
 }
 .coe{
-    background-image: url(/images/coe.jpg)
+    background-image: url(/images/coe.jpg);
+    background-position: center;
 }
 .playTitle {
     position: relative;
     width: max-content;
+    font-size: 1.5vw;
 }
 .playTitle::after {
     content: "";
@@ -305,6 +315,9 @@ details.sort > p, details.sort > details > details > p {
 .actHead {
     color: var(--textColor)
 }
+.speech {
+    margin-left: 5%;
+}
 .speaker {
     color: var(--textColor);
     font-size: 1.2em;
@@ -315,7 +328,7 @@ details.sort > p, details.sort > details > details > p {
     margin: .5em 0 .5em 3em;
 }
 .stage {
-    text-align: right;
+    text-align: center;
     font-style: italic;
 }
 .stage::before {
