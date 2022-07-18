@@ -303,7 +303,11 @@ details.sort > p, details.sort > details > details > p {
     background: #2C2A25;
 }
 .actHead {
-    color: var(--textColor)
+    color: var(--textColor);
+    text-align: center;
+}
+.speech {
+    margin-left: 5%;
 }
 .speaker {
     color: var(--textColor);
@@ -315,7 +319,7 @@ details.sort > p, details.sort > details > details > p {
     margin: .5em 0 .5em 3em;
 }
 .stage {
-    text-align: right;
+    text-align: center;
     font-style: italic;
 }
 .stage::before {
