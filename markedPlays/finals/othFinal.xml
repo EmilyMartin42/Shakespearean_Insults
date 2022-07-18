@@ -413,7 +413,7 @@
                             gender="male-male"
                             rel="friend-friend"
                             rel-state="neg"
-                            speechAct="ind"
+                            speechAct="indirect"
                             illoc-type="representative"
                             maxim="man"/>
                <w id="sha-oth20124106" lemma="a (at)" pos="at">a</w>
@@ -20536,7 +20536,7 @@
                                   gender="male-male"
                                   rel="friend-friend"
                                   rel-state="neg"
-                                  speechAct="ind"
+                                  speechAct="indirect"
                                   illoc-type="representative"
                                   maxim="man"/>
                      <w id="sha-oth20124106" lemma="a (at)" pos="at">a</w>
