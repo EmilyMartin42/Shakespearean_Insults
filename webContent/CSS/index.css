@@ -121,15 +121,19 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     font-size: 2.5em;
     color: var(--textColor);
 }
+.playCards{
+    display: flex;
+    justify-content: space-between;
+}
 .card {
     display: inline-block;
     color: var(--textColor);
     background-size: cover;
-    width: 22.5%;
-    padding: 18rem 0 0;
+    width: 23.5%;
+    padding: 30% 0 0;
     border-radius: .5rem;
-    overflow-y: hidden;
-    margin: 0 1rem 0 1rem;
+    overflow: hidden;
+    margin: 0 1%;
 
     transition: transform 500ms ease;
 }
@@ -137,9 +141,10 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     transform: scale(1.05);
 }
 .cardContent {
-    --padding: 1.5rem;
+    --padding: 10%;
+    --verticalPadding: 10%;
     padding: var(--padding);
-    padding-top: 3.5rem;
+    padding-top: var(--verticalPadding);
     background: linear-gradient( 
     hsla(0, 0%, 0%, 0),
     hsla(0, 0%, 0%, .3) 10%,
@@ -175,6 +180,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
 .playTitle {
     position: relative;
     width: max-content;
+    font-size: 1.5vw;
 }
 .playTitle::after {
     content: "";
@@ -303,8 +309,7 @@ details.sort > p, details.sort > details > details > p {
     background: #2C2A25;
 }
 .actHead {
-    color: var(--textColor);
-    text-align: center;
+    color: var(--textColor)
 }
 .speech {
     margin-left: 5%;
