@@ -130,7 +130,7 @@ body.home a.home, body.about a.about, body.corp a.corp, body.analysis a.analysis
     color: var(--textColor);
     background-size: cover;
     width: 23.5%;
-    padding: 30% 0 0;
+    padding: 20% 0 0;
     border-radius: .5rem;
     overflow: hidden;
     margin: 0 1%;
