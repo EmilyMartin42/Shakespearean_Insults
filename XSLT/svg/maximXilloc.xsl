@@ -37,10 +37,11 @@
                             <line x1="50" x2="{$max-wide + 100}" y1="-{$y-pos}" y2="-{$y-pos}" stroke="#E0E0E0" stroke-dasharray="4"/>
                             <text x="40" y="-{$y-pos - 2}" stroke="#E0E0E0" fill="#E0E0E0" text-anchor="end">
                                 <xsl:value-of select="
-                                if (current-grouping-key() = 'relev')  then 'relevance'
-                                else if (current-grouping-key() = 'man')  then 'manner'
-                                else if (current-grouping-key() = 'quant')  then 'quantity'
-                                else 'quality'"/>
+                                if (current-grouping-key() = 'relev') then 'relevance'
+                                else if (current-grouping-key() = 'man') then 'manner'
+                                else if (current-grouping-key() = 'quant') then 'quantity'
+                                else if (current-grouping-key() = 'qual') then 'quality'
+                                else 'ERROR'"/>
                             </text>
                         </xsl:for-each>
                     </xsl:for-each-group>
