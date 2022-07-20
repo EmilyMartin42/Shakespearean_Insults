@@ -69,9 +69,11 @@ wordHoardTaggedLine_type =
     (element w { w_type }
      | element punc { xsd:string }
      | element insultStart {
-           attribute insType | gender | rel | rel-state | speechAct | illoc-type | maxim {
+           attribute insType | gender | rel | rel-state | speechAct {
                xsd:string
-           }+
+           }+,
+           attribute illoc-type { 'representative' | 'expressive' | 'directive' | 'commissive' | 'declarative'}?,
+           attribute maxim { 'quant' | 'qual' | 'relev' | 'man' }?
        }
      | element insultEnd { empty }
      | element hi { hi_line_type }
@@ -183,9 +185,11 @@ insultContent =
     (element w { w_type }
      | element punc { xsd:string }
      | element insultStart {
-           attribute insType | gender | rel | rel-state | speechAct | illoc-type | maxim {
+           attribute insType | gender | rel | rel-state | speechAct {
                xsd:string
-           }+
+           }+,
+           attribute illoc-type { 'representative' | 'expressive' | 'directive' | 'commissive' | 'declarative'}?,
+           attribute maxim { 'quant' | 'qual' | 'relev' | 'man' }?
        }
      | element insultEnd { empty })+,
     attribute xml:id { xsd:string }
