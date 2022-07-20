@@ -1286,7 +1286,7 @@
                             rel-state="neutral"
                             speechAct="indirect"
                             illoc-type="representative"
-                            maxim="manner"/>
+                            maxim="man"/>
                <w id="sha-mnd50112101" lemma="he (pnp)" pos="pnp-3sg.ge-dt">His</w>
                <punc> </punc>
                <w id="sha-mnd50112102" lemma="speech (n)" pos="n-sg">speech</w>
@@ -36524,7 +36524,7 @@
                                   rel-state="neutral"
                                   speechAct="indirect"
                                   illoc-type="representative"
-                                  maxim="manner"/>
+                                  maxim="man"/>
                      <w id="sha-mnd50112101" lemma="he (pnp)" pos="pnp-3sg.ge-dt">His</w>
                      <punc> </punc>
                      <w id="sha-mnd50112102" lemma="speech (n)" pos="n-sg">speech</w>

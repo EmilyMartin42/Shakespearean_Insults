@@ -61354,7 +61354,7 @@
 					<sp who="Theseus">
 						<speaker>Theseus</speaker>
 						<wordHoardTaggedLine id="sha-mnd501121" n="121" prosodic="prose">
-							<insultStart insType ="pAttack slander" gender="male-male" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="manner"/>
+							<insultStart insType ="pAttack slander" gender="male-male" rel="acq-acq" rel-state="neutral" speechAct="indirect" illoc-type="representative" maxim="man"/>
 							<w id="sha-mnd50112101"
 							   lemma="he (pnp)"
 							   pos="pnp-3sg.ge-dt"                  >His</w>
