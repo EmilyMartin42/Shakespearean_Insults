@@ -45,6 +45,7 @@
     --backgroundColor: #2C2A25;
     --headerColor: #8F0002;
     --hoverColor: #B80003;
+    --graphBlue: #5d81b9;
 }
 /* 
  * Default element styling below
@@ -340,6 +341,9 @@ details.sort > p, details.sort > details > details > p {
 .textInsult {
     display: table;
     background-color: var(--headerColor)
+}
+.textInsult:target {
+    background-color: var(--graphBlue)
 }
 /* 
  * Id styling below
