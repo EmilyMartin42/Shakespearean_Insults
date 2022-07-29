@@ -75,12 +75,17 @@
                     <xsl:text>textInsult</xsl:text>
                 </xsl:attribute>
                 <xsl:attribute name="id">
-                    <xsl:value-of select="count(preceding::node()[name() = 'insultStart'])"/>
+                    <xsl:value-of select="count(preceding::node()[name() eq 'insultStart'])"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:value-of
-                select="string-join(node()[name() ne 'stage']) => normalize-space() => replace(' ([.,:;?!])', '$1')"
+                select="string-join(node()[name() = ('punc', 'w')]) => normalize-space() => replace(' ([.,:;?!])', '$1')"
             />
         </p>
+    </xsl:template>
+    <xsl:template match="comment()">
+        <xsl:comment>
+            <xsl:value-of select=".">
+        </xsl:comment>
     </xsl:template>
 </xsl:stylesheet>
